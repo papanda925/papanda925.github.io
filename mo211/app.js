@@ -144,8 +144,10 @@
       box.appendChild(f);
     }
 
-    if(help.visuals?.[q.skillId]?.type==="flashfill"){
-      box.appendChild(buildFlashFillVisual(help.visuals[q.skillId].caption));
+    const visual=help.visuals?.[q.skillId];
+    if(visual){
+      const visualNode=buildVisual(visual.type,visual.caption);
+      if(visualNode) box.appendChild(visualNode);
     }
 
     const practice=document.createElement("div");
@@ -202,22 +204,92 @@
     target.appendChild(box);
   }
 
-  function buildFlashFillVisual(caption){
+  function buildVisual(type,caption){
     const fig=document.createElement("figure");
     fig.className="excel-mock";
-    fig.innerHTML=
-      "<div class='mock-title'>Excel for Microsoft 365 — 操作イメージ</div>"+
-      "<div class='mock-tabs'><span>ホーム</span><span class='active'>データ</span><span>数式</span><span>校閲</span><span>表示</span></div>"+
-      "<div class='mock-ribbon'><span>並べ替え</span><span>フィルター</span><span class='highlight'>フラッシュ フィル<br><kbd>Ctrl + E</kbd></span><span>重複の削除</span><span>データの入力規則</span></div>"+
-      "<div class='sheet-grid'>"+
-        "<div class='corner'></div><div class='col'>A</div><div class='col'>B</div>"+
-        "<div class='row'>1</div><div class='cell head'>氏名</div><div class='cell head'>姓</div>"+
-        "<div class='row'>2</div><div class='cell'>山田 太郎</div><div class='cell input'>山田 ← まず例を入力</div>"+
-        "<div class='row'>3</div><div class='cell'>鈴木 花子</div><div class='cell preview'>鈴木</div>"+
-        "<div class='row'>4</div><div class='cell'>佐藤 次郎</div><div class='cell preview'>佐藤</div>"+
-      "</div>"+
-      "<figcaption>"+escapeHtml(caption||"")+"</figcaption>";
-    return fig;
+    const cap="<figcaption>"+escapeHtml(caption||"")+"<br><small>本サイト作成の模式図。実際のExcel画面そのものではありません。</small></figcaption>";
+
+    if(type==="flashfill"){
+      fig.innerHTML=
+        "<div class='mock-title'>Excel for Microsoft 365 — 操作イメージ</div>"+
+        "<div class='mock-tabs'><span>ホーム</span><span class='active'>データ</span><span>数式</span><span>校閲</span><span>表示</span></div>"+
+        "<div class='mock-ribbon'><span>並べ替え</span><span>フィルター</span><span class='highlight'>フラッシュ フィル<br><kbd>Ctrl + E</kbd></span><span>重複の削除</span><span>データの入力規則</span></div>"+
+        sheet2("氏名","姓","山田 太郎","山田 ← 例を入力","鈴木 花子","鈴木","佐藤 次郎","佐藤")+
+        cap;
+      return fig;
+    }
+
+    if(type==="conditional"){
+      fig.innerHTML=
+        "<div class='mock-title'>条件付き書式 — 新しい書式ルール</div>"+
+        "<div class='dialog-mock'><div class='dialog-row selected'>● 数式を使用して、書式設定するセルを決定</div><label>次の数式を満たす場合に値を書式設定</label><div class='formula-entry'>=AND($A2&lt;TODAY(),$C2=&quot;未完了&quot;)</div><div class='format-sample'>プレビュー：期限切れ・未完了の行を強調</div></div>"+
+        cap;
+      return fig;
+    }
+
+    if(type==="xlookup"){
+      fig.innerHTML=
+        "<div class='mock-title'>Excel for Microsoft 365 — XLOOKUP</div>"+
+        "<div class='formula-bar'>fx　=XLOOKUP(E2,$A$2:$A$5,$C$2:$C$5,&quot;未登録&quot;)</div>"+
+        "<div class='mini-sheet four'><b>商品コード</b><b>商品名</b><b>単価</b><b>検索</b><span>P001</span><span>マウス</span><span>2500</span><span class='active-cell'>P002</span><span>P002</span><span>キーボード</span><span>6800</span><span class='result-cell'>6,800</span></div>"+
+        cap;
+      return fig;
+    }
+
+    if(type==="workday"){
+      fig.innerHTML=
+        "<div class='mock-title'>Excel for Microsoft 365 — WORKDAY</div>"+
+        "<div class='formula-bar'>fx　=WORKDAY(A2,B2,$F$2:$F$5)</div>"+
+        "<div class='mini-sheet four'><b>申請日</b><b>営業日数</b><b>期限日</b><b>祝日一覧</b><span>2026/9/1</span><span>5</span><span class='result-cell'>2026/9/8</span><span>2026/9/3</span><span></span><span></span><span></span><span>2026/9/23</span></div>"+
+        cap;
+      return fig;
+    }
+
+    if(type==="goalseek"){
+      fig.innerHTML=
+        "<div class='mock-title'>ゴール シーク</div>"+
+        "<div class='dialog-mock goal'><label>数式入力セル</label><div class='input-like'>$D$5（利益）</div><label>目標値</label><div class='input-like'>1000000</div><label>変化させるセル</label><div class='input-like'>$B$5（販売数量）</div><div class='dialog-buttons'><span>OK</span><span>キャンセル</span></div></div>"+
+        cap;
+      return fig;
+    }
+
+    if(type==="macro"){
+      fig.innerHTML=
+        "<div class='mock-title'>Excel for Microsoft 365 — マクロの記録</div>"+
+        "<div class='mock-tabs'><span>ホーム</span><span>挿入</span><span>数式</span><span class='active'>表示</span><span>開発</span></div>"+
+        "<div class='mock-ribbon'><span>表示設定</span><span class='highlight'>マクロ ▼<br>マクロの記録</span><span>ウィンドウ</span></div>"+
+        "<div class='flow'><span>① 記録開始</span><b>→</b><span>② Excelを操作</span><b>→</b><span>③ 記録停止</span><b>→</b><span>④ 再実行</span></div>"+
+        cap;
+      return fig;
+    }
+
+    if(type==="pivot"){
+      fig.innerHTML=
+        "<div class='mock-title'>Excel for Microsoft 365 — ピボットテーブル</div>"+
+        "<div class='pivot-mock'><div class='pivot-table'><b>行ラベル</b><b>売上 合計</b><span>営業部</span><span>1,250,000</span><span>開発部</span><span>980,000</span><strong>総計</strong><strong>2,230,000</strong></div><div class='field-list'><b>ピボットテーブルのフィールド</b><label>☑ 部門</label><label>☑ 売上</label><label>☐ 担当者</label><hr><span>行：部門</span><span>値：売上</span></div></div>"+
+        cap;
+      return fig;
+    }
+
+    if(type==="slicer"){
+      fig.innerHTML=
+        "<div class='mock-title'>Excel for Microsoft 365 — スライサー</div>"+
+        "<div class='slicer-mock'><div class='pivot-mini'><b>部門</b><b>売上</b><span>営業</span><span>1,250,000</span><span>開発</span><span>980,000</span></div><div class='slicer-box'><b>担当者</b><button class='on'>山田</button><button>鈴木</button><button>佐藤</button></div></div>"+
+        cap;
+      return fig;
+    }
+
+    return null;
+  }
+
+  function sheet2(h1,h2,a1,b1,a2,b2,a3,b3){
+    return "<div class='sheet-grid'>"+
+      "<div class='corner'></div><div class='col'>A</div><div class='col'>B</div>"+
+      "<div class='row'>1</div><div class='cell head'>"+escapeHtml(h1)+"</div><div class='cell head'>"+escapeHtml(h2)+"</div>"+
+      "<div class='row'>2</div><div class='cell'>"+escapeHtml(a1)+"</div><div class='cell input'>"+escapeHtml(b1)+"</div>"+
+      "<div class='row'>3</div><div class='cell'>"+escapeHtml(a2)+"</div><div class='cell preview'>"+escapeHtml(b2)+"</div>"+
+      "<div class='row'>4</div><div class='cell'>"+escapeHtml(a3)+"</div><div class='cell preview'>"+escapeHtml(b3)+"</div>"+
+      "</div>";
   }
 
   next.onclick=()=>{index++;if(index>=queue.length)finish();else render();};
