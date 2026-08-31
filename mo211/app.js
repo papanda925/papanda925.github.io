@@ -2,10 +2,27 @@
   const skills = window.MO211_SKILLS || [];
   const help = window.MO211_HELP || {paths:{},formulas:{},links:{},visuals:{},contrasts:{}};
 
-  const questions = skills.flatMap(s => ([
-    {id:"q-"+s.id,skillId:s.id,mode:"choice",domain:s.domain,title:s.title,prompt:s.q,options:s.options,answer:s.answer,explanation:s.explanation},
-    {id:"p-"+s.id,skillId:s.id,mode:"practice",domain:s.domain,title:"実技: "+s.title,prompt:s.practice,steps:s.steps,answerText:s.answerText}
-  ]));
+  const variants = window.MO211_VARIANTS || {};
+  const questions = skills.flatMap(s => {
+    const base = [
+      {id:"q-"+s.id,skillId:s.id,mode:"choice",domain:s.domain,title:s.title,prompt:s.q,options:s.options,answer:s.answer,explanation:s.explanation},
+      {id:"p-"+s.id+"-1",skillId:s.id,mode:"practice",domain:s.domain,title:"実技: "+s.title,prompt:s.practice,steps:s.steps,answerText:s.answerText,variant:1}
+    ];
+    (variants[s.id] || []).forEach((v,i) => {
+      base.push({
+        id:"p-"+s.id+"-"+(i+2),
+        skillId:s.id,
+        mode:"practice",
+        domain:s.domain,
+        title:"実技: "+s.title+"（別パターン）",
+        prompt:v.prompt,
+        steps:v.steps || s.steps,
+        answerText:v.answerText || s.answerText,
+        variant:i+2
+      });
+    });
+    return base;
+  });
 
   const $=id=>document.getElementById(id);
   const quiz=$("quiz"), result=$("result"), mode=$("mode"), title=$("title"), skill=$("skill"),
