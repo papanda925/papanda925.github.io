@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MO-211の48スキル学習進捗・復習キューを確認するローカルダッシュボード。">
+  <title>MO-211 学習ダッシュボード | papanda925</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap header-inner"><a class="brand" href="./">MO-211 Practice</a><span class="tag">Learning Dashboard</span></div></header>
+<main class="wrap">
+  <section class="hero">
+    <p class="eyebrow">LOCAL LEARNING ANALYTICS</p>
+    <h1>学習ダッシュボード</h1>
+    <p class="lead">48スキルの復習状況を、このブラウザのlocalStorageから表示します。アカウント登録は不要です。</p>
+    <div class="stats dashboard-stats">
+      <div><strong id="studiedCount">0</strong><span>学習済み</span></div>
+      <div><strong id="dueCount">0</strong><span>復習期限</span></div>
+      <div><strong id="stableCount">0</strong><span>14日以上レベル</span></div>
+    </div>
+    <div class="actions">
+      <a class="btn primary link-btn" href="./">問題へ戻る</a>
+      <button id="exportProgress" class="btn secondary">進捗をエクスポート</button>
+      <label class="btn secondary file-btn">進捗をインポート<input id="importProgress" type="file" accept="application/json"></label>
+      <button id="resetProgress" class="btn secondary">進捗をリセット</button>
+    </div>
+    <p class="notice">進捗データは端末内だけに保存されます。別PCへ移す場合はエクスポート／インポートを使ってください。</p>
+  </section>
+
+  <section class="panel">
+    <div class="dashboard-filter">
+      <button data-filter="all" class="hint-btn selected">すべて</button>
+      <button data-filter="due" class="hint-btn">復習期限</button>
+      <button data-filter="weak" class="hint-btn">苦手</button>
+      <button data-filter="stable" class="hint-btn">定着中</button>
+    </div>
+    <div id="skillDashboard"></div>
+  </section>
+
+  <section class="info">
+    <h2>表示の意味</h2>
+    <p><strong>Level 0</strong> は要復習、Level 1～5は復習間隔の段階です。このサイトでは1・3・7・14・30日を目安にしています。これは分散学習を実装するための実用的な間隔で、研究上の唯一の最適日程を意味しません。</p>
+  </section>
+</main>
+<footer><div class="wrap"><p>進捗はブラウザ内に保存され、サーバーには送信しません。</p></div></footer>
+
+<script src="./data-d1.js"></script>
+<script src="./data-d2.js"></script>
+<script src="./data-d3.js"></script>
+<script src="./data-d4.js"></script>
+<script src="./dashboard.js"></script>
+</body>
+</html>
