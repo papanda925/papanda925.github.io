@@ -118,9 +118,13 @@ window.MO211_HELP = {
   },
 
   visuals: {
-    "2.1.1": {
-      type:"flashfill",
-      caption:"操作イメージ（本サイト作成の模式図。実際のExcel画面そのものではありません）"
-    }
+    "2.1.1": {type:"flashfill",caption:"操作イメージ（本サイト作成の模式図。実際のExcel画面そのものではありません）"},
+    "2.3.2": {type:"conditional",caption:"条件付き書式で「数式を使用して、書式設定するセルを決定」を選ぶイメージ"},
+    "3.2.1": {type:"xlookup",caption:"商品コードを入力するとXLOOKUPで単価が返るイメージ"},
+    "3.3.2": {type:"workday",caption:"申請日・営業日数・祝日一覧からWORKDAYで期限日を求めるイメージ"},
+    "3.4.2": {type:"goalseek",caption:"ゴール シークで「目標値」と「変化させるセル」を指定するイメージ"},
+    "3.6.1": {type:"macro",caption:"マクロ記録を開始してから操作し、記録停止する流れのイメージ"},
+    "4.2.1": {type:"pivot",caption:"元明細からピボットテーブルへフィールドを配置するイメージ"},
+    "4.2.3": {type:"slicer",caption:"スライサーのボタンでピボットテーブルを絞り込むイメージ"}
   }
 };
