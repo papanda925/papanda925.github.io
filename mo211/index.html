@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MO-211 Microsoft Excel Expert (Microsoft 365 Apps) の非公式日本語練習サイト。">
+  <title>MO-211 Excel Expert 日本語練習 | papanda925</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="https://papanda925.github.io/">papanda925</a>
+    <span class="tag">MO-211 Excel Expert</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <p class="eyebrow">Microsoft Office Specialist</p>
+    <h1>MO-211 Excel Expert<br>日本語練習サイト</h1>
+    <p class="lead">Microsoft 365 Apps版 Excel Expert の公開試験範囲をもとに、知識確認とExcel実操作を組み合わせて学習する非公式サイトです。</p>
+    <div class="stats">
+      <div><strong id="questionCount">--</strong><span>総問題数</span></div>
+      <div><strong>48</strong><span>スキル項目</span></div>
+      <div><strong>4</strong><span>試験分野</span></div>
+    </div>
+    <div class="actions">
+      <button id="random10" class="btn primary">ランダム10問</button>
+      <button id="allChoice" class="btn secondary">知識問題だけ</button>
+      <button id="allPractice" class="btn secondary">実技課題だけ</button>
+    </div>
+    <p class="notice">実際の試験問題・試験ダンプ・公式教材の問題文は掲載していません。掲載問題は学習用のオリジナルです。</p>
+  </section>
+
+  <section class="domain-select">
+    <h2>分野別に練習</h2>
+    <div class="domain-buttons">
+      <button data-domain="ブックのオプションと設定">1. ブックのオプションと設定</button>
+      <button data-domain="データの管理・書式設定">2. データの管理・書式設定</button>
+      <button data-domain="高度な数式とマクロ">3. 高度な数式とマクロ</button>
+      <button data-domain="高度なグラフとテーブル">4. 高度なグラフとテーブル</button>
+    </div>
+  </section>
+
+  <section id="quiz" class="panel">
+    <div class="quiz-top">
+      <div>
+        <span id="mode" class="pill"></span>
+        <h2 id="title">問題を読み込み中...</h2>
+        <p id="skill" class="skill"></p>
+      </div>
+      <div class="progress-box">
+        <span id="progressText"></span>
+        <div class="progress"><span id="progressBar"></span></div>
+      </div>
+    </div>
+
+    <div id="prompt" class="prompt"></div>
+    <div id="answerArea"></div>
+
+    <div class="quiz-actions">
+      <button id="showAnswer" class="btn secondary hidden">解答・ポイントを見る</button>
+      <button id="next" class="btn primary hidden">次の問題</button>
+    </div>
+  </section>
+
+  <section id="result" class="panel hidden">
+    <h2>結果</h2>
+    <p id="score" class="score"></p>
+    <div id="breakdown"></div>
+    <button id="again" class="btn primary">もう一度ランダム10問</button>
+  </section>
+
+  <section class="info">
+    <h2>学習のしかた</h2>
+    <ol>
+      <li>知識問題で機能の目的と使い分けを確認する。</li>
+      <li>実技課題が出たらExcelを開き、実際に操作してから解答を見る。</li>
+      <li>間違えたスキル番号を控え、Microsoft公式の試験範囲・Excelヘルプで復習する。</li>
+    </ol>
+    <p><a href="https://learn.microsoft.com/ja-jp/credentials/certifications/exams/mo-211/" target="_blank" rel="noopener">Microsoft Learn: MO-211 公式試験ページ ↗</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>非公式学習サイト。Microsoft、Microsoft 365、Excel は各権利者の商標です。本サイトはMicrosoft Corporationの承認・提携を受けたものではありません。</p>
+  </div>
+</footer>
+
+<script src="./data-d1.js"></script>
+<script src="./data-d2.js"></script>
+<script src="./data-d3.js"></script>
+<script src="./data-d4.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
