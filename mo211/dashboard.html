@@ -17,7 +17,7 @@
     <div class="stats dashboard-stats">
       <div><strong id="studiedCount">0</strong><span>学習済み</span></div>
       <div><strong id="dueCount">0</strong><span>復習期限</span></div>
-      <div><strong id="stableCount">0</strong><span>14日以上レベル</span></div>
+      <div><strong id="stableCount">0</strong><span>Level 4以上</span></div>
     </div>
     <div class="actions">
       <a class="btn primary link-btn" href="./">問題へ戻る</a>
@@ -32,15 +32,17 @@
     <div class="dashboard-filter">
       <button data-filter="all" class="hint-btn selected">すべて</button>
       <button data-filter="due" class="hint-btn">復習期限</button>
-      <button data-filter="weak" class="hint-btn">苦手</button>
-      <button data-filter="stable" class="hint-btn">定着中</button>
+      <button data-filter="weak" class="hint-btn">要復習・低Level</button>
+      <button data-filter="new" class="hint-btn">未学習</button>
+      <button data-filter="stable" class="hint-btn">長めの復習間隔</button>
     </div>
     <div id="skillDashboard"></div>
   </section>
 
   <section class="info">
     <h2>表示の意味</h2>
-    <p><strong>Level 0</strong> は要復習、Level 1～5は復習間隔の段階です。このサイトでは1・3・7・14・30日を目安にしています。これは分散学習を実装するための実用的な間隔で、研究上の唯一の最適日程を意味しません。</p>
+    <p><strong>Level 0～5は能力認定ではなく、復習間隔を決めるための内部的な段階</strong>です。このサイトでは1・3・7・14・30日を目安にし、自力成功が続くと間隔を長く、ヒント使用や失敗では短くします。「Level 4以上」「長めの復習間隔」は定着を保証する表示ではありません。</p>
+    <p>この復習間隔は分散学習を実装するためのヒューリスティックで、研究上の唯一の最適日程を意味しません。</p>
   </section>
 </main>
 <footer><div class="wrap"><p>進捗はブラウザ内に保存され、サーバーには送信しません。</p></div></footer>
