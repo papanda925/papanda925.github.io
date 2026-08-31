@@ -1,89 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="papanda925 のポートフォリオ。VBA、PowerShell、AI、API、ネットワークなどの技術記事とGitHubプロジェクトを公開しています。">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:title" content="papanda925 | Portfolio">
+  <meta property="og:description" content="VBA / PowerShell / AI / API など、試したもの・作ったものを公開しています。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://papanda925.github.io/">
+  <title>papanda925 | Portfolio</title>
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/78643310?v=4">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="papanda925 home">papanda925</a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="https://papanda925.com/" target="_blank" rel="noopener noreferrer">Blog</a>
+        <a href="https://github.com/papanda925" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
     </div>
   </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">OFFICE AUTOMATION · SCRIPTING · AI · NETWORK</p>
+          <h1>作って、試して、<br>記録する。</h1>
+          <p class="lead">
+            VBA、PowerShell、AI、API、ネットワークなどを中心に、
+            個人で試したコードやツール、技術メモを公開しています。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://papanda925.com/" target="_blank" rel="noopener noreferrer">
+              技術ブログを読む
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button secondary" href="https://github.com/papanda925" target="_blank" rel="noopener noreferrer">
+              GitHubを見る
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
+
+        <aside class="profile-card" aria-label="プロフィール">
+          <img class="avatar" src="https://avatars.githubusercontent.com/u/78643310?v=4" alt="papanda925 GitHub avatar">
+          <div>
+            <p class="profile-name">@papanda925</p>
+            <p class="profile-text">事務系エンジニアの趣味の記録。</p>
           </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+          <div class="profile-links">
+            <a href="https://papanda925.com/" target="_blank" rel="noopener noreferrer">papanda925.com</a>
+            <a href="https://github.com/papanda925" target="_blank" rel="noopener noreferrer">github.com/papanda925</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">FEATURED PROJECTS</p>
+            <h2>GitHub Projects</h2>
+          </div>
+          <a class="text-link" href="https://github.com/papanda925?tab=repositories" target="_blank" rel="noopener noreferrer">
+            すべてのリポジトリを見る →
+          </a>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+
+        <div class="project-grid">
+          <a class="project-card" href="https://github.com/papanda925/VBA_WinsockAPI_TCP_Sample" target="_blank" rel="noopener noreferrer">
+            <div class="project-top">
+              <span class="tag">VBA</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>VBA Winsock API TCP Sample</h3>
+            <p>Excel VBAからWinsock APIを扱うTCP通信のサンプル。</p>
+          </a>
+
+          <a class="project-card" href="https://github.com/papanda925/VBA_WinsockAPI_UDP_Sample" target="_blank" rel="noopener noreferrer">
+            <div class="project-top">
+              <span class="tag">VBA</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>VBA Winsock API UDP Sample</h3>
+            <p>VBAでUDP通信を試すためのWinsock APIサンプル。</p>
+          </a>
+
+          <a class="project-card" href="https://github.com/papanda925/PowerShell_WPF_XAML_GUI_SampleCodes" target="_blank" rel="noopener noreferrer">
+            <div class="project-top">
+              <span class="tag">PowerShell</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>PowerShell WPF / XAML GUI</h3>
+            <p>PowerShellとWPF/XAMLを使ったGUI実装のサンプルコード。</p>
+          </a>
+
+          <a class="project-card" href="https://github.com/papanda925/PowerShellXamlEditTool" target="_blank" rel="noopener noreferrer">
+            <div class="project-top">
+              <span class="tag">PowerShell</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>PowerShell XAML Edit Tool</h3>
+            <p>PowerShell / XAMLで作成した小さな編集ツール。</p>
+          </a>
+
+          <a class="project-card" href="https://github.com/papanda925/MarkdownLocalWiki" target="_blank" rel="noopener noreferrer">
+            <div class="project-top">
+              <span class="tag">Markdown</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>Markdown Local Wiki</h3>
+            <p>Windows上でサーバーなしに動かせる、Markdown対応のローカルWiki。</p>
+          </a>
+
+          <a class="project-card" href="https://github.com/papanda925/OrcaRouter-Samples" target="_blank" rel="noopener noreferrer">
+            <div class="project-top">
+              <span class="tag">LLM / API</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>OrcaRouter Samples</h3>
+            <p>Web、PowerShell、VBAからLLM APIを利用するサンプルをまとめるプロジェクト。</p>
+          </a>
         </div>
       </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
+    </section>
+
+    <section class="section section-muted" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="section-kicker">ABOUT</p>
+          <h2>技術ブログと<br>GitHubの入口。</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            <strong>papanda925.com</strong> では、実際に調べたことや試したことを技術記事として記録しています。
+            GitHubでは、VBAやPowerShellを中心に、サンプルコードや小さなツールを公開しています。
+          </p>
+          <div class="topic-list" aria-label="主なトピック">
+            <span>VBA / Office</span>
+            <span>PowerShell</span>
+            <span>AI / LLM</span>
+            <span>API</span>
+            <span>Network / RFC</span>
+            <span>Linux / DevOps</span>
+          </div>
+          <a class="button primary" href="https://papanda925.com/" target="_blank" rel="noopener noreferrer">
+            papanda925.com へ
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© papanda925</p>
+      <div class="footer-links">
+        <a href="https://papanda925.com/" target="_blank" rel="noopener noreferrer">Blog</a>
+        <a href="https://github.com/papanda925" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
     </div>
   </footer>
 </body>
