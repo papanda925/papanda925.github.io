@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MO-211の公式試験範囲に列挙された関数・高度なグラフを個別に確認する網羅ドリル。">
+  <title>MO-211 名前付き機能 網羅ドリル | papanda925</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap header-inner"><a class="brand" href="./">MO-211 Practice</a><span class="tag">Objective Coverage</span></div></header>
+<main class="wrap">
+  <section class="hero">
+    <p class="eyebrow">NAMED OBJECTIVE COVERAGE</p>
+    <h1>名前付き機能 網羅ドリル</h1>
+    <p class="lead">48スキルの中には、複数の関数やグラフ種類をまとめて1項目としているものがあります。このページでは、Microsoftの公開試験範囲に名前が挙がる主要機能を1つずつ「何に使うか → 1回操作する」で確認します。</p>
+    <div class="actions"><a class="btn primary link-btn" href="./">問題へ戻る</a><a class="btn secondary link-btn" href="./exam-sim.html">50分模擬</a></div>
+    <p class="notice">本番問題の再現ではありません。以下は公開された試験範囲から作成したオリジナル練習指示です。</p>
+  </section>
+
+  <section class="panel">
+    <h2>3.1 論理・条件付き集計関数</h2>
+    <div class="evidence-grid">
+      <article><strong>IF</strong><p>売上が100,000以上なら「達成」、それ以外は「未達」と返す。</p></article>
+      <article><strong>IFS</strong><p>評価点を90以上=A、80以上=B、70以上=C、それ以外=Dのように複数段階で分類する。</p></article>
+      <article><strong>SWITCH</strong><p>部署コード「S」「D」「A」を、それぞれ「営業」「開発」「管理」へ変換する。</p></article>
+      <article><strong>SUMIF</strong><p>部門が「営業」の売上だけを合計する。</p></article>
+      <article><strong>AVERAGEIF</strong><p>カテゴリが「周辺機器」の単価だけを平均する。</p></article>
+      <article><strong>COUNTIF</strong><p>状態が「未処理」の件数を数える。</p></article>
+      <article><strong>SUMIFS</strong><p>「営業」かつ「4月」の売上を合計する。</p></article>
+      <article><strong>AVERAGEIFS</strong><p>「関東」かつ売上100,000以上の利益率を平均する。</p></article>
+      <article><strong>COUNTIFS</strong><p>期限が今日より前、かつ状態が「完了」以外の件数を数える。</p></article>
+      <article><strong>MAXIFS</strong><p>営業部だけに限定して最大売上を求める。</p></article>
+      <article><strong>MINIFS</strong><p>特定カテゴリだけに限定して最小在庫数を求める。</p></article>
+      <article><strong>AND</strong><p>売上100,000以上かつ利益率20%以上ならTRUEになる条件を作る。</p></article>
+      <article><strong>OR</strong><p>状態が「至急」または期限切れならTRUEになる条件を作る。</p></article>
+      <article><strong>NOT</strong><p>状態が「完了」ではない行を判定する条件を作る。</p></article>
+      <article><strong>LET</strong><p>売上・原価・利益の中間計算へ名前を付け、最終的な利益率を返す。</p></article>
+    </div>
+    <p class="subtle">目標：関数名だけでなく、「単一条件か複数条件か」「値を返すのか論理値を返すのか」を区別する。</p>
+  </section>
+
+  <section class="panel">
+    <h2>3.2 検索関数</h2>
+    <div class="evidence-grid">
+      <article><strong>XLOOKUP</strong><p>商品コードから単価を返し、未登録時は「未登録」と表示する。</p></article>
+      <article><strong>VLOOKUP</strong><p>縦方向の商品マスターから商品コードを検索して商品名を返す。列番号と完全一致指定も確認する。</p></article>
+      <article><strong>HLOOKUP</strong><p>横方向に月が並ぶ表から指定月の値を返す。</p></article>
+      <article><strong>MATCH</strong><p>社員番号が一覧の何番目にあるか位置を返す。</p></article>
+      <article><strong>INDEX</strong><p>MATCHで求めた位置を使い、対応する部署名をINDEXで返す。</p></article>
+    </div>
+    <p class="subtle">目標：XLOOKUPだけに依存せず、VLOOKUP/HLOOKUPとINDEX+MATCHの構造も実際に1回は作る。</p>
+  </section>
+
+  <section class="panel">
+    <h2>3.3 日付・時刻関数</h2>
+    <div class="evidence-grid">
+      <article><strong>NOW</strong><p>現在の日付と時刻を表示し、表示形式を変えて時刻部分も確認する。</p></article>
+      <article><strong>TODAY</strong><p>現在日付だけを使い、契約日からの経過日数を計算する。</p></article>
+      <article><strong>WEEKDAY</strong><p>日付を曜日番号へ変換し、戻り値の種類を変えて月曜始まりを確認する。</p></article>
+      <article><strong>WORKDAY</strong><p>祝日一覧を除外し、申請日から5営業日後を求める。</p></article>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>4.1 高度なグラフ</h2>
+    <div class="evidence-grid">
+      <article><strong>Box &amp; Whisker</strong><p>複数チームの得点分布を箱ひげ図にし、中央値とばらつきの違いを見る。</p></article>
+      <article><strong>Combo / 第2軸</strong><p>売上を縦棒、利益率を折れ線・第2軸として同じグラフへ表示する。</p></article>
+      <article><strong>Funnel</strong><p>問い合わせ→商談→見積→受注のように段階ごとに減少する件数をファネルで表す。</p></article>
+      <article><strong>Histogram</strong><p>試験得点50件程度をヒストグラムにし、ビン幅またはビン数を変更する。</p></article>
+      <article><strong>Sunburst</strong><p>本部→部門→チームの階層データをサンバーストで可視化する。</p></article>
+      <article><strong>Waterfall</strong><p>期首利益から増減要因を積み上げ、期末利益までの変化を表す。開始・終了値を合計として設定する。</p></article>
+    </div>
+    <p class="subtle">目標：「作り方」だけでなく、データの形を見てどのグラフが適切かを判断する。</p>
+  </section>
+
+  <section class="panel">
+    <h2>1.1 マクロの安全な扱い</h2>
+    <div class="method-grid">
+      <article><h3>コピー</h3><p>VBEで標準モジュールを別ブックへコピーする。</p></article>
+      <article><h3>有効化</h3><p>信頼できるテスト用ブックで、セキュリティ警告から「コンテンツの有効化」を選び、その文書のマクロを実行する。</p></article>
+      <article><h3>保存形式との違い</h3><p>.xlsmで保存することはVBAを保持する操作であり、「マクロを有効にする」操作とは別だと説明できるようにする。</p></article>
+    </div>
+    <p><a href="https://support.microsoft.com/en-US/Office/vba/enable-or-disable-macros-in-microsoft-365-files" target="_blank" rel="noopener">Microsoft公式：マクロを有効または無効にする ↗</a></p>
+  </section>
+
+  <section class="info">
+    <h2>使い方</h2>
+    <p>一度に全部暗記するページではありません。メイン問題で苦手になった関数群やグラフ群だけをここで横断し、各項目をExcelで1回操作したら、翌日以降に選択肢なしで「用途」と「最初の操作」を思い出してください。</p>
+    <p><a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/mo-211/" target="_blank" rel="noopener">Microsoft Learn：MO-211 公式試験ページ ↗</a></p>
+  </section>
+</main>
+<footer><div class="wrap"><p>非公式学習サイト。実際の試験問題・試験ダンプ・公式教材の問題文は使用していません。</p></div></footer>
+</body>
+</html>
