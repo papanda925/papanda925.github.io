@@ -29,6 +29,8 @@
       <button id="random10" class="btn primary">ランダム10問</button>
       <button id="allChoice" class="btn secondary">知識問題だけ</button>
       <button id="allPractice" class="btn secondary">実技課題だけ</button>
+      <button id="reviewDue" class="btn secondary">今日の復習 <span id="reviewCount">0</span></button>
+      <a class="btn secondary link-btn" href="./study-method.html">勉強法・本番思考</a>
     </div>
     <p class="notice">実際の試験問題・試験ダンプ・公式教材の問題文は掲載していません。掲載問題は学習用のオリジナルです。間違えた問題では、Excel for Microsoft 365 の操作場所・練習手順・模式図・Microsoft公式ヘルプまで表示します。</p>
   </section>
@@ -69,15 +71,19 @@
     <h2>結果</h2>
     <p id="score" class="score"></p>
     <div id="breakdown"></div>
-    <button id="again" class="btn primary">もう一度ランダム10問</button>
+    <div class="actions">
+      <button id="again" class="btn primary">もう一度ランダム10問</button>
+      <button id="retryMissed" class="btn secondary hidden">今回の苦手だけやり直す</button>
+    </div>
   </section>
 
   <section class="info">
     <h2>学習のしかた</h2>
     <ol>
       <li>知識問題で機能の目的と使い分けを確認する。</li>
-      <li>実技課題が出たらExcelを開き、実際に操作してから解答を見る。</li>
-      <li>間違えたスキル番号を控え、Microsoft公式の試験範囲・Excelヘルプで復習する。</li>
+      <li>実技課題は手順を先に見ず、「動詞 → 対象 → 場所」を30秒考えてからExcelを操作する。</li>
+      <li>解答を見たら一度閉じ、同じ操作を記憶だけでもう一度再現する。</li>
+      <li>間違い・ヒント使用は復習キューへ保存し、日を空けて再挑戦する。</li>
     </ol>
     <p><a href="https://learn.microsoft.com/ja-jp/credentials/certifications/exams/mo-211/" target="_blank" rel="noopener">Microsoft Learn: MO-211 公式試験ページ ↗</a></p>
   </section>
