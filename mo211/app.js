@@ -201,6 +201,13 @@
     exp.innerHTML="<strong>"+(correct?"正解":"確認ポイント")+"</strong><p>"+escapeHtml(q.explanation)+"</p>";
     answerArea.appendChild(exp);
 
+    if(!correct){
+      const cmp=document.createElement("div");
+      cmp.className="answer-compare";
+      cmp.innerHTML="<div><span>あなたの選択</span><strong>"+escapeHtml(q.options[selected])+"</strong></div><div><span>正解</span><strong>"+escapeHtml(q.options[q.answer])+"</strong></div>";
+      exp.appendChild(cmp);
+    }
+
     if(currentConfidence){
       const cal=document.createElement("div");
       cal.className="calibration-feedback";
