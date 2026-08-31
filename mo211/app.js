@@ -1,6 +1,6 @@
 (() => {
   const skills = window.MO211_SKILLS || [];
-  const help = window.MO211_HELP || {paths:{},formulas:{},links:{},visuals:{}};
+  const help = window.MO211_HELP || {paths:{},formulas:{},links:{},visuals:{},contrasts:{}};
 
   const questions = skills.flatMap(s => ([
     {id:"q-"+s.id,skillId:s.id,mode:"choice",domain:s.domain,title:s.title,prompt:s.q,options:s.options,answer:s.answer,explanation:s.explanation},
@@ -12,43 +12,105 @@
         prompt=$("prompt"), answerArea=$("answerArea"), showAnswer=$("showAnswer"), next=$("next"),
         progressText=$("progressText"), progressBar=$("progressBar"), score=$("score"), breakdown=$("breakdown");
 
+  const REVIEW_KEY="mo211-review-v1";
+  const REVIEW_INTERVALS=[1,3,7,14,30];
+  let reviewState=loadReviewState();
+
   let queue=[], index=0, points=0, answered=false, stats={};
+  let sessionMisses=new Set();
+  let currentHintUsed=false;
 
   $("questionCount").textContent = questions.length;
+  updateReviewCount();
 
   function shuffle(arr){ return [...arr].sort(()=>Math.random()-.5); }
-  function initStats(){ stats={}; questions.forEach(q=>{if(!stats[q.domain])stats[q.domain]={correct:0,total:0};}); }
+
+  function initStats(){
+    stats={};
+    questions.forEach(q=>{if(!stats[q.domain])stats[q.domain]={correct:0,total:0};});
+  }
 
   function start(list){
     queue=list.length?list:[...questions];
-    index=0;points=0;answered=false;initStats();
-    result.classList.add("hidden");quiz.classList.remove("hidden");
+    index=0;
+    points=0;
+    answered=false;
+    sessionMisses=new Set();
+    initStats();
+    result.classList.add("hidden");
+    $("retryMissed").classList.add("hidden");
+    quiz.classList.remove("hidden");
     render();
     quiz.scrollIntoView({behavior:"smooth",block:"start"});
   }
 
   function render(){
-    const q=queue[index]; answered=false; answerArea.innerHTML="";
-    next.classList.add("hidden");showAnswer.classList.add("hidden");
+    const q=queue[index];
+    answered=false;
+    currentHintUsed=false;
+    answerArea.innerHTML="";
+    next.classList.add("hidden");
+    showAnswer.classList.add("hidden");
+
     mode.textContent=q.mode==="choice"?"知識問題":"実技課題";
-    title.textContent=q.title; skill.textContent="スキル "+q.skillId+" / "+q.domain;
+    title.textContent=q.title;
+    skill.textContent="スキル "+q.skillId+" / "+q.domain;
     prompt.textContent=q.prompt;
     progressText.textContent=(index+1)+" / "+queue.length;
     progressBar.style.width=((index+1)/queue.length*100)+"%";
 
     if(q.mode==="choice"){
-      const box=document.createElement("div");box.className="options";
+      const box=document.createElement("div");
+      box.className="options";
       q.options.forEach((opt,i)=>{
-        const b=document.createElement("button");b.className="option";
+        const b=document.createElement("button");
+        b.className="option";
         b.textContent=String.fromCharCode(65+i)+". "+opt;
-        b.onclick=()=>choose(i);box.appendChild(b);
+        b.onclick=()=>choose(i);
+        box.appendChild(b);
       });
       answerArea.appendChild(box);
     }else{
-      const ol=document.createElement("ol");ol.className="practice-steps";
-      q.steps.forEach(s=>{const li=document.createElement("li");li.textContent=s;ol.appendChild(li);});
-      answerArea.appendChild(ol);showAnswer.classList.remove("hidden");
+      renderPracticeThinking(q);
+      showAnswer.textContent="解答・操作イメージ・参考情報を見る";
+      showAnswer.classList.remove("hidden");
     }
+  }
+
+  function renderPracticeThinking(q){
+    const route=help.paths?.[q.skillId] || "";
+    const firstRoute=route ? route.split(/[>→]/)[0].trim() : "Excelのリボン／数式バー";
+
+    const card=document.createElement("div");
+    card.className="thinking-card";
+    card.innerHTML=
+      "<h3>本番思考：まず30秒、手順を見ないで考える</h3>"+
+      "<p><strong>動詞</strong>：何を『作る／変更する／設定する／計算する』問題か？</p>"+
+      "<p><strong>対象</strong>：セル、範囲、シート、ブック、グラフ、ピボットのどれか？</p>"+
+      "<p><strong>完了条件</strong>：操作後、画面や値がどうなれば成功か？</p>"+
+      "<div class='hint-row'>"+
+        "<button class='hint-btn' data-h='1'>ヒント1：考え方</button>"+
+        "<button class='hint-btn' data-h='2'>ヒント2：入口</button>"+
+        "<button class='hint-btn' data-h='3'>ヒント3：操作場所</button>"+
+      "</div><div class='hint-output hidden'></div>"+
+      "<p class='review-note'>ヒントを使っても問題ありません。ただし『ヒントなしで再現できる』状態を最終目標にします。</p>";
+
+    const output=card.querySelector(".hint-output");
+    card.querySelectorAll(".hint-btn").forEach(btn=>{
+      btn.onclick=()=>{
+        currentHintUsed=true;
+        output.classList.remove("hidden");
+        if(btn.dataset.h==="1"){
+          output.textContent="指示文の固有名詞より先に『動詞』を拾い、操作の種類を絞ってください。次に対象オブジェクトを先に選択します。";
+        }else if(btn.dataset.h==="2"){
+          output.textContent="操作の入口は「"+firstRoute+"」です。ここから先を記憶だけで探してみてください。";
+        }else{
+          output.textContent=route ? "操作場所： "+route : "この課題は数式バーまたは対象オブジェクトを選択した後のリボンから操作します。";
+        }
+      };
+    });
+
+    answerArea.appendChild(card);
   }
 
   function choose(selected){
@@ -65,7 +127,14 @@
     });
 
     stats[q.domain].total++;
-    if(correct){points++;stats[q.domain].correct++;}
+    if(correct){
+      points++;
+      stats[q.domain].correct++;
+      markReview(q.skillId,2);
+    }else{
+      sessionMisses.add(q.skillId);
+      markReview(q.skillId,0);
+    }
 
     const exp=document.createElement("div");
     exp.className="explanation";
@@ -89,6 +158,7 @@
     }
 
     next.classList.remove("hidden");
+    updateReviewCount();
   }
 
   showAnswer.onclick=()=>{
@@ -99,21 +169,54 @@
 
     const exp=document.createElement("div");
     exp.className="explanation";
-    exp.innerHTML="<strong>解答・確認ポイント</strong><p>"+escapeHtml(q.answerText)+"</p><div class='self-check'><span>自分でできましたか？</span><button data-v='1'>できた</button><button data-v='0'>要復習</button></div>";
+    exp.innerHTML="<strong>解答・確認ポイント</strong><p>"+escapeHtml(q.answerText)+"</p>";
     answerArea.appendChild(exp);
 
-    exp.querySelectorAll(".self-check button").forEach(b=>b.onclick=()=>{
-      if(b.parentElement.dataset.done)return;
-      b.parentElement.dataset.done="1";
-      const v=Number(b.dataset.v);
-      stats[q.domain].total++;
-      if(v){points++;stats[q.domain].correct++;}
-      b.parentElement.querySelectorAll("button").forEach(x=>x.disabled=true);
+    // 実技は、解答後に必ず操作場所・図・参考リンクまで見られるようにする。
+    renderDeepHelp(q,exp);
 
-      if(!v && !exp.querySelector(".deep-help")){
-        renderDeepHelp(q,exp);
+    const check=document.createElement("div");
+    check.className="self-check";
+    check.innerHTML=
+      "<span>解答を見る前の自分を判定：</span>"+
+      "<button data-v='2'>自力でできた</button>"+
+      "<button data-v='1'>ヒントありでできた</button>"+
+      "<button data-v='0'>できなかった</button>";
+    exp.appendChild(check);
+
+    const note=document.createElement("p");
+    note.className="review-note";
+    note.textContent="『ヒントあり』『できなかった』は復習キューへ。解答を閉じたあと、同じ操作をもう一度記憶だけで再現すると定着しやすくなります。";
+    exp.appendChild(note);
+
+    check.querySelectorAll("button").forEach(b=>b.onclick=()=>{
+      if(check.dataset.done)return;
+      check.dataset.done="1";
+
+      let v=Number(b.dataset.v);
+      if(v===2 && currentHintUsed) v=1;
+
+      stats[q.domain].total++;
+      if(v===2){
+        points++;
+        stats[q.domain].correct++;
+        markReview(q.skillId,2);
+      }else{
+        sessionMisses.add(q.skillId);
+        markReview(q.skillId,v);
       }
+
+      check.querySelectorAll("button").forEach(x=>x.disabled=true);
+
+      if(Number(b.dataset.v)===2 && currentHintUsed){
+        const msg=document.createElement("p");
+        msg.className="review-note";
+        msg.textContent="今回はヒントを使ったため、復習上は『ヒントあり』として記録しました。";
+        check.after(msg);
+      }
+
       next.classList.remove("hidden");
+      updateReviewCount();
     });
   };
 
@@ -136,6 +239,11 @@
       box.appendChild(routeBox);
     }
 
+    const cue=document.createElement("div");
+    cue.className="exam-cue";
+    cue.innerHTML="<span class='help-label'>本番での頭の動かし方</span><p>"+escapeHtml(makeExamCue(q,route))+"</p>";
+    box.appendChild(cue);
+
     const formula=help.formulas?.[q.skillId];
     if(formula){
       const f=document.createElement("div");
@@ -144,17 +252,31 @@
       box.appendChild(f);
     }
 
+    const contrast=help.contrasts?.[q.skillId];
+    if(contrast){
+      const c=document.createElement("div");
+      c.className="contrast-box";
+      c.innerHTML="<span class='help-label'>似た機能と区別する</span><p>"+escapeHtml(contrast)+"</p>";
+      box.appendChild(c);
+    }
+
     const visual=help.visuals?.[q.skillId];
     if(visual){
       const visualNode=buildVisual(visual.type,visual.caption);
       if(visualNode) box.appendChild(visualNode);
+    }else if(route){
+      box.appendChild(buildGenericRouteVisual(route));
     }
 
     const practice=document.createElement("div");
     practice.className="mini-practice";
-    practice.innerHTML="<span class='help-label'>実際にやってみる</span><p>"+escapeHtml(source.practice)+"</p>";
+    practice.innerHTML="<span class='help-label'>答えを閉じて、もう一度やる</span><p>"+escapeHtml(source.practice)+"</p>";
     const ol=document.createElement("ol");
-    source.steps.forEach(s=>{const li=document.createElement("li");li.textContent=s;ol.appendChild(li);});
+    source.steps.forEach(s=>{
+      const li=document.createElement("li");
+      li.textContent=s;
+      ol.appendChild(li);
+    });
     practice.appendChild(ol);
     box.appendChild(practice);
 
@@ -180,7 +302,8 @@
         a.target="_blank";
         a.rel="noopener noreferrer";
         a.textContent=link.label+" ↗";
-        li.appendChild(a);ul.appendChild(li);
+        li.appendChild(a);
+        ul.appendChild(li);
       });
     }else{
       const li=document.createElement("li");
@@ -189,19 +312,52 @@
       a.target="_blank";
       a.rel="noopener noreferrer";
       a.textContent="Microsoft サポート：Excel ヘルプとラーニング ↗";
-      li.appendChild(a);ul.appendChild(li);
+      li.appendChild(a);
+      ul.appendChild(li);
+
+      const kw=document.createElement("li");
+      kw.textContent="Microsoft公式で探すキーワード： Excel Microsoft 365 「"+source.title+"」";
+      ul.appendChild(kw);
     }
 
     const li2=document.createElement("li");
     const a2=document.createElement("a");
     a2.href="https://learn.microsoft.com/ja-jp/credentials/certifications/exams/mo-211/";
-    a2.target="_blank";a2.rel="noopener noreferrer";
+    a2.target="_blank";
+    a2.rel="noopener noreferrer";
     a2.textContent="Microsoft Learn：MO-211 公式試験ページ ↗";
-    li2.appendChild(a2);ul.appendChild(li2);
+    li2.appendChild(a2);
+    ul.appendChild(li2);
+
+    const li3=document.createElement("li");
+    const a3=document.createElement("a");
+    a3.href="./study-method.html";
+    a3.textContent="このサイトの勉強法：本番で手が動くようにする方法";
+    li3.appendChild(a3);
+    ul.appendChild(li3);
 
     linksBox.appendChild(ul);
     box.appendChild(linksBox);
     target.appendChild(box);
+  }
+
+  function makeExamCue(q,route){
+    if((route||"").includes("数式バー") || q.title.includes("関数") || q.title.includes("日付")){
+      return "① 何を返したい関数かを言葉にする → ② 必要な入力値・範囲を確認 → ③ 引数の順番を思い出す → ④ 数式を確定 → ⑤ 返った値が目的どおりか確認。";
+    }
+    const first=route ? route.split(/[>→]/)[0].trim() : "対象オブジェクト";
+    return "① 指示の動詞を拾う → ② 対象セル／オブジェクトを先に選ぶ → ③ 「"+first+"」を入口に機能を探す → ④ 必要な設定だけ行う → ⑤ 実際の表示・値・保護状態で完了を確認。";
+  }
+
+  function buildGenericRouteVisual(route){
+    const fig=document.createElement("figure");
+    fig.className="excel-mock";
+    const parts=route.split(/>|→/).map(x=>x.trim()).filter(Boolean);
+    fig.innerHTML=
+      "<div class='mock-title'>Excel for Microsoft 365 — 操作経路イメージ</div>"+
+      "<div class='flow'>"+parts.map((p,i)=>"<span>"+(i+1)+" "+escapeHtml(p)+"</span>"+(i<parts.length-1?"<b>→</b>":"")).join("")+"</div>"+
+      "<figcaption>操作場所を『点』ではなく『経路』として思い出すための模式図です。実際のExcel画面そのものではありません。</figcaption>";
+    return fig;
   }
 
   function buildVisual(type,caption){
@@ -292,18 +448,112 @@
       "</div>";
   }
 
+  function loadReviewState(){
+    try{
+      return JSON.parse(localStorage.getItem(REVIEW_KEY) || "{}");
+    }catch(e){
+      return {};
+    }
+  }
+
+  function saveReviewState(){
+    try{
+      localStorage.setItem(REVIEW_KEY,JSON.stringify(reviewState));
+    }catch(e){}
+  }
+
+  function markReview(skillId,quality){
+    const now=Date.now();
+    const old=reviewState[skillId] || {level:0,due:now,hits:0,misses:0,lastQuality:null};
+
+    let level=Number(old.level||0);
+    let days=1;
+
+    if(quality===2){
+      level=Math.min(REVIEW_INTERVALS.length,level+1);
+      days=REVIEW_INTERVALS[Math.max(0,level-1)];
+      old.hits=Number(old.hits||0)+1;
+    }else if(quality===1){
+      level=Math.max(0,level-1);
+      days=1;
+      old.misses=Number(old.misses||0)+1;
+    }else{
+      level=0;
+      days=1;
+      old.misses=Number(old.misses||0)+1;
+    }
+
+    reviewState[skillId]={
+      ...old,
+      level,
+      due:now+days*24*60*60*1000,
+      last:now,
+      lastQuality:quality
+    };
+
+    saveReviewState();
+  }
+
+  function dueSkillIds(){
+    const now=Date.now();
+    return Object.entries(reviewState)
+      .filter(([,v])=>Number(v.due||0)<=now)
+      .sort((a,b)=>Number(a[1].due||0)-Number(b[1].due||0))
+      .map(([id])=>id);
+  }
+
+  function updateReviewCount(){
+    const el=$("reviewCount");
+    if(el)el.textContent=dueSkillIds().length;
+  }
+
+  function makeReviewQueue(ids){
+    return ids.slice(0,10).map(id=>{
+      const options=questions.filter(q=>q.skillId===id);
+      return options[Math.floor(Math.random()*options.length)];
+    }).filter(Boolean);
+  }
+
   next.onclick=()=>{index++;if(index>=queue.length)finish();else render();};
+
   $("again").onclick=()=>start(shuffle(questions).slice(0,10));
   $("random10").onclick=()=>start(shuffle(questions).slice(0,10));
   $("allChoice").onclick=()=>start(questions.filter(q=>q.mode==="choice"));
   $("allPractice").onclick=()=>start(questions.filter(q=>q.mode==="practice"));
-  document.querySelectorAll("[data-domain]").forEach(b=>b.onclick=()=>start(questions.filter(q=>q.domain===b.dataset.domain)));
+
+  $("reviewDue").onclick=()=>{
+    const due=dueSkillIds();
+    if(due.length){
+      start(makeReviewQueue(due));
+      return;
+    }
+    const tracked=Object.keys(reviewState);
+    if(tracked.length){
+      start(makeReviewQueue(shuffle(tracked)));
+      return;
+    }
+    start(shuffle(questions).slice(0,5));
+  };
+
+  $("retryMissed").onclick=()=>{
+    const ids=[...sessionMisses];
+    if(!ids.length)return;
+    const list=shuffle(questions.filter(q=>ids.includes(q.skillId)));
+    start(list);
+  };
+
+  document.querySelectorAll("[data-domain]").forEach(b=>{
+    b.onclick=()=>start(questions.filter(q=>q.domain===b.dataset.domain));
+  });
 
   function finish(){
-    quiz.classList.add("hidden");result.classList.remove("hidden");
+    quiz.classList.add("hidden");
+    result.classList.remove("hidden");
+
     const total=Object.values(stats).reduce((n,s)=>n+s.total,0);
     score.textContent=total?points+" / "+total+" ("+Math.round(points/total*100)+"%)":"採点対象なし";
     breakdown.innerHTML="";
+
     Object.entries(stats).forEach(([d,s])=>{
       if(!s.total)return;
       const r=document.createElement("div");
@@ -311,6 +561,14 @@
       r.innerHTML="<span>"+escapeHtml(d)+"</span><strong>"+s.correct+" / "+s.total+"</strong>";
       breakdown.appendChild(r);
     });
+
+    if(sessionMisses.size){
+      $("retryMissed").classList.remove("hidden");
+    }else{
+      $("retryMissed").classList.add("hidden");
+    }
+
+    updateReviewCount();
     result.scrollIntoView({behavior:"smooth",block:"start"});
   }
 
@@ -323,5 +581,6 @@
       .replaceAll("'","&#039;");
   }
 
+  // 初回表示でも必ず問題が見えるようにする。
   start(shuffle(questions).slice(0,5));
 })();
