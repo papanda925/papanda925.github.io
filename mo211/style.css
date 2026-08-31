@@ -65,3 +65,18 @@ footer{padding:18px 0 36px;color:var(--muted);font-size:.83rem}
   .sheet-grid{grid-template-columns:30px 160px 190px}
   .mock-ribbon{flex-wrap:nowrap;overflow:auto}
 }
+
+.dialog-mock{padding:14px;background:#fafafa}
+.dialog-mock label{display:block;margin-top:9px;font-size:.76rem;color:#5e6970}
+.dialog-row{padding:8px;border:1px solid #d7dde1;background:#fff;border-radius:5px}
+.dialog-row.selected{outline:2px solid #217346}
+.formula-entry,.input-like,.formula-bar{margin-top:5px;padding:8px 10px;border:1px solid #cfd6da;background:#fff;border-radius:5px;font-family:Consolas,"SFMono-Regular",monospace;font-size:.8rem;overflow:auto;white-space:nowrap}
+.formula-bar{border-radius:0;border-left:0;border-right:0;background:#fbfbfb}
+.format-sample{margin-top:12px;padding:9px;background:#fff3c4;border:1px solid #e6d27c;border-radius:5px;font-size:.78rem}
+.dialog-buttons{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}.dialog-buttons span{padding:5px 16px;border:1px solid #bfc7cc;background:#fff;border-radius:4px}
+.mini-sheet{display:grid;font-size:.78rem}.mini-sheet.four{grid-template-columns:repeat(4,minmax(110px,1fr))}.mini-sheet>*{padding:7px;border-right:1px solid #e1e5e8;border-bottom:1px solid #e1e5e8}.mini-sheet b{background:#f2f4f5}.active-cell{outline:2px solid #217346;outline-offset:-2px}.result-cell{background:#eef8f2;font-weight:800}
+.flow{display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap;padding:18px}.flow span{padding:8px 11px;border:1px solid #cfd7dc;border-radius:7px;background:#fff}
+.pivot-mock,.slicer-mock{display:grid;grid-template-columns:1.5fr .9fr;gap:10px;padding:12px;background:#fafafa}
+.pivot-table,.pivot-mini{display:grid;grid-template-columns:1fr 1fr;border:1px solid #d9dfe2;background:#fff}.pivot-table>*,.pivot-mini>*{padding:7px;border-right:1px solid #e1e5e8;border-bottom:1px solid #e1e5e8}.pivot-table b,.pivot-mini b{background:#eaf2f8}.field-list,.slicer-box{border:1px solid #cfd7dc;background:#fff;padding:9px;display:flex;flex-direction:column;gap:6px}.field-list label,.field-list span{font-size:.76rem}.slicer-box button{border:1px solid #bfc9cf;background:#fff;border-radius:4px;padding:6px;text-align:left}.slicer-box button.on{background:#dbeef7;border-color:#5b9bd5;font-weight:700}
+.excel-mock small{color:var(--muted)}
+@media(max-width:620px){.pivot-mock,.slicer-mock{grid-template-columns:1fr}.mini-sheet.four{grid-template-columns:repeat(4,120px);overflow:auto}}
