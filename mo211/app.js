@@ -30,8 +30,10 @@
         progressText=$("progressText"), progressBar=$("progressBar"), score=$("score"), breakdown=$("breakdown");
 
   const REVIEW_KEY="mo211-review-v1";
+  const RECALL_KEY="mo211-recall-mode";
   const REVIEW_INTERVALS=[1,3,7,14,30];
   let reviewState=loadReviewState();
+  let recallMode=localStorage.getItem(RECALL_KEY)==="1";
 
   let queue=[], index=0, points=0, answered=false, stats={};
   let sessionMisses=new Set();
@@ -40,6 +42,7 @@
   let calibration={highWrong:0,lowRight:0,rated:0};
 
   $("questionCount").textContent = questions.length;
+  updateRecallButton();
   updateReviewCount();
 
   function shuffle(arr){ return [...arr].sort(()=>Math.random()-.5); }
@@ -101,6 +104,24 @@
         b.onclick=()=>choose(item.original);
         box.appendChild(b);
       });
+
+      if(recallMode){
+        box.classList.add("hidden");
+        const recall=document.createElement("div");
+        recall.className="recall-box";
+        recall.innerHTML="<span class='help-label'>選択肢を見る前に、答えを記憶から出す</span><p>機能名・関数名・操作名を、自分の言葉で1つ書いてください。完全一致でなくて構いません。</p><input type='text' placeholder='例：フラッシュフィル'><button class='hint-btn'>選択肢を表示して答える</button>";
+        const input=recall.querySelector("input");
+        const reveal=recall.querySelector("button");
+        reveal.onclick=()=>{
+          recall.dataset.response=input.value.trim();
+          input.disabled=true;
+          reveal.disabled=true;
+          reveal.textContent="選択肢を表示しました";
+          box.classList.remove("hidden");
+        };
+        answerArea.appendChild(recall);
+      }
+
       answerArea.appendChild(box);
     }else{
       renderPracticeThinking(q);
@@ -593,6 +614,20 @@
   $("random10").onclick=()=>start(shuffle(questions).slice(0,10));
   $("allChoice").onclick=()=>start(questions.filter(q=>q.mode==="choice"));
   $("allPractice").onclick=()=>start(questions.filter(q=>q.mode==="practice"));
+
+  $("recallMode").onclick=()=>{
+    recallMode=!recallMode;
+    localStorage.setItem(RECALL_KEY,recallMode?"1":"0");
+    updateRecallButton();
+    render();
+  };
+
+  function updateRecallButton(){
+    const b=$("recallMode");
+    if(!b)return;
+    b.textContent="思い出しモード："+(recallMode?"ON":"OFF");
+    b.classList.toggle("active-mode",recallMode);
+  }
 
   $("reviewDue").onclick=()=>{
     const due=dueSkillIds();
