@@ -114,7 +114,46 @@ window.MO211_HELP = {
     ],
     "4.3.1":[
       {label:"Microsoft公式：ピボットグラフを作成する（画面例あり）",url:"https://support.microsoft.com/ja-jp/excel/get-started/create-a-pivotchart"}
+    ],
+    "2.1.2":[
+      {label:"Microsoft公式：連続データ・系列を作成する",url:"https://support.microsoft.com/en-us/excel/project-values-in-a-series"}
+    ],
+    "2.2.1":[
+      {label:"Microsoft公式：ユーザー定義の表示形式を作成する（画面例あり）",url:"https://support.microsoft.com/en-us/excel/get-started/create-a-custom-number-format"},
+      {label:"Microsoft公式：ユーザー定義表示形式の書式コード",url:"https://support.microsoft.com/en-us/excel/review-guidelines-for-customizing-a-number-format"}
+    ],
+    "2.2.5":[
+      {label:"Microsoft公式：一意の値を抽出／重複を削除する（画面例あり）",url:"https://support.microsoft.com/en-us/excel/get-started/filter-for-unique-values-or-remove-duplicate-values"}
+    ],
+    "2.3.1":[
+      {label:"Microsoft公式：条件付き書式で情報を強調する（画面例あり）",url:"https://support.microsoft.com/en-us/excel/use-conditional-formatting-to-highlight-information-in-excel"}
+    ],
+    "3.5.1":[
+      {label:"Microsoft公式：参照元・参照先を矢印で確認する（画面例あり）",url:"https://support.microsoft.com/en-US/Excel/display-the-relationships-between-formulas-and-cells"}
+    ],
+    "3.5.3":[
+      {label:"Microsoft公式：数式のエラーを検出する",url:"https://support.microsoft.com/en-US/Excel/detect-formula-errors-in-excel"}
+    ],
+    "4.2.4":[
+      {label:"Microsoft公式：ピボットテーブルのデータをグループ化する（画面例あり）",url:"https://support.microsoft.com/en-us/excel/get-started/group-or-ungroup-data-in-a-pivottable"}
+    ],
+    "4.3.4":[
+      {label:"Microsoft公式：ピボットテーブル／グラフを展開・折りたたむ（画面例あり）",url:"https://support.microsoft.com/en-us/excel/expand-collapse-or-show-details-in-a-pivottable-or-pivotchart"}
     ]
+  },
+
+  contrasts: {
+    "2.1.1":"フラッシュ フィル＝例からパターンを推測して値を生成。フィル シリーズ＝数値・日付などの系列を規則に従って生成。",
+    "2.1.2":"フィル シリーズ＝開始値・増分・停止値などを指定。フラッシュ フィル＝文字列などの例からパターンを推測。",
+    "2.2.2":"データの入力規則＝入力できる値を制限。条件付き書式＝入力値は制限せず、条件に応じて見た目を変える。",
+    "2.3.2":"条件付き書式の数式＝TRUE/FALSEで『書式を付けるか』を決める。IF関数＝セルに返す値そのものを決める。",
+    "3.2.1":"XLOOKUP＝検索範囲と戻り範囲を独立指定。VLOOKUP＝検索対象が表の先頭列という制約を意識。",
+    "3.4.1":"統合＝複数範囲を一つの集計結果へまとめる。ピボットテーブル＝明細を項目配置で柔軟にクロス集計する。",
+    "3.4.2":"ゴール シーク＝目標値から1つの入力セルを逆算。シナリオ マネージャー＝複数の入力値セットを保存・比較。",
+    "3.4.5":"FILTER関数＝条件一致データを別のスピル範囲へ返す。通常のフィルター＝元表の表示行を絞り込む。",
+    "3.4.6":"SORTBY関数＝並べ替えた結果を別のスピル範囲へ返す。通常の並べ替え＝元の範囲自体の順序を変更する。",
+    "4.2.3":"スライサー＝ボタンで視覚的に絞り込み。通常フィルター＝ドロップダウン等で条件指定。",
+    "4.2.4":"ピボットのグループ化＝ピボット項目を月・四半期・数値区間などにまとめる。アウトラインのグループ化＝ワークシートの行・列を折りたたむ。"
   },
 
   visuals: {
