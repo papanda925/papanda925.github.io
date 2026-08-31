@@ -390,6 +390,20 @@
 
     linksBox.appendChild(ul);
     box.appendChild(linksBox);
+
+    const retry=document.createElement("button");
+    retry.className="learn-more";
+    retry.textContent="答えを閉じて、このスキルを今すぐ再挑戦";
+    retry.onclick=()=>{
+      const alts=questions.filter(x=>x.skillId===q.skillId && x.id!==q.id);
+      if(!alts.length)return;
+      const nextAlt=alts[Math.floor(Math.random()*alts.length)];
+      queue.splice(index+1,0,nextAlt);
+      retry.disabled=true;
+      retry.textContent="次の問題に再挑戦を追加しました";
+    };
+    box.appendChild(retry);
+
     target.appendChild(box);
   }
 
