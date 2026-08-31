@@ -48,7 +48,7 @@
     help.links["1.1.3"] = [
       {
         label: "Microsoft公式：Microsoft 365 ファイルでマクロを有効または無効にする",
-        url: "https://support.microsoft.com/en-us/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6"
+        url: "https://support.microsoft.com/en-US/Office/vba/enable-or-disable-macros-in-microsoft-365-files"
       },
       {
         label: "Microsoft公式：Excel のマクロ セキュリティ設定を変更する",
