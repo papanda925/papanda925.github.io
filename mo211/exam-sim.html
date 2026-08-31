@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MO-211 Excel Expertのプロジェクト形式50分模擬試験。">
+  <title>MO-211 50分プロジェクト模擬 | papanda925</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap header-inner"><a class="brand" href="./">MO-211 Practice</a><span class="tag">Project Simulator</span></div></header>
+<main class="wrap">
+  <section class="hero">
+    <p class="eyebrow">CERTIPORT-STYLE PRACTICE</p>
+    <h1>50分 プロジェクト模擬</h1>
+    <p class="lead">本番は5～8プロジェクト、各プロジェクト1～7タスクの形式です。この模擬では、オリジナルのプロジェクトを使い、Excelを実際に操作しながらタスク処理の思考を練習します。</p>
+    <div class="actions">
+      <button id="startExam" class="btn primary">50分模擬を開始</button>
+      <button id="practiceProjects" class="btn secondary">時間制限なしで練習</button>
+      <a class="btn secondary link-btn" href="./study-method.html">本番思考・勉強法</a>
+    </div>
+    <p class="notice">このページは本番問題の再現ではありません。公開された試験範囲とCertiportの試験UI説明を参考にした独自練習です。</p>
+  </section>
+
+  <section id="sim" class="panel hidden">
+    <div class="sim-top">
+      <div><span id="projNo" class="pill"></span><h2 id="projTitle"></h2><p id="projTheme" class="skill"></p></div>
+      <div class="timer"><span>残り時間</span><strong id="timerText">50:00</strong></div>
+    </div>
+
+    <div class="project-setup">
+      <div class="setup-head"><strong>スターターデータ</strong><button id="copyData" class="hint-btn">コピー</button></div>
+      <p>空のExcelへ貼り付けてからタスクを始めてください。</p>
+      <pre id="setupData"></pre>
+    </div>
+
+    <div class="task-panel">
+      <div class="task-nav"><button id="prevTask" class="hint-btn">← 前</button><span id="taskNo"></span><button id="nextTask" class="hint-btn">次 →</button></div>
+      <p id="taskText" class="task-text"></p>
+      <p id="taskSkill" class="skill"></p>
+      <div class="actions">
+        <button id="markDone" class="btn primary">完了</button>
+        <button id="markReview" class="btn secondary">あとで見直す</button>
+        <button id="taskHint" class="btn secondary">操作入口だけ見る</button>
+      </div>
+      <div id="taskHintOut" class="hint-output hidden"></div>
+    </div>
+
+    <div class="project-nav">
+      <button id="prevProject" class="btn secondary">← 前のプロジェクト</button>
+      <button id="nextProject" class="btn primary">次のプロジェクト →</button>
+    </div>
+  </section>
+
+  <section id="summary" class="panel hidden">
+    <h2>模擬試験サマリー</h2>
+    <p id="summaryText" class="score"></p>
+    <div id="summaryList"></div>
+    <div class="actions">
+      <button id="retryReview" class="btn primary">未完了・見直しを再確認</button>
+      <button id="restartExam" class="btn secondary">もう一度</button>
+    </div>
+  </section>
+
+  <section class="info">
+    <h2>本番形式で意識すること</h2>
+    <p>プロジェクトごとに「何を作るか」を先に把握し、各タスクでは<strong>動詞 → 対象 → 操作場所 → 完了条件</strong>の順で分解します。1問に固執せず、見直しフラグを使う練習も含めています。</p>
+    <p><a href="https://certiport.pearsonvue.com/Educator-resources/Exam-details/Exam-tutorials/MOS_365Apps_Tutorial.pdf" target="_blank" rel="noopener">Certiport公式 MOS 365 Apps Exam Tutorial ↗</a></p>
+  </section>
+</main>
+<footer><div class="wrap"><p>非公式模擬サイト。実際の試験問題・試験ダンプは使用していません。</p></div></footer>
+<script src="./data-d1.js"></script>
+<script src="./data-d2.js"></script>
+<script src="./data-d3.js"></script>
+<script src="./data-d4.js"></script>
+<script src="./help-data.js"></script>
+<script src="./project-data.js"></script>
+<script src="./exam-sim.js"></script>
+</body>
+</html>
