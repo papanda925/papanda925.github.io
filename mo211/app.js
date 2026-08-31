@@ -36,6 +36,8 @@
   let queue=[], index=0, points=0, answered=false, stats={};
   let sessionMisses=new Set();
   let currentHintUsed=false;
+  let currentConfidence=null;
+  let calibration={highWrong:0,lowRight:0,rated:0};
 
   $("questionCount").textContent = questions.length;
   updateReviewCount();
@@ -53,6 +55,7 @@
     points=0;
     answered=false;
     sessionMisses=new Set();
+    calibration={highWrong:0,lowRight:0,rated:0};
     initStats();
     result.classList.add("hidden");
     $("retryMissed").classList.add("hidden");
@@ -65,6 +68,7 @@
     const q=queue[index];
     answered=false;
     currentHintUsed=false;
+    currentConfidence=null;
     answerArea.innerHTML="";
     next.classList.add("hidden");
     showAnswer.classList.add("hidden");
@@ -77,13 +81,24 @@
     progressBar.style.width=((index+1)/queue.length*100)+"%";
 
     if(q.mode==="choice"){
+      const meta=document.createElement("div");
+      meta.className="confidence-box";
+      meta.innerHTML="<span>答える前の自信度（任意）</span><div><button data-c='low'>低</button><button data-c='mid'>中</button><button data-c='high'>高</button></div>";
+      meta.querySelectorAll("button").forEach(b=>b.onclick=()=>{
+        currentConfidence=b.dataset.c;
+        meta.querySelectorAll("button").forEach(x=>x.classList.toggle("selected",x===b));
+      });
+      answerArea.appendChild(meta);
+
       const box=document.createElement("div");
       box.className="options";
-      q.options.forEach((opt,i)=>{
+      const ordered=shuffle(q.options.map((opt,i)=>({opt,original:i})));
+      ordered.forEach((item,i)=>{
         const b=document.createElement("button");
         b.className="option";
-        b.textContent=String.fromCharCode(65+i)+". "+opt;
-        b.onclick=()=>choose(i);
+        b.dataset.original=String(item.original);
+        b.textContent=String.fromCharCode(65+i)+". "+item.opt;
+        b.onclick=()=>choose(item.original);
         box.appendChild(b);
       });
       answerArea.appendChild(box);
@@ -137,10 +152,11 @@
     const correct=selected===q.answer;
     const bs=[...answerArea.querySelectorAll(".option")];
 
-    bs.forEach((b,i)=>{
+    bs.forEach(b=>{
+      const original=Number(b.dataset.original);
       b.disabled=true;
-      if(i===q.answer)b.classList.add("correct");
-      if(i===selected&&i!==q.answer)b.classList.add("wrong");
+      if(original===q.answer)b.classList.add("correct");
+      if(original===selected&&original!==q.answer)b.classList.add("wrong");
     });
 
     stats[q.domain].total++;
@@ -153,10 +169,29 @@
       markReview(q.skillId,0);
     }
 
+    if(currentConfidence){
+      calibration.rated++;
+      if(currentConfidence==="high" && !correct) calibration.highWrong++;
+      if(currentConfidence==="low" && correct) calibration.lowRight++;
+    }
+
     const exp=document.createElement("div");
     exp.className="explanation";
     exp.innerHTML="<strong>"+(correct?"正解":"確認ポイント")+"</strong><p>"+escapeHtml(q.explanation)+"</p>";
     answerArea.appendChild(exp);
+
+    if(currentConfidence){
+      const cal=document.createElement("div");
+      cal.className="calibration-feedback";
+      if(currentConfidence==="high" && !correct){
+        cal.textContent="高い自信で誤答：このスキルは優先復習。『なぜ他の選択肢ではないか』まで確認してください。";
+      }else if(currentConfidence==="low" && correct){
+        cal.textContent="低い自信で正解：知識は出ています。次はヒントなしで素早く再現できるか確認すると定着が進みます。";
+      }else{
+        cal.textContent="自信度と正誤が概ね一致しています。実際のExcel操作でも再現できるか確認してください。";
+      }
+      exp.appendChild(cal);
+    }
 
     const helpButton=document.createElement("button");
     helpButton.className="learn-more";
@@ -570,6 +605,13 @@
     const total=Object.values(stats).reduce((n,s)=>n+s.total,0);
     score.textContent=total?points+" / "+total+" ("+Math.round(points/total*100)+"%)":"採点対象なし";
     breakdown.innerHTML="";
+
+    if(calibration.rated){
+      const cal=document.createElement("div");
+      cal.className="calibration-summary";
+      cal.innerHTML="<strong>自信度の振り返り</strong><p>高い自信で誤答："+calibration.highWrong+"件　／　低い自信で正解："+calibration.lowRight+"件</p><small>高自信の誤答は、知識の思い違いを見つける重要な復習対象です。</small>";
+      breakdown.appendChild(cal);
+    }
 
     Object.entries(stats).forEach(([d,s])=>{
       if(!s.total)return;
