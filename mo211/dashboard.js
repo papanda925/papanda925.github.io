@@ -14,7 +14,7 @@
     const level=Number(v.level||0);
     if(due(v))return {label:"復習期限",cls:"due"};
     if(level===0)return {label:"要復習",cls:"weak"};
-    if(level>=4)return {label:"定着中",cls:"stable"};
+    if(level>=4)return {label:"長めの復習間隔",cls:"stable"};
     return {label:"Level "+level,cls:"learning"};
   }
 
@@ -33,10 +33,11 @@
     const domains=[...new Set(skills.map(s=>s.domain))];
     domains.forEach(domain=>{
       const items=skills.filter(s=>s.domain===domain).filter(s=>{
-        const v=state[s.id],st=statusFor(v);
+        const v=state[s.id];
         if(filter==="all")return true;
-        if(filter==="due")return v&&due(v);
-        if(filter==="weak")return !v||Number(v.level||0)<=1;
+        if(filter==="due")return Boolean(v)&&due(v);
+        if(filter==="weak")return Boolean(v)&&Number(v.level||0)<=1;
+        if(filter==="new")return !v;
         if(filter==="stable")return Number(v?.level||0)>=4&&!due(v);
         return true;
       });
@@ -94,7 +95,7 @@
     try{
       const obj=JSON.parse(await f.text());
       const review=obj.review||obj;
-      if(typeof review!=="object"||Array.isArray(review))throw new Error();
+      if(typeof review!=="object"||review===null||Array.isArray(review))throw new Error();
       localStorage.setItem(KEY,JSON.stringify(review));
       render();
       alert("進捗をインポートしました。");
