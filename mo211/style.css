@@ -239,3 +239,82 @@ h2 { line-height: 1.4; }
   .hero, .panel, .howto, .references { padding: 20px; }
   .domain-grid { grid-template-columns: 1fr; }
 }
+
+
+.action-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.summary-badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.summary-badges span {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--muted);
+  font-size: .9rem;
+}
+.syllabus-domain-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+}
+.syllabus-domain-head h2 {
+  margin: 8px 0 0;
+}
+.syllabus-domain-head > strong {
+  color: var(--accent-color);
+  white-space: nowrap;
+}
+.syllabus-mid + .syllabus-mid {
+  margin-top: 22px;
+}
+.syllabus-mid h3 {
+  font-size: 1.02rem;
+  margin: 0 0 10px;
+}
+.syllabus-mid h3 span {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: .78rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.skill-list {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+.skill-list li {
+  padding: 7px 0;
+  border-bottom: 1px dashed var(--border-color);
+}
+.skill-list li:last-child {
+  border-bottom: 0;
+}
+.skill-list code {
+  display: inline-block;
+  margin-right: 9px;
+  color: var(--accent-dark);
+  background: #f3f5f7;
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-size: .78rem;
+}
+.coverage-note code {
+  font-family: Consolas, "SFMono-Regular", monospace;
+  background: #f3f5f7;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
