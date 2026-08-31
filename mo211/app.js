@@ -419,10 +419,17 @@
     const fig=document.createElement("figure");
     fig.className="excel-mock";
     const parts=route.split(/>|→/).map(x=>x.trim()).filter(Boolean);
+    const tabs=["ファイル","ホーム","挿入","ページ レイアウト","数式","データ","校閲","表示","開発"];
+    const first=parts[0]||"";
+    const active=tabs.find(t=>first.includes(t)) || (first.includes("数式バー") ? "数式" : "");
+    const command=parts.length>1 ? parts.slice(1).join(" → ") : first;
+
     fig.innerHTML=
-      "<div class='mock-title'>Excel for Microsoft 365 — 操作経路イメージ</div>"+
+      "<div class='mock-title'>Excel for Microsoft 365 — 操作イメージ</div>"+
+      "<div class='mock-tabs'>"+tabs.map(t=>"<span class='"+(t===active?"active":"")+"'>"+escapeHtml(t)+"</span>").join("")+"</div>"+
+      "<div class='mock-ribbon'><span>クリップボード</span><span>編集</span><span class='highlight'>"+escapeHtml(command||"対象コマンド")+"</span><span>その他</span></div>"+
       "<div class='flow'>"+parts.map((p,i)=>"<span>"+(i+1)+" "+escapeHtml(p)+"</span>"+(i<parts.length-1?"<b>→</b>":"")).join("")+"</div>"+
-      "<figcaption>操作場所を『点』ではなく『経路』として思い出すための模式図です。実際のExcel画面そのものではありません。</figcaption>";
+      "<figcaption>各スキル専用の操作経路をExcel風に模式化しています。実際のExcel画面そのものではありません。</figcaption>";
     return fig;
   }
 
