@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="papanda925 のポートフォリオ。VBA、PowerShell、AI、API、ネットワークなどの技術記事とGitHubプロジェクトを公開しています。">
+  <meta name="description" content="papanda925 のポートフォリオ。日本語コメントと処理トレースを備えたVBAネットワーク教材、PowerShell、AI/APIなどの技術記事とGitHubプロジェクトを公開しています。">
   <meta name="theme-color" content="#0b1220">
   <meta property="og:title" content="papanda925 | Portfolio">
   <meta property="og:description" content="VBA / PowerShell / AI / API など、試したもの・作ったものを公開しています。">
@@ -34,7 +34,7 @@
           <h1>作って、試して、<br>記録する。</h1>
           <p class="lead">
             VBA、PowerShell、AI、API、ネットワークなどを中心に、
-            個人で試したコードやツール、技術メモを公開しています。
+            日本語コメント、処理トレース、テスト手順を備えた学習用コードと技術メモを公開しています。
           </p>
           <div class="hero-actions">
             <a class="button primary" href="https://papanda925.com/" target="_blank" rel="noopener noreferrer">
@@ -93,6 +93,60 @@
             <p>VBAでUDP通信を試すためのWinsock APIサンプル。</p>
           </a>
 
+          <a class="project-card" href="https://github.com/papanda925/VBA_Async_HTTP_API_Sample" target="_blank" rel="noopener noreferrer">
+            <div class="project-top">
+              <span class="tag">VBA / HTTP</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>VBA Async HTTP API Sample</h3>
+            <p>非同期HTTPクライアントとローカル簡易HTTPサーバーを動かし、要求と応答をTraceIdで追跡する教材。</p>
+          </a>
+
+          <a class="project-card" href="https://github.com/papanda925/VBA_DnsAPI_Query_Sample" target="_blank" rel="noopener noreferrer">
+            <div class="project-top">
+              <span class="tag">VBA / DNS</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>VBA DNS API Query Sample</h3>
+            <p>nslookup.exeを使わず、Windows DNS APIからA、AAAA、CNAME、PTR、MX、TXTを取得する教材。</p>
+          </a>
+
+          <a class="project-card" href="https://github.com/papanda925/VBA_IcmpAPI_Ping_Sample" target="_blank" rel="noopener noreferrer">
+            <div class="project-top">
+              <span class="tag">VBA / ICMP</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>VBA ICMP API Ping Sample</h3>
+            <p>ping.exeを使わず、Windows ICMP APIでIPv4/IPv6の到達性と応答時間を確認する教材。</p>
+          </a>
+
+          <a class="project-card" href="https://github.com/papanda925/VBA_IcmpAPI_Traceroute_Sample" target="_blank" rel="noopener noreferrer">
+            <div class="project-top">
+              <span class="tag">VBA / ICMP</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>VBA ICMP API Traceroute Sample</h3>
+            <p>TTLを1ずつ増やし、宛先までの経路と各Hopの応答を観察できるTraceroute教材。</p>
+          </a>
+
+          <a class="project-card" href="https://github.com/papanda925/VBA_WinsockAPI_TCP_IPv6_Sample" target="_blank" rel="noopener noreferrer">
+            <div class="project-top">
+              <span class="tag">VBA / IPv6</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>VBA TCP/IPv6 Client–Server</h3>
+            <p>IPv6ループバック上でTCPクライアントと簡易サーバーを動かし、接続から切断まで追跡する教材。</p>
+          </a>
+
+          <a class="project-card" href="https://github.com/papanda925/VBA_WinsockAPI_UDP_IPv6_Sample" target="_blank" rel="noopener noreferrer">
+            <div class="project-top">
+              <span class="tag">VBA / IPv6</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>VBA UDP/IPv6 Client–Server</h3>
+            <p>IPv6 UDPの送受信、応答待ち、タイムアウト、送信元確認をローカル環境で学べる教材。</p>
+          </a>
+
           <a class="project-card" href="https://github.com/papanda925/PowerShell_WPF_XAML_GUI_SampleCodes" target="_blank" rel="noopener noreferrer">
             <div class="project-top">
               <span class="tag">PowerShell</span>
@@ -141,7 +195,8 @@
         <div class="about-copy">
           <p>
             <strong>papanda925.com</strong> では、実際に調べたことや試したことを技術記事として記録しています。
-            GitHubでは、VBAやPowerShellを中心に、サンプルコードや小さなツールを公開しています。
+            GitHubでは、VBAやPowerShellを中心に、初学者・学生・社内研修向けのサンプルコードや小さなツールを公開しています。
+            新しいネットワーク教材はMIT Licenseで公開し、学習、改変、再配布に利用できるようにしています。
           </p>
           <div class="topic-list" aria-label="主なトピック">
             <span>VBA / Office</span>
