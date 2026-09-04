@@ -35,6 +35,10 @@ a{color:var(--accent)}
   text-decoration:none;background:var(--card);font-weight:700
 }
 .button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:0 0 20px}
+.stat-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.stat-card strong{display:block;font-size:1.8rem;line-height:1.1}
+.stat-card span{display:block;color:var(--muted);font-size:.88rem;margin-top:6px}
 .section{padding:46px 0}
 .section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:20px}
 .section h2{font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.2;margin:0}
@@ -66,6 +70,7 @@ a{color:var(--accent)}
 .footer a{text-decoration:none}
 @media(max-width:850px){
   .entry-grid,.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stats{grid-template-columns:1fr}
   .about{grid-template-columns:1fr;gap:18px}
 }
 @media(max-width:620px){
