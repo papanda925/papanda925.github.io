@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>メンタルヘルス・マネジメント検定 II種 ラインケア 模擬テスト</title>
+  <meta name="description" content="メンタルヘルス・マネジメント検定 II種（ラインケアコース）の出題範囲に沿った、非公式・オリジナル模擬問題サイト。50問模擬試験、10問演習、分野別復習に対応。">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://papanda925.github.io/mental-health-line-care/">
+  <style>
+    :root {
+      --bg:#f5f7fb; --surface:#fff; --text:#1f2937; --muted:#667085; --line:#e5e7eb;
+      --accent:#2563eb; --accent-soft:#eff6ff; --ok:#15803d; --ok-soft:#f0fdf4;
+      --bad:#b91c1c; --bad-soft:#fef2f2; --warn:#9a6700; --warn-soft:#fff8e1;
+      --shadow:0 10px 30px rgba(31,41,55,.08);
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; background:var(--bg); color:var(--text); line-height:1.7; }
+    a { color:var(--accent); }
+    .wrap { width:min(1060px,calc(100% - 32px)); margin:auto; }
+    header { background:rgba(255,255,255,.95); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:10; backdrop-filter:blur(10px); }
+    .top { height:64px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { color:var(--text); text-decoration:none; font-weight:800; letter-spacing:.01em; }
+    .mini { font-size:.9rem; color:var(--muted); }
+    .hero { padding:48px 0 28px; }
+    .eyebrow { margin:0 0 8px; color:var(--accent); font-weight:800; font-size:.84rem; letter-spacing:.08em; }
+    h1 { margin:0; font-size:clamp(1.9rem,4vw,3.15rem); line-height:1.25; }
+    .lead { color:var(--muted); max-width:760px; margin:18px 0 0; }
+    .notice { margin-top:22px; padding:14px 16px; background:var(--warn-soft); border:1px solid #f1df9d; border-radius:14px; font-size:.92rem; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:24px 0; }
+    .card { background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:22px; box-shadow:var(--shadow); }
+    .card h2,.card h3 { margin-top:0; }
+    .mode { cursor:pointer; transition:.18s ease; }
+    .mode:hover { transform:translateY(-2px); border-color:#bfdbfe; }
+    .mode strong { display:block; font-size:1.25rem; margin-bottom:6px; }
+    .mode p { margin:0 0 14px; color:var(--muted); font-size:.94rem; }
+    button,select { font:inherit; }
+    button { border:0; border-radius:12px; padding:11px 16px; cursor:pointer; font-weight:700; }
+    .primary { background:var(--accent); color:#fff; }
+    .secondary { background:#eef2f7; color:var(--text); }
+    .danger { background:var(--bad-soft); color:var(--bad); }
+    select { width:100%; padding:10px 12px; border:1px solid var(--line); border-radius:10px; background:#fff; margin-top:8px; }
+    .quiz-shell { display:none; margin:22px 0 48px; }
+    .quiz-top { display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:12px; }
+    .progress { height:10px; background:#e9eef5; border-radius:99px; overflow:hidden; }
+    .progress > div { height:100%; width:0; background:var(--accent); transition:.2s; }
+    .question-card { margin-top:14px; }
+    .meta { color:var(--muted); font-size:.9rem; display:flex; flex-wrap:wrap; gap:8px 14px; }
+    .question { font-size:1.18rem; font-weight:750; margin:14px 0 18px; }
+    .choices { display:grid; gap:10px; }
+    .choice { text-align:left; background:#fff; border:1px solid var(--line); padding:13px 15px; border-radius:12px; font-weight:500; }
+    .choice:hover { border-color:#93c5fd; }
+    .choice.selected { border-color:var(--accent); background:var(--accent-soft); }
+    .choice.correct { border-color:#86efac; background:var(--ok-soft); }
+    .choice.wrong { border-color:#fecaca; background:var(--bad-soft); }
+    .explanation { display:none; margin-top:16px; padding:14px 16px; border-radius:12px; background:#f8fafc; border:1px solid var(--line); }
+    .explanation.show { display:block; }
+    .navrow { margin-top:18px; display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; }
+    .navgroup { display:flex; gap:10px; flex-wrap:wrap; }
+    .result { display:none; margin:24px 0 50px; }
+    .score { font-size:clamp(2.2rem,7vw,4.6rem); line-height:1; margin:8px 0; font-weight:900; }
+    .pass { color:var(--ok); }
+    .fail { color:var(--bad); }
+    .barrow { display:grid; grid-template-columns:180px 1fr 70px; gap:10px; align-items:center; margin:10px 0; }
+    .smallbar { height:9px; background:#e9eef5; border-radius:99px; overflow:hidden; }
+    .smallbar > div { height:100%; background:var(--accent); }
+    .review { margin-top:18px; }
+    .review-item { border-top:1px solid var(--line); padding:16px 0; }
+    .review-item:first-child { border-top:0; }
+    .badge { display:inline-flex; align-items:center; padding:3px 8px; border-radius:999px; font-size:.78rem; font-weight:700; background:#eef2ff; color:#3730a3; }
+    .source-list li { margin:8px 0; }
+    footer { border-top:1px solid var(--line); padding:28px 0 48px; color:var(--muted); font-size:.9rem; }
+    .hidden { display:none !important; }
+    @media (max-width:760px) {
+      .grid { grid-template-columns:1fr; }
+      .barrow { grid-template-columns:1fr; gap:4px; }
+      .top { height:auto; padding:12px 0; align-items:flex-start; }
+      .quiz-top { align-items:flex-start; flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap top">
+    <a class="brand" href="/">papanda925</a>
+    <div class="mini">II種 ラインケア｜非公式学習サイト</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero" id="home">
+    <p class="eyebrow">MENTAL HEALTH MANAGEMENT · LINE CARE</p>
+    <h1>II種 ラインケアコース<br>模擬テスト</h1>
+    <p class="lead">公式が公開している2026年度の出題範囲、公開例題の出題形式、厚生労働省の指針・職場復帰支援資料を参照し、学習用に独自作成した問題で練習できます。</p>
+    <div class="notice">
+      <strong>重要：</strong>このサイトは大阪商工会議所の公式サイトではありません。市販の公式テキスト・過去問題集の問題文は転載していません。公開資料は出題分野・制度確認の参考とし、模擬問題はオリジナルで作成しています。
+    </div>
+  </section>
+
+  <section id="start">
+    <div class="grid">
+      <div class="card mode">
+        <strong>50問 模擬試験</strong>
+        <p>120分・100点満点。70点を合格目安として本番を意識して解きます。解説は終了後に表示します。</p>
+        <button class="primary" onclick="startQuiz('exam')">模擬試験を始める</button>
+      </div>
+      <div class="card mode">
+        <strong>10問 ランダム演習</strong>
+        <p>全7分野から10問。1問ごとに正解と解説を確認できます。</p>
+        <button class="primary" onclick="startQuiz('quick')">10問演習を始める</button>
+      </div>
+      <div class="card mode">
+        <strong>分野別 10問</strong>
+        <p>苦手分野を絞って練習します。</p>
+        <select id="categorySelect" aria-label="分野を選択"></select>
+        <button class="primary" style="margin-top:10px" onclick="startQuiz('category')">この分野を練習</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>出題分野</h2>
+      <ol>
+        <li>メンタルヘルスケアの意義と管理監督者の役割</li>
+        <li>ストレスおよびメンタルヘルスに関する基礎知識</li>
+        <li>職場環境等の評価および改善の方法</li>
+        <li>個々の労働者への配慮</li>
+        <li>労働者からの相談への対応</li>
+        <li>社内外資源との連携</li>
+        <li>心の健康問題をもつ復職者への支援の方法</li>
+      </ol>
+      <p class="mini">50問模擬試験はこのサイト独自の構成です。公式試験はII種が選択問題・2時間・100点満点・70点以上が合格基準ですが、実際の設問数や配点方式を再現するものではありません。</p>
+    </div>
+  </section>
+
+  <section class="quiz-shell" id="quiz">
+    <div class="quiz-top">
+      <div>
+        <strong id="quizTitle">模擬試験</strong>
+        <div class="mini" id="quizSub"></div>
+      </div>
+      <div><strong id="timer">--:--</strong></div>
+    </div>
+    <div class="progress"><div id="progressBar"></div></div>
+    <div class="card question-card">
+      <div class="meta">
+        <span id="qNo"></span>
+        <span class="badge" id="qCategory"></span>
+      </div>
+      <div class="question" id="qText"></div>
+      <div class="choices" id="choices"></div>
+      <div class="explanation" id="explanation"></div>
+      <div class="navrow">
+        <div class="navgroup">
+          <button class="secondary" id="prevBtn" onclick="move(-1)">← 前へ</button>
+          <button class="secondary" id="nextBtn" onclick="move(1)">次へ →</button>
+        </div>
+        <div class="navgroup">
+          <button class="danger" onclick="finishQuiz(false)">終了して採点</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="result" id="result">
+    <div class="card">
+      <p class="eyebrow">RESULT</p>
+      <h2>結果</h2>
+      <div class="score" id="score"></div>
+      <p id="resultMessage"></p>
+      <p class="mini" id="bestScore"></p>
+      <h3>分野別</h3>
+      <div id="breakdown"></div>
+      <div class="navgroup" style="margin-top:20px">
+        <button class="primary" onclick="resetToHome()">別の問題に挑戦</button>
+        <button class="secondary" id="wrongRetry" onclick="retryWrong()">間違えた問題だけ復習</button>
+      </div>
+    </div>
+    <div class="card review" id="reviewCard">
+      <h2>解答・解説</h2>
+      <div id="review"></div>
+    </div>
+  </section>
+
+  <section class="card" style="margin-bottom:26px">
+    <h2>参照している公開資料</h2>
+    <ul class="source-list">
+      <li><a href="https://www.mental-health.ne.jp/guide/" target="_blank" rel="noopener">メンタルヘルス・マネジメント検定試験 2026年度受験要項</a></li>
+      <li><a href="https://www.mental-health.ne.jp/procedure/pdf/mentalhealth2026_A4.pdf" target="_blank" rel="noopener">2026年度公式パンフレット（公開例題・出題分野）</a></li>
+      <li><a href="https://www.mhlw.go.jp/web/t_doc?dataId=00tb3227&dataType=1&pageNo=1" target="_blank" rel="noopener">厚生労働省「労働者の心の健康の保持増進のための指針」</a></li>
+      <li><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000055195_00005.html" target="_blank" rel="noopener">厚生労働省「心の健康問題により休業した労働者の職場復帰支援の手引き」</a></li>
+      <li><a href="https://kokoro.mhlw.go.jp/" target="_blank" rel="noopener">働く人のメンタルヘルス・ポータルサイト「こころの耳」</a></li>
+    </ul>
+    <p class="mini">制度・法令は改正されることがあります。受験時は公式テキスト第6版、公式サイトの訂正・法令改正情報も確認してください。</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© papanda925 · 非公式学習用コンテンツ。医療上の診断・治療の代替を目的としたものではありません。</div>
+</footer>
+
+<script>
+const CATEGORIES = [
+  "メンタルヘルスケアの意義と管理監督者の役割",
+  "ストレスおよびメンタルヘルスに関する基礎知識",
+  "職場環境等の評価および改善の方法",
+  "個々の労働者への配慮",
+  "労働者からの相談への対応",
+  "社内外資源との連携",
+  "心の健康問題をもつ復職者への支援"
+];
+
+const QUESTIONS = [
+{id:1,c:0,q:"職場のメンタルヘルスケアにおける「ラインによるケア」の中心的な担い手として、最も適切なのはどれか。",ch:["労働者本人","管理監督者","事業場外の医療機関だけ","労働基準監督署"],a:1,e:"ラインによるケアは、労働者と日常的に接する管理監督者が、職場環境等の改善や相談対応を行う取組です。"},
+{id:2,c:0,q:"4つのメンタルヘルスケアに含まれないものはどれか。",ch:["セルフケア","ラインによるケア","事業場内産業保健スタッフ等によるケア","顧客によるケア"],a:3,e:"4つのケアは、セルフケア、ラインによるケア、事業場内産業保健スタッフ等によるケア、事業場外資源によるケアです。"},
+{id:3,c:0,q:"管理監督者の役割として最も適切なのはどれか。",ch:["部下の精神疾患を診断する","部下の治療方針を決める","日常の変化に気づき、必要に応じて相談先につなぐ","本人の同意なく病名を職場全体に共有する"],a:2,e:"管理監督者は診断や治療を行う立場ではありません。日常の状況把握、職場環境の改善、相談対応、専門職への橋渡しが重要です。"},
+{id:4,c:0,q:"管理監督者自身のセルフケアについて最も適切なのはどれか。",ch:["管理監督者はセルフケアの対象外である","管理監督者もセルフケアの対象である","部下が多い管理職だけが対象である","産業医の指示がある場合だけ対象となる"],a:1,e:"厚生労働省の指針では、管理監督者にとってもセルフケアは重要であり、対象者に含めるとされています。"},
+{id:5,c:0,q:"ラインによるケアを進めるうえで、管理監督者が把握・改善に取り組む対象として適切なのはどれか。",ch:["部下の私生活をすべて把握すること","職場の労働時間、仕事量、人間関係など","部下の医療記録の詳細","家族関係の評価"],a:1,e:"管理監督者は、業務量、労働時間、作業方法、人間関係など職場のストレス要因を把握し、改善を図る立場にあります。"},
+{id:6,c:0,q:"心の健康づくり計画を実施する際の考え方として最も適切なのはどれか。",ch:["一度策定したら見直さない","4つのケアを継続的・計画的に進める","個人の自己責任だけに委ねる","不調者が出た時だけ対応する"],a:1,e:"メンタルヘルスケアは、予防から相談、復職支援までを含め、4つのケアを継続的・計画的に進めることが重要です。"},
+{id:7,c:0,q:"一時的なプロジェクト体制などで通常のラインによるケアが難しい場合、最も適切な対応はどれか。",ch:["ラインケアを行わなくてよい","実務上の指揮命令系統の上位者等が同等のケアを行える体制を整える","本人のセルフケアだけに任せる","外部医療機関に全責任を移す"],a:1,e:"通常のラインケアが難しい業務形態でも、同等のケアが確実に実施される体制を整えることが求められます。"},
+{id:8,c:0,q:"メンタルヘルス不調への管理監督者の基本姿勢として不適切なのはどれか。",ch:["早めに変化へ気づく","職場環境の改善を検討する","本人の人格の弱さが原因だと決めつける","必要に応じ産業保健スタッフへ相談する"],a:2,e:"心の健康問題には個人差があり、人格や意志の弱さと決めつけることは適切ではありません。"},
+
+{id:9,c:1,q:"「ストレス要因」と「ストレス反応」の関係として最も適切なのはどれか。",ch:["ストレス要因は原因側、ストレス反応は心身に現れる反応","両者は必ず同じ意味","ストレス反応は職場環境そのもの","ストレス要因は病名を指す"],a:0,e:"仕事量や人間関係などがストレス要因となり、それに対して心理面・身体面・行動面などにストレス反応が現れます。"},
+{id:10,c:1,q:"同じ出来事に対するストレス反応について最も適切なのはどれか。",ch:["誰にでも同じ強さで現れる","個人差がある","年齢だけで決まる","管理職には起こらない"],a:1,e:"ストレスの受け止め方や反応には個人差があります。"},
+{id:11,c:1,q:"ストレス反応の例として最も適切な組合せはどれか。",ch:["気分の落ち込み・頭痛・遅刻の増加","身長・血液型・利き手","所属部署・役職・勤続年数","資格・学歴・通勤経路"],a:0,e:"ストレス反応は心理面、身体面、行動面などに現れることがあります。"},
+{id:12,c:1,q:"メンタルヘルス不調の早期把握について最も適切なのはどれか。",ch:["病名が確定するまで対応しない","普段との違いを把握し、必要に応じ相談につなぐ","本人が申告しない限り何もしない","同僚全員で病名を推測する"],a:1,e:"管理監督者は診断をするのではなく、日常の変化に気づき、必要に応じて専門職へつなぐことが大切です。"},
+{id:13,c:1,q:"心の健康問題の特性として最も適切なのはどれか。",ch:["すべて客観的数値だけで簡単に評価できる","発生過程や現れ方には個人差がある","必ず身体症状から始まる","本人以外には必ず分かる"],a:1,e:"心の健康問題は評価が容易でないことがあり、発生過程や現れ方にも個人差があります。"},
+{id:14,c:1,q:"ストレスへの対処として一般に望ましい考え方はどれか。",ch:["一つの方法だけを全員に強制する","自分の状態に気づき、休養・相談など複数の対処手段を持つ","不調を感じても常に我慢する","相談は弱さの証拠なので避ける"],a:1,e:"セルフケアでは、ストレスへの気づきと適切な対処、自発的な相談が重視されます。"},
+{id:15,c:1,q:"管理監督者が部下の状態を見る際、最も望ましい比較の仕方はどれか。",ch:["他部署の平均とだけ比べる","本人の普段の様子との変化を見る","年齢が同じ人とだけ比べる","性格診断の結果だけで判断する"],a:1,e:"『いつもと違う』変化を捉える視点が、日常的に接する管理監督者には重要です。"},
+{id:16,c:1,q:"メンタルヘルス不調について不適切な認識はどれか。",ch:["誰にでも起こり得る","誤解や偏見を避ける必要がある","本人の意志の弱さだけで説明できる","早めの相談が役立つ場合がある"],a:2,e:"メンタルヘルス不調を意志や性格だけで説明するのは不適切です。"},
+
+{id:17,c:2,q:"職場環境等の改善対象として適切でないものはどれか。",ch:["労働時間","仕事の量と質","職場の人間関係","本人の血液型"],a:3,e:"職場環境等には労働時間、仕事量、作業方法、人間関係、組織・人事労務管理などが含まれます。"},
+{id:18,c:2,q:"職場環境改善の進め方として最も適切なのはどれか。",ch:["問題が起きた個人だけを変える","職場のストレス要因を把握し、優先順位をつけて改善する","全員の仕事量を一律に増やす","改善後の確認は不要"],a:1,e:"職場環境改善では、問題点の把握、改善策の実施、評価・見直しという継続的な取組が重要です。"},
+{id:19,c:2,q:"長時間労働が続くチームへの管理監督者の対応として最も適切なのはどれか。",ch:["本人のやる気に任せる","業務量・期限・分担を見直し、必要な支援につなぐ","残業時間を記録しない","体調不良が出るまで変更しない"],a:1,e:"業務量、労働時間、役割分担などは職場環境改善の重要な対象です。"},
+{id:20,c:2,q:"職場環境改善において、従業員の意見を取り入れることの意義として最も適切なのはどれか。",ch:["現場の具体的な問題や改善案を把握しやすくなる","管理監督者の責任がなくなる","医療診断ができるようになる","個人情報を自由に共有できる"],a:0,e:"現場の参加は、実際の作業や人間関係など具体的なストレス要因を把握し、実行可能な改善につなげるのに役立ちます。"},
+{id:21,c:2,q:"職場のコミュニケーション改善策として適切なのはどれか。",ch:["相談の機会を減らす","定期的な1on1や情報共有の場を設ける","重要情報を一部の人だけに隠す","質問を禁止する"],a:1,e:"日常的なコミュニケーションの確保は、変化への気づきや相談しやすい職場づくりに役立ちます。"},
+{id:22,c:2,q:"改善策を実施した後の対応として最も適切なのはどれか。",ch:["効果や新たな問題を確認し、必要に応じて見直す","一度決めたので永久に固定する","結果を確認せず終了する","不調者だけに評価を任せる"],a:0,e:"職場環境改善は一度きりではなく、実施状況と効果を評価し、見直すことが重要です。"},
+{id:23,c:2,q:"ハラスメントを含む職場の人間関係について最も適切なのはどれか。",ch:["メンタルヘルスと無関係である","職場のストレス要因となり得る","個人の私生活だけの問題である","管理監督者は関与できない"],a:1,e:"職場の人間関係やハラスメントも、心の健康に影響する職場環境等の要素です。"},
+{id:24,c:2,q:"職場環境改善の目的として最も適切なのはどれか。",ch:["不調者を見つけて評価を下げる","メンタルヘルス不調の未然防止につなげる","医療機関の受診者数をゼロにする","全員に同じ働き方を強制する"],a:1,e:"職場環境等の改善は、メンタルヘルス不調の未然防止を図るための重要な取組です。"},
+
+{id:25,c:3,q:"普段は期限を守る部下に遅刻やミスが増え、表情も暗い。管理監督者の最初の対応として最も適切なのはどれか。",ch:["すぐに病名を決めつける","人目の少ない場所で声をかけ、最近の様子を尋ねる","皆の前で理由を追及する","評価を下げると伝える"],a:1,e:"まずは普段との変化に気づき、落ち着いて声をかけ、本人の話を聴くことが基本です。"},
+{id:26,c:3,q:"部下から体調不良の相談を受けた際、管理監督者の対応として不適切なのはどれか。",ch:["業務上の配慮を検討する","必要に応じ産業保健スタッフへつなぐ","自分だけで診断して薬を勧める","本人の話を落ち着いて聴く"],a:2,e:"診断や治療は医療専門職の役割です。管理監督者は職場でできる配慮と適切な連携を行います。"},
+{id:27,c:3,q:"部下の健康情報の取扱いとして最も適切なのはどれか。",ch:["興味のある同僚に共有する","業務上必要な範囲を意識し、適切に取り扱う","SNSに匿名で掲載する","本人の病名を朝礼で説明する"],a:1,e:"健康情報は機微な個人情報です。必要性と範囲を慎重に判断し、適切に取り扱う必要があります。"},
+{id:28,c:3,q:"不調が疑われる部下への声かけとして最も適切なのはどれか。",ch:["最近、遅刻が増えているけど、何か困っていることはある？","あなたはうつ病だと思う","気合いが足りない","みんな大変だから我慢して"],a:0,e:"観察できる事実をもとに、決めつけず、本人が話しやすい形で尋ねるのが適切です。"},
+{id:29,c:3,q:"業務上の配慮を検討する際の考え方として適切なのはどれか。",ch:["本人の状況や専門職の意見も踏まえて検討する","全員に同じ配慮を機械的に適用する","本人の希望だけで医療判断を行う","配慮内容を同僚全員に詳細説明する"],a:0,e:"就業上の配慮は、本人の状況、業務内容、産業保健スタッフ等の意見などを踏まえて検討します。"},
+{id:30,c:3,q:"部下が相談をためらっている様子のとき、望ましい職場づくりはどれか。",ch:["相談すると評価が下がると伝える","相談先と利用方法を日頃から周知する","相談は勤務時間外だけに限定する","相談内容を自動的に全社共有する"],a:1,e:"相談しやすい環境づくりと、事業場内外の相談先の周知が重要です。"},
+{id:31,c:3,q:"『最近いつもと違う』という気づきの扱いとして適切なのはどれか。",ch:["それだけで精神疾患と断定する","声かけや状況確認のきっかけとして用いる","人事評価に直結させる","周囲に噂として広める"],a:1,e:"変化への気づきは診断ではなく、適切な声かけや相談につなげるきっかけです。"},
+{id:32,c:3,q:"部下が『詳しい病名は話したくない』と述べた場合の対応として最も適切なのはどれか。",ch:["病名を言うまで仕事を与えない","必要な就業上の情報を確認しつつ、過度な開示を強制しない","同僚に病名を調べさせる","家族へ無断で連絡し病名を聞く"],a:1,e:"職場では、安全に働くために必要な情報を適切に確認しつつ、健康情報の取扱いと本人のプライバシーに配慮します。"},
+
+{id:33,c:4,q:"相談を受けるときの『傾聴』として最も適切なのはどれか。",ch:["途中で結論を決めて指示する","相手の話を遮らず、内容と気持ちを理解しようと聴く","自分の経験談だけを長く話す","正しさを競う"],a:1,e:"相談対応では、相手の話を遮らず、受け止めながら聴く姿勢が基本です。"},
+{id:34,c:4,q:"部下が『最近眠れず、仕事がつらい』と話したときの返答として最も適切なのはどれか。",ch:["気にしすぎだよ","それは大変だったね。もう少し状況を聞かせてもらえる？","自分も同じだから問題ない","今すぐ退職した方がいい"],a:1,e:"まず受け止め、開かれた質問で状況を確認することで、必要な支援につなげやすくなります。"},
+{id:35,c:4,q:"相談時の質問として、相手が話しやすい『開かれた質問』はどれか。",ch:["はい・いいえだけで答えて","最近、仕事でどんなことが一番負担になっていますか","あなたが悪いんですよね","病名はこれですよね"],a:1,e:"開かれた質問は、相手が自分の言葉で状況を説明しやすい問い方です。"},
+{id:36,c:4,q:"相談対応で避けたい行動はどれか。",ch:["相手の話を要約して確認する","安易に励ましたり説教したりする","相談先の情報を提供する","必要に応じ専門職へつなぐ"],a:1,e:"『頑張れ』などの安易な励ましや説教は、相手の負担や孤立感を強めることがあります。"},
+{id:37,c:4,q:"管理監督者が相談を受けた際、自分だけでは対応が難しいと判断した場合の対応として最も適切なのはどれか。",ch:["相談を打ち切る","産業医など適切な専門職・相談窓口につなぐ","同僚全員に相談する","本人を叱って自力で解決させる"],a:1,e:"管理監督者は抱え込まず、事業場内産業保健スタッフや外部資源と連携することが重要です。"},
+{id:38,c:4,q:"相談内容の確認方法として最も適切なのはどれか。",ch:["『つまり、○○が一番負担になっているという理解で合っていますか』と確認する","本人の話を聞かず推測で決める","途中で話題を変える","他人の事例と同じだと決めつける"],a:0,e:"要約して確認することで、相手の認識とこちらの理解のずれを減らせます。"},
+{id:39,c:4,q:"相談者が沈黙したときの対応として一般に望ましいのはどれか。",ch:["すぐに責める","急かさず、必要な間を取りながら待つ","相談を即終了する","別の人を呼んで話させる"],a:1,e:"沈黙もコミュニケーションの一部です。急かさず、安心して話せる時間を確保します。"},
+{id:40,c:4,q:"管理監督者の相談対応の限界について最も適切なのはどれか。",ch:["すべて自分だけで解決すべき","職場での対応と専門職への連携を使い分ける","医師より優先して診断する","相談記録は無制限に共有してよい"],a:1,e:"管理監督者は職場の支援者であり、医療専門職ではありません。必要に応じて適切に連携します。"},
+
+{id:41,c:5,q:"『事業場内産業保健スタッフ等によるケア』の担い手の例として最も適切なのはどれか。",ch:["産業医や保健師など","取引先の営業担当","顧客","家族だけ"],a:0,e:"事業場内産業保健スタッフ等には、産業医、保健師、衛生管理者などが含まれます。"},
+{id:42,c:5,q:"『事業場外資源によるケア』の例として最も適切なのはどれか。",ch:["社外の専門相談機関や医療機関の活用","直属上司だけで対応","本人の自己判断だけ","人事評価会議"],a:0,e:"事業場外資源には、外部の医療機関、相談機関、EAPなどが含まれます。"},
+{id:43,c:5,q:"管理監督者が産業医へ相談する主な目的として適切なのはどれか。",ch:["部下の懲戒処分を決めてもらう","健康面から就業上の配慮について専門的助言を得る","人事評価を代行してもらう","私生活を調査してもらう"],a:1,e:"産業医等の専門職は、健康確保や就業上の配慮について専門的な支援を行います。"},
+{id:44,c:5,q:"社内外資源との連携で大切な考え方として最も適切なのはどれか。",ch:["相談先の役割を理解し、必要に応じて適切につなぐ","すべての情報を無条件で共有する","外部資源は利用しない","管理監督者が治療方針を決定する"],a:0,e:"それぞれの専門性と役割を理解し、情報の取扱いに配慮しながら必要な支援へつなぎます。"},
+{id:45,c:5,q:"従業員が相談先を利用しやすくするための取組として適切なのはどれか。",ch:["相談窓口を非公開にする","利用方法や連絡先を日頃から周知する","相談した事実を全員に通知する","上司の許可なしでは一切使えないとする"],a:1,e:"事業場内外の相談先に関する情報を日頃から周知し、自発的に相談しやすい環境を整えることが重要です。"},
+{id:46,c:5,q:"管理監督者が対応を抱え込まないことが重要な理由として最も適切なのはどれか。",ch:["管理監督者は専門職ではなく、適切な役割分担が必要だから","管理監督者には部下への配慮義務が一切ないから","相談はすべて外部へ丸投げすべきだから","本人の希望は一切考慮しなくてよいから"],a:0,e:"管理監督者には重要な役割がありますが、診断・治療など専門領域は専門職と連携して対応します。"},
+{id:47,c:5,q:"連携時の健康情報の取扱いとして最も適切なのはどれか。",ch:["必要性を考えず広く共有する","目的と必要範囲を意識して適切に扱う","社内SNSに掲示する","興味のある人には誰でも伝える"],a:1,e:"健康情報は慎重に扱う必要があります。支援の目的と必要性を踏まえた適切な取扱いが重要です。"},
+{id:48,c:5,q:"外部の相談機関を利用するメリットとして適切なのはどれか。",ch:["社内にない専門性や相談機能を活用できる","会社の責任がすべてなくなる","本人の同意が常に不要になる","管理監督者が診断できるようになる"],a:0,e:"事業場外資源は、社内だけでは得にくい専門的な支援や相談機能を補完します。"},
+
+{id:49,c:6,q:"厚生労働省の職場復帰支援の手引きで、第1ステップとして位置づけられる内容はどれか。",ch:["休業開始および休業中のケア","最終的な職場復帰の決定","職場復帰後のフォローアップ","人事評価の確定"],a:0,e:"職場復帰支援は、休業開始および休業中のケアから始まり、段階的に進めます。"},
+{id:50,c:6,q:"職場復帰支援の第2ステップとして最も適切なのはどれか。",ch:["主治医による職場復帰可能の判断","全社員への病名公表","復帰後の昇進決定","退職勧奨"],a:0,e:"第2ステップは、主治医による職場復帰可能の判断です。"},
+{id:51,c:6,q:"職場復帰支援の第3ステップとして最も適切なのはどれか。",ch:["職場復帰の可否判断および職場復帰支援プランの作成","休業前の評価の固定","治療の中止","病名の社内公開"],a:0,e:"第3ステップでは、職場復帰の可否を検討し、具体的な職場復帰支援プランを作成します。"},
+{id:52,c:6,q:"職場復帰支援の第4ステップとして最も適切なのはどれか。",ch:["事業者による最終的な職場復帰の決定","本人だけによる最終決定","同僚による多数決","主治医が会社の人事権を代行"],a:0,e:"第4ステップでは、必要な情報や意見を踏まえて事業者が最終的な職場復帰を決定します。"},
+{id:53,c:6,q:"職場復帰支援の第5ステップに含まれるものはどれか。",ch:["職場復帰後のフォローアップ","休業開始前の採用面接","資格更新","賞与査定だけ"],a:0,e:"復帰後は、再燃・再発の有無、勤務状況、支援プランの実施状況などをフォローし、必要に応じて見直します。"},
+{id:54,c:6,q:"復職支援プランに関する考え方として最も適切なのはどれか。",ch:["一度作ったら変更しない","本人の状態や職場状況を踏まえ、必要に応じて見直す","同僚の希望だけで決める","病名を全社公表することが中心"],a:1,e:"職場復帰後の状況を確認し、必要に応じて支援プランや就業上の配慮を見直すことが重要です。"},
+{id:55,c:6,q:"復職直後の管理監督者の対応として最も適切なのはどれか。",ch:["休業前と同じ負荷を直ちに求める","支援プランや専門職の意見を踏まえ、勤務状況を確認する","再発の可能性は考えない","本人への確認を一切しない"],a:1,e:"復職後は勤務状況や業務遂行状況を確認し、支援プランの実施状況をフォローします。"},
+{id:56,c:6,q:"職場復帰支援における管理監督者の役割として不適切なのはどれか。",ch:["職場での業務状況を把握する","就業上の配慮を関係者と連携して実施する","医学的診断を自分で確定する","復帰後の変化を確認する"],a:2,e:"医学的診断は医療専門職の役割です。管理監督者は職場側の支援と連携を担います。"}
+];
+
+let session = [];
+let answers = [];
+let current = 0;
+let mode = "quick";
+let remaining = 0;
+let timerHandle = null;
+let lastWrong = [];
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+
+function init() {
+  const sel = document.getElementById("categorySelect");
+  CATEGORIES.forEach((name,i) => {
+    const opt = document.createElement("option");
+    opt.value = i; opt.textContent = name; sel.appendChild(opt);
+  });
+  const best = localStorage.getItem("mh_linecare_best");
+  if (best) document.getElementById("bestScore").textContent = "これまでの最高得点: " + best + "点";
+}
+
+function startQuiz(type) {
+  mode = type;
+  if (type === "exam") {
+    session = shuffle(QUESTIONS).slice(0,50);
+    remaining = 120 * 60;
+    document.getElementById("quizTitle").textContent = "50問 模擬試験";
+    document.getElementById("quizSub").textContent = "解説は採点後に表示";
+  } else if (type === "category") {
+    const cat = Number(document.getElementById("categorySelect").value);
+    const pool = QUESTIONS.filter(x => x.c === cat);
+    session = shuffle(pool).slice(0,10);
+    remaining = 0;
+    document.getElementById("quizTitle").textContent = "分野別演習";
+    document.getElementById("quizSub").textContent = CATEGORIES[cat];
+  } else {
+    session = shuffle(QUESTIONS).slice(0,10);
+    remaining = 0;
+    document.getElementById("quizTitle").textContent = "10問 ランダム演習";
+    document.getElementById("quizSub").textContent = "回答後すぐに解説を確認";
+  }
+  answers = new Array(session.length).fill(null);
+  current = 0;
+  lastWrong = [];
+  document.getElementById("start").classList.add("hidden");
+  document.getElementById("result").style.display = "none";
+  document.getElementById("quiz").style.display = "block";
+  if (timerHandle) clearInterval(timerHandle);
+  if (mode === "exam") {
+    tick();
+    timerHandle = setInterval(function() {
+      remaining--;
+      tick();
+      if (remaining <= 0) {
+        clearInterval(timerHandle);
+        finishQuiz(true);
+      }
+    },1000);
+  } else {
+    document.getElementById("timer").textContent = "演習モード";
+  }
+  renderQuestion();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function tick() {
+  const m = Math.floor(Math.max(0,remaining)/60);
+  const s = Math.max(0,remaining)%60;
+  document.getElementById("timer").textContent = String(m).padStart(2,"0") + ":" + String(s).padStart(2,"0");
+}
+
+function renderQuestion() {
+  const q = session[current];
+  document.getElementById("qNo").textContent = "問題 " + (current+1) + " / " + session.length;
+  document.getElementById("qCategory").textContent = CATEGORIES[q.c];
+  document.getElementById("qText").textContent = q.q;
+  document.getElementById("progressBar").style.width = (((current+1)/session.length)*100) + "%";
+  const box = document.getElementById("choices");
+  box.innerHTML = "";
+  q.ch.forEach((txt,i) => {
+    const b = document.createElement("button");
+    b.className = "choice";
+    b.textContent = (i+1) + ". " + txt;
+    if (answers[current] === i) b.classList.add("selected");
+    if (mode !== "exam" && answers[current] !== null) {
+      if (i === q.a) b.classList.add("correct");
+      if (i === answers[current] && i !== q.a) b.classList.add("wrong");
+    }
+    b.onclick = function(){ choose(i); };
+    box.appendChild(b);
+  });
+  const exp = document.getElementById("explanation");
+  if (mode !== "exam" && answers[current] !== null) {
+    exp.innerHTML = "<strong>" + (answers[current] === q.a ? "正解" : "不正解") + "</strong><br>" + escapeHtml(q.e);
+    exp.classList.add("show");
+  } else {
+    exp.textContent = "";
+    exp.classList.remove("show");
+  }
+  document.getElementById("prevBtn").disabled = current === 0;
+  document.getElementById("nextBtn").textContent = current === session.length-1 ? "採点する" : "次へ →";
+}
+
+function choose(i) {
+  answers[current] = i;
+  renderQuestion();
+}
+
+function move(dir) {
+  if (dir > 0 && current === session.length-1) {
+    finishQuiz(false);
+    return;
+  }
+  current = Math.max(0,Math.min(session.length-1,current+dir));
+  renderQuestion();
+}
+
+function finishQuiz(timeout) {
+  if (timerHandle) clearInterval(timerHandle);
+  const unanswered = answers.filter(x => x === null).length;
+  if (!timeout && unanswered > 0 && !confirm("未回答が " + unanswered + " 問あります。このまま採点しますか？")) return;
+
+  let correct = 0;
+  const stats = {};
+  lastWrong = [];
+  CATEGORIES.forEach((_,i) => stats[i] = {ok:0,total:0});
+  session.forEach((q,i) => {
+    stats[q.c].total++;
+    if (answers[i] === q.a) {
+      correct++;
+      stats[q.c].ok++;
+    } else {
+      lastWrong.push(q);
+    }
+  });
+  const score = Math.round(correct / session.length * 100);
+  if (mode === "exam") {
+    const old = Number(localStorage.getItem("mh_linecare_best") || 0);
+    if (score > old) localStorage.setItem("mh_linecare_best",String(score));
+  }
+  document.getElementById("quiz").style.display = "none";
+  document.getElementById("result").style.display = "block";
+  const scoreEl = document.getElementById("score");
+  scoreEl.textContent = score + "点";
+  scoreEl.className = "score " + (score >= 70 ? "pass" : "fail");
+  document.getElementById("resultMessage").textContent =
+    mode === "exam"
+      ? (score >= 70 ? "70点以上。合格基準を意識した模擬試験では合格圏です。" : "70点未満。分野別結果から弱点を絞って復習しましょう。")
+      : "正解 " + correct + " / " + session.length + " 問。";
+  const best = localStorage.getItem("mh_linecare_best");
+  document.getElementById("bestScore").textContent = best ? "50問模擬試験の最高得点: " + best + "点" : "";
+
+  const breakdown = document.getElementById("breakdown");
+  breakdown.innerHTML = "";
+  Object.keys(stats).forEach(k => {
+    const st = stats[k];
+    if (!st.total) return;
+    const pct = Math.round(st.ok/st.total*100);
+    const row = document.createElement("div");
+    row.className = "barrow";
+    row.innerHTML = "<div>" + escapeHtml(CATEGORIES[k]) + "</div><div class='smallbar'><div style='width:" + pct + "%'></div></div><div>" + st.ok + "/" + st.total + "</div>";
+    breakdown.appendChild(row);
+  });
+
+  const review = document.getElementById("review");
+  review.innerHTML = "";
+  session.forEach((q,i) => {
+    const item = document.createElement("div");
+    item.className = "review-item";
+    const your = answers[i] === null ? "未回答" : (answers[i]+1) + ". " + q.ch[answers[i]];
+    item.innerHTML =
+      "<span class='badge'>" + escapeHtml(CATEGORIES[q.c]) + "</span>" +
+      "<p><strong>Q" + (i+1) + ". " + escapeHtml(q.q) + "</strong></p>" +
+      "<p>あなたの回答: " + escapeHtml(your) + "<br>正解: " + (q.a+1) + ". " + escapeHtml(q.ch[q.a]) + "</p>" +
+      "<p class='mini'>" + escapeHtml(q.e) + "</p>";
+    review.appendChild(item);
+  });
+  document.getElementById("wrongRetry").style.display = lastWrong.length ? "inline-block" : "none";
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function retryWrong() {
+  if (!lastWrong.length) return;
+  mode = "review";
+  session = shuffle(lastWrong);
+  answers = new Array(session.length).fill(null);
+  current = 0;
+  document.getElementById("result").style.display = "none";
+  document.getElementById("quiz").style.display = "block";
+  document.getElementById("quizTitle").textContent = "間違えた問題を復習";
+  document.getElementById("quizSub").textContent = session.length + "問";
+  document.getElementById("timer").textContent = "復習モード";
+  renderQuestion();
+}
+
+function resetToHome() {
+  if (timerHandle) clearInterval(timerHandle);
+  document.getElementById("quiz").style.display = "none";
+  document.getElementById("result").style.display = "none";
+  document.getElementById("start").classList.remove("hidden");
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function escapeHtml(v) {
+  return String(v).replace(/[&<>"']/g,function(ch){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch];
+  });
+}
+init();
+</script>
+</body>
+</html>
