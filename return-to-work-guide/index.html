@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>職場復帰 いまどこ？｜5ステップ安心ナビ</title>
+  <meta name="description" content="休職中に『いま自分はどの段階？』『次に何を確認すればいい？』を、厚生労働省の職場復帰支援5ステップをもとに整理する非公式の確認ツールです。">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://papanda925.github.io/return-to-work-guide/">
+  <style>
+    :root{
+      --bg:#f5f7fb;--card:#fff;--text:#1f2937;--muted:#64748b;--line:#dbe4ee;
+      --primary:#2563eb;--primary-soft:#eff6ff;--good:#047857;--good-soft:#ecfdf5;
+      --warm:#92400e;--warm-soft:#fffbeb;--shadow:0 14px 34px rgba(15,23,42,.08);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.75}
+    a{color:inherit}
+    button,input{font:inherit}
+    .wrap{max-width:980px;margin:auto;padding:24px 18px 64px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:34px}
+    .brand{text-decoration:none;font-weight:800;letter-spacing:.02em}
+    .back{text-decoration:none;color:var(--muted);font-size:.93rem}
+    .hero{background:linear-gradient(135deg,#eef6ff 0%,#fff 56%,#effcf7 100%);border:1px solid var(--line);border-radius:28px;padding:42px;box-shadow:var(--shadow)}
+    .eyebrow{margin:0 0 8px;color:var(--primary);font-weight:800;font-size:.82rem;letter-spacing:.12em}
+    h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.2;margin:0 0 18px}
+    .lead{font-size:1.08rem;max-width:760px;margin:0;color:#334155}
+    .reassure{margin-top:22px;display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.78);padding:16px 18px;border-radius:18px;border:1px solid #d9e8f8}
+    .reassure strong{display:block;margin-bottom:2px}
+    .privacy{margin-top:14px;color:var(--muted);font-size:.9rem}
+    .section{margin-top:34px}
+    .section h2{font-size:1.55rem;margin:0 0 8px}
+    .section-intro{margin:0 0 18px;color:var(--muted)}
+    .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:22px 0 32px}
+    .step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 12px;text-align:center;min-height:112px;cursor:pointer;transition:.15s}
+    .step:hover,.step:focus-visible{border-color:#93b8f5;transform:translateY(-1px);outline:none}
+    .step.active{border:2px solid var(--primary);background:var(--primary-soft)}
+    .num{width:32px;height:32px;border-radius:50%;background:#e2e8f0;display:grid;place-items:center;margin:0 auto 8px;font-weight:800}
+    .step.active .num{background:var(--primary);color:#fff}
+    .step b{display:block;font-size:.92rem;line-height:1.45}
+    .question-card,.result,.source-card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 8px 22px rgba(15,23,42,.04)}
+    .choices{display:grid;gap:10px;margin-top:18px}
+    .choice{position:relative}
+    .choice input{position:absolute;opacity:0;pointer-events:none}
+    .choice label{display:block;border:1px solid var(--line);border-radius:16px;padding:15px 16px;cursor:pointer;background:#fff;transition:.12s}
+    .choice input:focus-visible + label{outline:3px solid rgba(37,99,235,.2)}
+    .choice input:checked + label{border:2px solid var(--primary);background:var(--primary-soft)}
+    .choice strong{display:block;margin-bottom:2px}
+    .choice span{display:block;color:var(--muted);font-size:.92rem}
+    .action-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+    .btn{border:none;border-radius:12px;padding:11px 18px;font-weight:700;cursor:pointer}
+    .btn.primary{background:var(--primary);color:#fff}
+    .btn.secondary{background:#eef2f7;color:#334155}
+    .result{display:none;margin-top:22px;border-left:6px solid var(--primary)}
+    .result.show{display:block}
+    .result-badge{display:inline-block;padding:5px 10px;border-radius:999px;background:var(--primary-soft);color:var(--primary);font-size:.82rem;font-weight:800}
+    .result h3{font-size:1.55rem;margin:12px 0 6px}
+    .result .message{font-size:1.08rem;margin:0 0 20px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .mini{border-radius:16px;padding:18px;background:#f8fafc;border:1px solid #e7edf4}
+    .mini h4{margin:0 0 8px;font-size:1rem}
+    .mini ul{margin:0;padding-left:1.2em}
+    .mini li+li{margin-top:4px}
+    .ask{margin-top:16px;border-radius:16px;padding:18px;background:var(--good-soft);border:1px solid #b7ead5}
+    .ask h4{margin:0 0 8px;color:var(--good)}
+    .script{background:#fff;border:1px solid #cfe7dc;border-radius:12px;padding:12px 14px;margin:10px 0;white-space:pre-wrap}
+    .copy-status{color:var(--good);font-size:.9rem;margin-left:8px}
+    .note{margin-top:18px;padding:16px 18px;background:var(--warm-soft);border:1px solid #f4dfaf;border-radius:16px;color:#713f12}
+    .source-card p{margin-top:0}
+    .source-card a{color:var(--primary);font-weight:700}
+    .disclaimer{font-size:.88rem;color:var(--muted);margin-top:14px}
+    footer{margin-top:38px;color:var(--muted);font-size:.88rem;text-align:center}
+    @media(max-width:760px){
+      .hero{padding:28px 22px}
+      .steps{grid-template-columns:1fr}
+      .step{min-height:0;display:flex;text-align:left;align-items:center;gap:12px}
+      .num{margin:0;flex:0 0 32px}
+      .grid{grid-template-columns:1fr}
+      .question-card,.result,.source-card{padding:20px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="/">papanda925</a>
+      <a class="back" href="/">← トップへ戻る</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">RETURN-TO-WORK STEP NAVI</p>
+        <h1>職場復帰、<br>いまどこ？</h1>
+        <p class="lead">
+          休職すると、「このあと何が起きるの？」「もう復職を決めないといけない？」と、
+          流れが見えないこと自体が不安になることがあります。
+          このページは、厚生労働省の職場復帰支援の5ステップをもとに、
+          <strong>いまの目安と、次に確認すること</strong>を整理するための非公式ナビです。
+        </p>
+        <div class="reassure">
+          <div aria-hidden="true">🧭</div>
+          <div><strong>ゴールは「急いで復職すること」ではありません。</strong>
+          いまの段階を知り、必要な支援や条件を一つずつ確認するために使ってください。</div>
+        </div>
+        <div class="privacy">🔒 入力内容は送信・保存しません。判定はこのブラウザの中だけで行います。</div>
+      </section>
+
+      <section class="section" aria-labelledby="flow-title">
+        <h2 id="flow-title">まず、5つの流れを眺める</h2>
+        <p class="section-intro">各ステップを押すと、その段階の説明を確認できます。</p>
+        <div class="steps" id="steps">
+          <button class="step" data-step="1"><span class="num">1</span><b>休業開始・<br>休業中のケア</b></button>
+          <button class="step" data-step="2"><span class="num">2</span><b>主治医による<br>復職可能の判断</b></button>
+          <button class="step" data-step="3"><span class="num">3</span><b>復職可否の判断・<br>支援プラン作成</b></button>
+          <button class="step" data-step="4"><span class="num">4</span><b>最終的な<br>職場復帰の決定</b></button>
+          <button class="step" data-step="5"><span class="num">5</span><b>復職後の<br>フォローアップ</b></button>
+        </div>
+      </section>
+
+      <section class="section question-card" aria-labelledby="check-title">
+        <h2 id="check-title">いまの状態に、一番近いものは？</h2>
+        <p class="section-intro">正確に分からなくても大丈夫です。「わからない」も選べます。</p>
+        <div class="choices">
+          <div class="choice">
+            <input type="radio" name="state" id="s1" value="1">
+            <label for="s1"><strong>休職が始まった／いまは療養中</strong><span>まだ復職の具体的な手続きには入っていない</span></label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="state" id="s2" value="2">
+            <label for="s2"><strong>復職を考え始め、主治医に相談している</strong><span>復職可能か、就業上の配慮が必要かを確認している</span></label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="state" id="s3" value="3">
+            <label for="s3"><strong>主治医から復職可能の判断が出て、会社・産業医等と相談している</strong><span>勤務時間、業務量、配置、支援方法などを具体化する段階</span></label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="state" id="s4" value="4">
+            <label for="s4"><strong>復職日や就業上の配慮について、最終確認をしている</strong><span>会社としての最終的な復職決定を待っている／受けた</span></label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="state" id="s5" value="5">
+            <label for="s5"><strong>すでに職場復帰している</strong><span>復帰後の勤務状況や配慮内容を見直している</span></label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="state" id="sx" value="0">
+            <label for="sx"><strong>どこにいるのか分からない</strong><span>会社から十分な説明を受けていない／流れが見えない</span></label>
+          </div>
+        </div>
+        <div class="action-row">
+          <button class="btn primary" id="judge">いまの目安を確認する</button>
+          <button class="btn secondary" id="reset">選び直す</button>
+        </div>
+      </section>
+
+      <section class="result" id="result" aria-live="polite"></section>
+
+      <section class="section source-card">
+        <h2>このナビの根拠</h2>
+        <p>
+          厚生労働省「心の健康問題により休業した労働者の職場復帰支援の手引き」に示される
+          5つのステップを、休職中の本人が流れを把握しやすいように短く言い換えています。
+        </p>
+        <p><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000055195_00005.html" target="_blank" rel="noopener">厚生労働省の公式ページを確認する ↗</a></p>
+        <div class="disclaimer">
+          このツールは診断、治療、法的判断、会社の正式な復職判定を行うものではありません。
+          実際の制度や手順は勤務先によって異なるため、主治医、産業医・保健師、人事労務担当者等と確認してください。
+        </div>
+      </section>
+    </main>
+
+    <footer>© papanda925 · 非公式の職場復帰支援フロー確認ツール</footer>
+  </div>
+
+<script>
+const data = {
+  1: {
+    title: "第1ステップ：病気休業開始・休業中のケア",
+    message: "いまは、まず療養に専念しながら、休業中に必要な情報と支援を受け取る段階です。復職日を急いで決める段階ではありません。",
+    now: ["休業に必要な事務手続き", "休業できる期間や会社の制度", "傷病手当金など利用できる制度", "困ったときの連絡・相談窓口", "勤務先の職場復帰支援の流れ"],
+    next: ["自分に復職の意思が出てきたら主治医へ相談する", "会社の復職手続き・必要書類を確認する"],
+    script: "休職中の職場復帰支援について、現在私はどの段階にあり、今後どのような手順で進むのか教えてください。"
+  },
+  2: {
+    title: "第2ステップ：主治医による職場復帰可能の判断",
+    message: "復職を考え始め、医学的に職場復帰が可能かを主治医と確認する段階です。主治医の「復職可能」だけで、すぐ復職が決まるわけではありません。",
+    now: ["復職したいという本人の意思", "主治医による復職可能性の判断", "勤務時間・業務内容など就業上の配慮についての主治医の意見"],
+    next: ["会社・産業医等が実際の仕事内容との適合性を確認する", "復職条件を具体化する第3ステップへ進む"],
+    script: "主治医と復職について相談しています。会社として次に必要な書類と、産業医面談など今後の手順を教えてください。"
+  },
+  3: {
+    title: "第3ステップ：復職可否の判断・職場復帰支援プランの作成",
+    message: "ここは『働けるか』だけでなく、『どの条件なら安全に働き続けられるか』を具体化する大切な段階です。",
+    now: ["業務内容・業務量", "勤務時間や段階的な就業上の配慮", "治療上必要な配慮", "配置転換・異動の必要性", "業務サポートの方法", "復職後のフォロー方法と見直し時期"],
+    next: ["本人・会社・産業保健スタッフ等で条件を確認する", "職場復帰支援プランを具体化し、最終決定につなげる"],
+    script: "復職の可否だけでなく、継続して勤務できる条件を確認したいです。業務量、勤務時間、配置・異動の必要性、復職後のフォロー方法を含めた職場復帰支援プランについて相談させてください。"
+  },
+  4: {
+    title: "第4ステップ：最終的な職場復帰の決定",
+    message: "第3ステップで整理した情報や配慮内容を踏まえ、会社が最終的な職場復帰を決定する段階です。",
+    now: ["復職日", "就業上の配慮や制限", "勤務内容・勤務時間", "復職後の面談やフォロー方法", "配慮内容を見直すタイミング"],
+    next: ["決定した条件を本人と会社で確認する", "復職後は第5ステップとして定期的に状態と職場環境を見直す"],
+    script: "復職にあたり、復職日、就業上の配慮、勤務内容、フォロー面談、配慮を見直す時期を確認したいです。"
+  },
+  5: {
+    title: "第5ステップ：職場復帰後のフォローアップ",
+    message: "復職したら終了ではありません。実際に働いてみた状態を確認し、必要なら支援プランや職場環境を見直す段階です。",
+    now: ["勤務状況・業務遂行状況", "症状の再燃・再発の有無", "治療状況", "就業上の配慮が機能しているか", "職場環境や業務上の負担", "支援プランの見直し"],
+    next: ["無理が出ていないか定期的に確認する", "必要な場合は勤務条件や職場環境を再調整する"],
+    script: "復職後の状態を踏まえて、現在の勤務条件や職場復帰支援プランが適切か確認し、必要であれば見直しを相談したいです。"
+  },
+  0: {
+    title: "いまの段階が分からないとき",
+    message: "流れが分からないこと自体が不安につながります。まず『どの段階まで進んでいるか』を会社に確認するところからで大丈夫です。",
+    now: ["休業中の手続きは完了しているか", "自分の復職意思を会社に伝える段階か", "主治医の復職可能判断が必要か", "産業医等との面談はいつか", "職場復帰支援プランを作る手順があるか"],
+    next: ["会社の人事労務・産業保健窓口に5ステップのどこかを確認する", "回答をメモして、次に必要なことを1つだけ整理する"],
+    script: "職場復帰までの流れが分からず不安があります。厚生労働省の職場復帰支援の5ステップでいうと、現在私はどの段階にあり、次に何をすればよいか教えてください。"
+  }
+};
+
+function render(step){
+  const d = data[step];
+  document.querySelectorAll(".step").forEach(el => el.classList.toggle("active", Number(el.dataset.step) === step));
+  const result = document.getElementById("result");
+  const badge = step === 0 ? "まず現在地を確認" : "いまの目安";
+  const nowItems = d.now.map(x => "<li>"+x+"</li>").join("");
+  const nextItems = d.next.map(x => "<li>"+x+"</li>").join("");
+  result.innerHTML = `
+    <span class="result-badge">${badge}</span>
+    <h3>${d.title}</h3>
+    <p class="message">${d.message}</p>
+    <div class="grid">
+      <div class="mini"><h4>この段階で確認すること</h4><ul>${nowItems}</ul></div>
+      <div class="mini"><h4>次につながること</h4><ul>${nextItems}</ul></div>
+    </div>
+    <div class="ask">
+      <h4>会社に確認するときの一言</h4>
+      <div class="script" id="scriptText">${d.script}</div>
+      <button class="btn secondary" id="copyBtn">この文をコピー</button><span class="copy-status" id="copyStatus"></span>
+    </div>
+    ${step === 3 ? '<div class="note"><strong>ポイント：</strong>厚生労働省の手引きでは、この段階で配置転換や異動の必要性、勤務制度変更の可否・必要性も検討項目に含まれています。</div>' : ''}
+  `;
+  result.classList.add("show");
+  document.getElementById("copyBtn").addEventListener("click", async () => {
+    try{
+      await navigator.clipboard.writeText(d.script);
+      document.getElementById("copyStatus").textContent = "コピーしました";
+    }catch(e){
+      document.getElementById("copyStatus").textContent = "選択してコピーしてください";
+    }
+  });
+  result.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+document.getElementById("judge").addEventListener("click", () => {
+  const checked = document.querySelector('input[name="state"]:checked');
+  if(!checked){
+    alert("一番近い状態を1つ選んでください。分からない場合は「どこにいるのか分からない」を選べます。");
+    return;
+  }
+  render(Number(checked.value));
+});
+
+document.getElementById("reset").addEventListener("click", () => {
+  document.querySelectorAll('input[name="state"]').forEach(x => x.checked = false);
+  document.querySelectorAll(".step").forEach(el => el.classList.remove("active"));
+  document.getElementById("result").classList.remove("show");
+});
+
+document.querySelectorAll(".step").forEach(el => {
+  el.addEventListener("click", () => render(Number(el.dataset.step)));
+});
+</script>
+</body>
+</html>
