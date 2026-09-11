@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>4択 解答チェックシート｜メンタルヘルス・マネジメント検定 自己学習</title>
+  <meta name="description" content="メンタルヘルス・マネジメント検定の市販問題集と組み合わせて使う、問題文を掲載しない4択解答チェックシート。スマホ・PC・印刷対応。">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://papanda925.github.io/mental-health-answer-sheet/">
+  <style>
+    :root{--bg:#f4f7fb;--surface:#fff;--text:#18212f;--muted:#667085;--line:#dfe5ec;--accent:#2563eb;--accent-soft:#eef5ff;--ok:#15803d;--ok-soft:#ecfdf3;--bad:#b42318;--bad-soft:#fff1f0;--warn:#9a6700;--warn-soft:#fff8df;--shadow:0 10px 30px rgba(31,41,55,.08)}
+    *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;background:var(--bg);color:var(--text);line-height:1.6} button,input,select,textarea{font:inherit} button{cursor:pointer} a{color:var(--accent)}
+    .wrap{width:min(1080px,calc(100% - 28px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.top{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{font-weight:800;text-decoration:none;color:var(--text)}.mini{font-size:.88rem;color:var(--muted)}
+    .hero{padding:34px 0 16px}.eyebrow{margin:0 0 6px;color:var(--accent);font-size:.8rem;font-weight:800;letter-spacing:.08em}.hero h1{margin:0;font-size:clamp(1.8rem,5vw,3.1rem);line-height:1.2}.lead{max-width:780px;margin:12px 0 0;color:var(--muted)}.notice{margin:18px 0 0;padding:12px 14px;border:1px solid #eedc9a;background:var(--warn-soft);border-radius:12px;font-size:.9rem}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:18px;margin:16px 0}.card h2,.card h3{margin-top:0}.settings{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:12px;align-items:end}.field label{display:block;font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:5px}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px 11px;color:var(--text)}
+    .btn{border:1px solid var(--line);background:#fff;color:var(--text);border-radius:11px;padding:10px 14px;font-weight:750}.btn:hover{border-color:#a8b6c8}.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}.btn.danger{color:var(--bad);background:var(--bad-soft);border-color:#ffd3cf}.btn.small{padding:7px 10px;font-size:.86rem}.actions{display:flex;gap:8px;flex-wrap:wrap}.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}.metric{border:1px solid var(--line);border-radius:13px;padding:11px 12px;background:#fbfcfe}.metric b{display:block;font-size:1.2rem}.metric span{font-size:.78rem;color:var(--muted)}
+    .modebar,.setbar,.filterbar{display:flex;gap:8px;flex-wrap:wrap}.modebar{margin:10px 0 14px}.tab,.setbtn,.filterbtn{border:1px solid var(--line);background:#fff;color:var(--text);border-radius:999px;padding:8px 12px;font-weight:700;font-size:.9rem}.tab.active,.setbtn.active,.filterbtn.active{background:var(--accent);border-color:var(--accent);color:#fff}.setbar{margin-top:8px}
+    .sheet-head{display:grid;grid-template-columns:56px minmax(260px,1fr) 96px;gap:10px;padding:0 10px 7px;font-size:.76rem;font-weight:800;color:var(--muted)}.rows{display:grid;gap:8px}.qrow{display:grid;grid-template-columns:56px minmax(260px,1fr) 96px;gap:10px;align-items:center;border:1px solid var(--line);border-radius:14px;background:#fff;padding:10px}.qrow.review{border-color:#f2c94c;background:#fffdf5}.qrow.correct{border-color:#a7e5ba;background:var(--ok-soft)}.qrow.wrong{border-color:#ffc9c2;background:var(--bad-soft)}.qno{font-weight:850;text-align:center}.choices{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.choice{min-height:42px;border:1px solid #cfd7e3;background:#fff;border-radius:10px;font-weight:850;font-size:1.03rem}.choice:hover{border-color:#7aa7ef}.choice.selected{background:var(--accent);border-color:var(--accent);color:#fff}.correct-mode .choice.selected{background:var(--ok);border-color:var(--ok)}.qtools{display:flex;align-items:center;justify-content:flex-end;gap:6px}.reviewbtn{width:42px;height:40px;border:1px solid var(--line);background:#fff;border-radius:10px;font-size:1.1rem}.reviewbtn.on{background:#fff4bd;border-color:#e6bd27}.judge{min-width:38px;text-align:center;font-weight:900}.judge.ok{color:var(--ok)}.judge.ng{color:var(--bad)}.judge.na{color:var(--muted)}
+    .legend{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:.82rem;margin:10px 0}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}.dot.blue{background:var(--accent)}.dot.yellow{background:#e6bd27}.dot.green{background:var(--ok)}.dot.red{background:var(--bad)}
+    .resultbox{display:none;margin-top:12px;padding:14px;border:1px solid var(--line);border-radius:12px;background:#fbfcfe}.resultbox.show{display:block}.scoreline{display:flex;gap:18px;flex-wrap:wrap;align-items:baseline}.scoreline strong{font-size:1.7rem}.muted{color:var(--muted)}
+    details{border-top:1px solid var(--line);margin-top:16px;padding-top:12px}summary{cursor:pointer;font-weight:800}.keyinput{margin-top:12px}.keyinput textarea{min-height:92px}.help{font-size:.86rem;color:var(--muted)}
+    footer{padding:26px 0 42px;color:var(--muted);font-size:.85rem}.hidden{display:none!important}
+    @media(max-width:760px){.settings{grid-template-columns:1fr 1fr}.settings .wide{grid-column:1/-1}.settings .apply{grid-column:1/-1}.summary{grid-template-columns:1fr 1fr}.sheet-head{display:none}.qrow{grid-template-columns:40px 1fr}.qtools{grid-column:2;justify-content:flex-start}.choices{gap:6px}.choice{min-height:46px}.top{padding:10px 0;align-items:flex-start}}
+    @media(max-width:420px){.wrap{width:min(100% - 16px,1080px)}.card{padding:12px;border-radius:14px}.qrow{padding:8px}.summary{grid-template-columns:1fr 1fr}.choice{font-size:1rem}}
+    @media print{body{background:#fff;color:#000}.topbar,.hero .notice,.actions,.modebar,.setbar,.filterbar,details,footer,.no-print{display:none!important}.wrap{width:100%;margin:0}.hero{padding:0 0 8px}.hero h1{font-size:19pt}.lead{font-size:9pt;margin:4px 0;color:#333}.card{box-shadow:none;border:0;padding:0;margin:0}.settings,.summary{display:none}.sheet-head{display:grid;grid-template-columns:40px 1fr 85px;font-size:8pt;padding:0 5px 4px}.rows{gap:3px}.qrow{grid-template-columns:40px 1fr 85px;break-inside:avoid;border-radius:0;border:1px solid #bbb;padding:4px 5px;min-height:29px;background:#fff!important}.qno{font-size:9pt}.choices{gap:4px}.choice{min-height:23px;padding:0;border:1px solid #999;border-radius:50%;font-size:9pt;background:#fff!important;color:#000!important}.choice.selected{font-weight:900;border:2px solid #000}.qtools{gap:2px}.reviewbtn{width:28px;height:24px;padding:0;border:0;background:#fff!important}.judge{font-size:9pt}.resultbox{display:none!important}}
+  </style>
+</head>
+<body>
+<header class="topbar"><div class="wrap top"><a class="brand" href="/">papanda925</a><span class="mini">自己学習用・問題文なし</span></div></header>
+<main class="wrap">
+  <section class="hero">
+    <p class="eyebrow">SELF-STUDY ANSWER SHEET</p>
+    <h1>4択 解答チェックシート</h1>
+    <p class="lead">手元のメンタルヘルス・マネジメント検定の問題集を開きながら、問番号ごとに 1〜4 をタップして記録。あとから正答を登録して、採点・見直しができます。</p>
+    <div class="notice"><strong>問題文は掲載していません。</strong> 市販の過去問題集・公式教材などの問題文や解説を転載しない、解答記録専用の自己学習ツールです。入力内容はこのブラウザ内に保存されます。</div>
+  </section>
+
+  <section class="card">
+    <div class="settings">
+      <div class="field wide"><label for="titleInput">学習セット名</label><input id="titleInput" value="2025年度 過去問題集" maxlength="60"></div>
+      <div class="field"><label for="countInput">問題数</label><input id="countInput" type="number" min="1" max="300" value="50"></div>
+      <div class="field"><label for="sizeSelect">1セット</label><select id="sizeSelect"><option value="10">10問</option><option value="15">15問</option><option value="20" selected>20問</option></select></div>
+      <button class="btn primary apply" id="applyBtn">設定を反映</button>
+    </div>
+    <div class="summary">
+      <div class="metric"><b id="answeredMetric">0 / 50</b><span>回答済み</span></div>
+      <div class="metric"><b id="reviewMetric">0</b><span>見直し</span></div>
+      <div class="metric"><b id="correctMetric">—</b><span>正解数 / 採点済み</span></div>
+      <div class="metric"><b id="rateMetric">—</b><span>正答率</span></div>
+    </div>
+    <div class="actions" style="margin-top:12px">
+      <button class="btn small" id="printBtn">このセットを印刷</button>
+      <button class="btn small" id="exportBtn">バックアップ保存</button>
+      <button class="btn small" id="importBtn">バックアップ読込</button>
+      <input id="importFile" type="file" accept="application/json" hidden>
+      <button class="btn small danger" id="resetBtn">全データを初期化</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 id="sheetTitle">2025年度 過去問題集</h2>
+    <div class="modebar no-print" aria-label="入力モード">
+      <button class="tab active" data-mode="answer">自分の解答</button>
+      <button class="tab" data-mode="correct">正答を登録</button>
+      <button class="tab" data-mode="result">採点・見直し</button>
+    </div>
+    <div class="setbar no-print" id="setbar"></div>
+    <div class="filterbar no-print hidden" id="filterbar" style="margin-top:12px">
+      <button class="filterbtn active" data-filter="all">すべて</button>
+      <button class="filterbtn" data-filter="wrong">誤答</button>
+      <button class="filterbtn" data-filter="review">★見直し</button>
+      <button class="filterbtn" data-filter="unanswered">未回答</button>
+    </div>
+    <div class="resultbox" id="resultbox"></div>
+    <div class="legend"><span><i class="dot blue"></i>選択中</span><span><i class="dot yellow"></i>★見直し</span><span><i class="dot green"></i>正解</span><span><i class="dot red"></i>誤答</span></div>
+    <div class="sheet-head"><span>問</span><span>選択肢</span><span>見直し / 判定</span></div>
+    <div class="rows" id="rows"></div>
+
+    <details class="no-print" id="bulkDetails">
+      <summary>正答をまとめて登録する</summary>
+      <div class="keyinput field">
+        <label for="bulkKey">1問目から順に 1〜4 を空白・カンマ・改行で入力</label>
+        <textarea id="bulkKey" placeholder="例：1 3 2 4 4 1 2 3 4 2 ..."></textarea>
+        <p class="help">入力した数だけ先頭から正答を登録します。問題文や解説は入力しません。</p>
+        <button class="btn primary" id="bulkApply">正答を登録</button>
+      </div>
+    </details>
+  </section>
+</main>
+<footer><div class="wrap">非公式の自己学習ツールです。大阪商工会議所および検定主催者とは関係ありません。ブラウザの保存領域を消去すると記録も消えるため、必要に応じてバックアップしてください。</div></footer>
+<script>
+(() => {
+  const KEY='papanda_mhm_answer_sheet_v1';
+  const blankState=()=>({title:'2025年度 過去問題集',count:50,setSize:20,currentSet:0,mode:'answer',filter:'all',answers:{},correct:{},review:{}});
+  let state=load();
+  const $=id=>document.getElementById(id);
+  const esc=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  function load(){try{const x=JSON.parse(localStorage.getItem(KEY));return {...blankState(),...(x||{})}}catch{return blankState()}}
+  function save(){localStorage.setItem(KEY,JSON.stringify(state));}
+  function normalize(){state.count=Math.min(300,Math.max(1,Number(state.count)||50));state.setSize=[10,15,20].includes(Number(state.setSize))?Number(state.setSize):20;const maxSet=Math.max(0,Math.ceil(state.count/state.setSize)-1);state.currentSet=Math.min(maxSet,Math.max(0,Number(state.currentSet)||0));}
+  function currentRange(){const start=state.currentSet*state.setSize+1;return [start,Math.min(state.count,start+state.setSize-1)]}
+  function judged(n){const a=state.answers[n],c=state.correct[n];if(!a||!c)return null;return Number(a)===Number(c)}
+  function stats(){let answered=0,review=0,graded=0,ok=0;for(let n=1;n<=state.count;n++){if(state.answers[n])answered++;if(state.review[n])review++;const j=judged(n);if(j!==null){graded++;if(j)ok++;}}return{answered,review,graded,ok,rate:graded?Math.round(ok/graded*100):null}}
+  function hydrateControls(){normalize();$('titleInput').value=state.title;$('countInput').value=state.count;$('sizeSelect').value=state.setSize;$('sheetTitle').textContent=state.title||'4択 解答チェックシート';document.title=(state.title||'4択 解答チェックシート')+'｜解答チェックシート';}
+  function render(){normalize();hydrateControls();renderTabs();renderSets();renderMetrics();renderRows();save();}
+  function renderTabs(){document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.mode===state.mode));$('filterbar').classList.toggle('hidden',state.mode!=='result');$('bulkDetails').open=false;$('bulkDetails').classList.toggle('hidden',state.mode!=='correct');document.querySelectorAll('.filterbtn').forEach(b=>b.classList.toggle('active',b.dataset.filter===state.filter));}
+  function renderSets(){const total=Math.ceil(state.count/state.setSize);$('setbar').innerHTML=Array.from({length:total},(_,i)=>{const s=i*state.setSize+1,e=Math.min(state.count,s+state.setSize-1);return `<button class="setbtn ${i===state.currentSet?'active':''}" data-set="${i}">${s}–${e}</button>`}).join('');$('setbar').querySelectorAll('.setbtn').forEach(b=>b.onclick=()=>{state.currentSet=Number(b.dataset.set);render()});}
+  function renderMetrics(){const s=stats();$('answeredMetric').textContent=`${s.answered} / ${state.count}`;$('reviewMetric').textContent=s.review;$('correctMetric').textContent=s.graded?`${s.ok} / ${s.graded}`:'—';$('rateMetric').textContent=s.rate===null?'—':`${s.rate}%`;}
+  function includeByFilter(n){if(state.mode!=='result'||state.filter==='all')return true;if(state.filter==='wrong')return judged(n)===false;if(state.filter==='review')return !!state.review[n];if(state.filter==='unanswered')return !state.answers[n];return true}
+  function renderRows(){const [start,end]=currentRange();let html='';let shown=0;for(let n=start;n<=end;n++){if(!includeByFilter(n))continue;shown++;const selected=state.mode==='correct'?state.correct[n]:state.answers[n];const j=judged(n);let cls='qrow';if(state.review[n])cls+=' review';if(state.mode==='result'&&j===true)cls+=' correct';if(state.mode==='result'&&j===false)cls+=' wrong';let buttons='';for(let c=1;c<=4;c++)buttons+=`<button class="choice ${Number(selected)===c?'selected':''}" data-q="${n}" data-choice="${c}" aria-label="問${n} 選択肢${c}">${c}</button>`;let judge='';if(state.mode==='result'){judge=j===true?'<span class="judge ok">○</span>':j===false?'<span class="judge ng">×</span>':'<span class="judge na">—</span>';}html+=`<div class="${cls} ${state.mode==='correct'?'correct-mode':''}"><div class="qno">${n}</div><div class="choices">${buttons}</div><div class="qtools"><button class="reviewbtn ${state.review[n]?'on':''}" data-review="${n}" title="見直し">★</button>${judge}</div></div>`}
+    $('rows').innerHTML=shown?html:'<p class="muted">この条件に該当する問題はありません。</p>';
+    $('rows').querySelectorAll('.choice').forEach(b=>b.onclick=()=>{const n=b.dataset.q,c=Number(b.dataset.choice);if(state.mode==='result')return;if(state.mode==='correct'){state.correct[n]=Number(state.correct[n])===c?null:c;if(!state.correct[n])delete state.correct[n]}else{state.answers[n]=Number(state.answers[n])===c?null:c;if(!state.answers[n])delete state.answers[n]}render()});
+    $('rows').querySelectorAll('[data-review]').forEach(b=>b.onclick=()=>{const n=b.dataset.review;state.review[n]=!state.review[n];if(!state.review[n])delete state.review[n];render()});
+    renderResultBox(start,end);
+  }
+  function renderResultBox(start,end){const box=$('resultbox');if(state.mode!=='result'){box.classList.remove('show');box.innerHTML='';return}let answered=0,graded=0,ok=0,wrong=0,review=0;for(let n=start;n<=end;n++){if(state.answers[n])answered++;if(state.review[n])review++;const j=judged(n);if(j!==null){graded++;if(j)ok++;else wrong++;}}const rate=graded?Math.round(ok/graded*100):null;box.innerHTML=`<div class="scoreline"><strong>${rate===null?'未採点':rate+'%'}</strong><span>正解 ${ok} / 採点済み ${graded}</span><span>誤答 ${wrong}</span><span>回答 ${answered}/${end-start+1}</span><span>★ ${review}</span></div><div class="help">正答未登録の問題は採点対象外です。「正答を登録」で入力できます。</div>`;box.classList.add('show');}
+  document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{state.mode=b.dataset.mode;state.filter='all';render()});
+  document.querySelectorAll('.filterbtn').forEach(b=>b.onclick=()=>{state.filter=b.dataset.filter;render()});
+  $('applyBtn').onclick=()=>{state.title=$('titleInput').value.trim()||'4択 解答チェックシート';state.count=Number($('countInput').value);state.setSize=Number($('sizeSelect').value);state.currentSet=0;render()};
+  $('printBtn').onclick=()=>window.print();
+  $('bulkApply').onclick=()=>{const vals=$('bulkKey').value.split(/[\s,、]+/).filter(Boolean).map(Number);const bad=vals.find(v=>![1,2,3,4].includes(v));if(bad){alert('正答は 1〜4 だけ入力してください。');return}vals.slice(0,state.count).forEach((v,i)=>state.correct[i+1]=v);$('bulkKey').value='';render();alert(`${Math.min(vals.length,state.count)}問分の正答を登録しました。`)};
+  $('exportBtn').onclick=()=>{const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='mental-health-answer-sheet-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
+  $('importBtn').onclick=()=>$('importFile').click();
+  $('importFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const x=JSON.parse(await f.text());state={...blankState(),...x};normalize();render();alert('バックアップを読み込みました。')}catch{alert('バックアップファイルを読み込めませんでした。')}e.target.value=''};
+  $('resetBtn').onclick=()=>{if(confirm('回答・正答・見直しをすべて初期化しますか？')){state=blankState();save();render()}};
+  render();
+})();
+</script>
+</body>
+</html>
