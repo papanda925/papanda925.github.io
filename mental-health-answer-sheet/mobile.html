@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>スマホ学習モード｜4択 解答チェックシート</title>
+  <meta name="description" content="4択解答チェックシートのスマホ学習モード。ストップウォッチと画面オン維持に対応。">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://papanda925.github.io/mental-health-answer-sheet/mobile.html">
+  <style>
+    :root{--bg:#f4f7fb;--surface:#fff;--text:#18212f;--muted:#667085;--line:#dfe5ec;--accent:#2563eb;--ok:#15803d;--warn:#9a6700;--bad:#b42318;--shadow:0 6px 20px rgba(31,41,55,.12)}
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif}
+    body{min-height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+    button{font:inherit;cursor:pointer}
+    .tools{z-index:10;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:max(8px,env(safe-area-inset-top)) 10px 9px}
+    .topline{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px}
+    .brand{font-weight:800;font-size:.92rem}.sub{color:var(--muted);font-size:.74rem}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .tool{border:1px solid var(--line);border-radius:13px;background:#fff;padding:9px}
+    .tool-title{font-size:.72rem;font-weight:800;color:var(--muted);margin-bottom:4px}
+    .timer{font-variant-numeric:tabular-nums;font-size:1.55rem;line-height:1;font-weight:900;letter-spacing:.02em;margin-bottom:7px}
+    .row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+    .btn{border:1px solid var(--line);background:#fff;color:var(--text);border-radius:9px;padding:7px 9px;font-size:.78rem;font-weight:800;min-height:34px}
+    .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+    .btn.on{background:#ecfdf3;border-color:#86d6a0;color:var(--ok)}
+    .btn:disabled{opacity:.5;cursor:not-allowed}
+    .status{font-size:.72rem;color:var(--muted);margin-top:5px;min-height:1.2em}
+    .status.ok{color:var(--ok)}.status.warn{color:var(--warn)}.status.bad{color:var(--bad)}
+    .frame-wrap{flex:1;min-height:0;background:#fff}
+    iframe{display:block;width:100%;height:100%;border:0;background:#fff}
+    @media(max-width:390px){.timer{font-size:1.35rem}.btn{padding:6px 7px;font-size:.73rem}.tool{padding:8px}.grid{gap:6px}}
+    @media(min-width:760px){.tools{padding-left:max(18px,calc((100% - 1080px)/2));padding-right:max(18px,calc((100% - 1080px)/2))}.grid{grid-template-columns:1fr 1fr}.timer{font-size:1.7rem}}
+  </style>
+</head>
+<body>
+  <section class="tools" aria-label="学習ツール">
+    <div class="topline">
+      <div><span class="brand">スマホ学習モード</span> <span class="sub">問題文なし・自己学習用</span></div>
+      <button class="btn" id="hideBtn" type="button">ツールを小さく</button>
+    </div>
+    <div class="grid" id="toolGrid">
+      <div class="tool">
+        <div class="tool-title">ストップウォッチ</div>
+        <div class="timer" id="timer">00:00:00</div>
+        <div class="row">
+          <button class="btn primary" id="startBtn" type="button">開始</button>
+          <button class="btn" id="pauseBtn" type="button">一時停止</button>
+          <button class="btn" id="resetBtn" type="button">リセット</button>
+        </div>
+      </div>
+      <div class="tool">
+        <div class="tool-title">画面オン維持</div>
+        <div class="row">
+          <button class="btn" id="wakeBtn" type="button">ONにする</button>
+        </div>
+        <div class="status" id="wakeStatus">確認中…</div>
+      </div>
+    </div>
+  </section>
+  <div class="frame-wrap"><iframe src="./" title="4択 解答チェックシート"></iframe></div>
+
+<script>
+(() => {
+  const timerEl=document.getElementById('timer');
+  const startBtn=document.getElementById('startBtn');
+  const pauseBtn=document.getElementById('pauseBtn');
+  const resetBtn=document.getElementById('resetBtn');
+  const hideBtn=document.getElementById('hideBtn');
+  const toolGrid=document.getElementById('toolGrid');
+  const wakeBtn=document.getElementById('wakeBtn');
+  const wakeStatus=document.getElementById('wakeStatus');
+
+  let elapsed=0;
+  let startedAt=null;
+  let raf=null;
+
+  const format=(ms)=>{
+    const total=Math.floor(ms/1000);
+    const h=Math.floor(total/3600);
+    const m=Math.floor((total%3600)/60);
+    const s=total%60;
+    return [h,m,s].map(v=>String(v).padStart(2,'0')).join(':');
+  };
+  const current=()=>elapsed+(startedAt===null?0:Date.now()-startedAt);
+  const paint=()=>{
+    timerEl.textContent=format(current());
+    if(startedAt!==null) raf=requestAnimationFrame(paint);
+  };
+  const start=()=>{
+    if(startedAt!==null) return;
+    startedAt=Date.now();
+    startBtn.textContent='計測中';
+    startBtn.disabled=true;
+    paint();
+  };
+  const pause=()=>{
+    if(startedAt===null) return;
+    elapsed+=Date.now()-startedAt;
+    startedAt=null;
+    if(raf) cancelAnimationFrame(raf);
+    timerEl.textContent=format(elapsed);
+    startBtn.textContent='再開';
+    startBtn.disabled=false;
+  };
+  const reset=()=>{
+    elapsed=0;
+    startedAt=null;
+    if(raf) cancelAnimationFrame(raf);
+    timerEl.textContent='00:00:00';
+    startBtn.textContent='開始';
+    startBtn.disabled=false;
+  };
+  startBtn.addEventListener('click',start);
+  pauseBtn.addEventListener('click',pause);
+  resetBtn.addEventListener('click',reset);
+
+  let collapsed=false;
+  hideBtn.addEventListener('click',()=>{
+    collapsed=!collapsed;
+    toolGrid.hidden=collapsed;
+    hideBtn.textContent=collapsed?'ツールを表示':'ツールを小さく';
+  });
+
+  let wakeLock=null;
+  let wakeWanted=false;
+  const supported='wakeLock' in navigator;
+
+  const setWakeUi=(state,msg)=>{
+    wakeStatus.className='status'+(state?' '+state:'');
+    wakeStatus.textContent=msg;
+    wakeBtn.classList.toggle('on',!!wakeLock && !wakeLock.released);
+    wakeBtn.textContent=(wakeWanted && wakeLock && !wakeLock.released)?'ON：画面を維持':'ONにする';
+  };
+
+  const requestWake=async()=>{
+    if(!supported){setWakeUi('warn','このブラウザは画面オン維持に未対応です');return;}
+    try{
+      wakeLock=await navigator.wakeLock.request('screen');
+      wakeWanted=true;
+      setWakeUi('ok','画面オン維持：有効');
+      wakeLock.addEventListener('release',()=>{
+        wakeLock=null;
+        if(wakeWanted) setWakeUi('warn','一時解除されました。画面復帰時に再取得します');
+        else setWakeUi('','画面オン維持：OFF');
+      });
+    }catch(err){
+      wakeLock=null;
+      setWakeUi('bad','有効化できませんでした（省電力・電池残量・ブラウザ設定等を確認）');
+    }
+  };
+
+  const releaseWake=async()=>{
+    wakeWanted=false;
+    try{if(wakeLock && !wakeLock.released) await wakeLock.release();}catch{}
+    wakeLock=null;
+    setWakeUi('','画面オン維持：OFF');
+  };
+
+  wakeBtn.addEventListener('click',()=>{
+    if(wakeWanted) releaseWake(); else requestWake();
+  });
+
+  document.addEventListener('visibilitychange',async()=>{
+    if(document.visibilityState==='visible' && wakeWanted && (!wakeLock || wakeLock.released)) await requestWake();
+  });
+
+  window.addEventListener('pagehide',()=>{
+    try{if(wakeLock && !wakeLock.released) wakeLock.release();}catch{}
+  });
+
+  if(supported) setWakeUi('','画面オン維持：OFF');
+  else {wakeBtn.disabled=true;setWakeUi('warn','このブラウザは画面オン維持に未対応です');}
+})();
+</script>
+</body>
+</html>
