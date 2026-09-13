@@ -39,7 +39,7 @@
     <div class="settings">
       <div class="field wide"><label for="titleInput">学習セット名</label><input id="titleInput" value="2025年度 過去問題集" maxlength="60"></div>
       <div class="field"><label for="countInput">問題数</label><input id="countInput" type="number" min="1" max="300" value="50"></div>
-      <div class="field"><label for="sizeSelect">1セット</label><select id="sizeSelect"><option value="10">10問</option><option value="15">15問</option><option value="20" selected>20問</option></select></div>
+      <div class="field"><label for="sizeSelect">1セット</label><select id="sizeSelect"><option value="10">10問</option><option value="15">15問</option><option value="20" selected>20問</option><option value="25">25問</option><option value="30">30問</option><option value="40">40問</option><option value="50">50問</option></select></div>
       <button class="btn primary apply" id="applyBtn">設定を反映</button>
     </div>
     <div class="summary">
@@ -97,7 +97,7 @@
   const esc=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
   function load(){try{const x=JSON.parse(localStorage.getItem(KEY));return {...blankState(),...(x||{})}}catch{return blankState()}}
   function save(){localStorage.setItem(KEY,JSON.stringify(state));}
-  function normalize(){state.count=Math.min(300,Math.max(1,Number(state.count)||50));state.setSize=[10,15,20].includes(Number(state.setSize))?Number(state.setSize):20;const maxSet=Math.max(0,Math.ceil(state.count/state.setSize)-1);state.currentSet=Math.min(maxSet,Math.max(0,Number(state.currentSet)||0));}
+  function normalize(){state.count=Math.min(300,Math.max(1,Number(state.count)||50));state.setSize=[10,15,20,25,30,40,50].includes(Number(state.setSize))?Number(state.setSize):20;const maxSet=Math.max(0,Math.ceil(state.count/state.setSize)-1);state.currentSet=Math.min(maxSet,Math.max(0,Number(state.currentSet)||0));}
   function currentRange(){const start=state.currentSet*state.setSize+1;return [start,Math.min(state.count,start+state.setSize-1)]}
   function judged(n){const a=state.answers[n],c=state.correct[n];if(!a||!c)return null;return Number(a)===Number(c)}
   function stats(){let answered=0,review=0,graded=0,ok=0;for(let n=1;n<=state.count;n++){if(state.answers[n])answered++;if(state.review[n])review++;const j=judged(n);if(j!==null){graded++;if(j)ok++;}}return{answered,review,graded,ok,rate:graded?Math.round(ok/graded*100):null}}
