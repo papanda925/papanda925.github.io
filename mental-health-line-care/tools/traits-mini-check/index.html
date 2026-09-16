@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>特性ふりかえりミニツール｜ASD・ADHDの基礎学習</title>
+<meta name="description" content="ASD・ADHDを診断するのではなく、仕事や日常でどんな場面が負荷になりやすいかを短時間で振り返る分岐型ミニツール。">
+<style>
+:root{--bg:#f7f8fc;--card:#fff;--text:#1f2937;--muted:#667085;--line:#e5e7eb;--blue:#2563eb;--blue2:#eff6ff;--green:#15803d;--green2:#f0fdf4;--amber:#92400e;--amber2:#fffbeb;--shadow:0 14px 35px rgba(15,23,42,.08)}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;background:var(--bg);color:var(--text);line-height:1.7}.wrap{width:min(760px,calc(100% - 28px));margin:auto}header{padding:18px 0}.brand{font-weight:800;text-decoration:none;color:var(--text)}main{padding:18px 0 56px}.hero{text-align:center;padding:22px 0}.hero .icon{font-size:3rem}.hero h1{font-size:clamp(1.8rem,6vw,2.7rem);margin:.3rem 0}.hero p{color:var(--muted);margin:.4rem auto;max-width:640px}.notice{background:var(--amber2);border:1px solid #f4d7a1;border-radius:14px;padding:13px 15px;margin:18px 0;text-align:left}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:var(--shadow)}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.choice{appearance:none;border:1px solid var(--line);background:#fff;border-radius:16px;padding:18px;text-align:left;cursor:pointer;font:inherit;min-height:125px;transition:.15s}.choice:hover,.choice:focus{border-color:var(--blue);transform:translateY(-1px);outline:none}.choice .emoji{font-size:2rem;display:block}.choice strong{display:block;margin-top:5px}.choice small{color:var(--muted)}.question{font-size:1.25rem;font-weight:800;margin:0 0 14px}.answers{display:grid;gap:10px}.answer{border:1px solid var(--line);border-radius:13px;padding:13px;background:#fff;cursor:pointer;font:inherit;text-align:left}.answer:hover,.answer:focus{background:var(--blue2);border-color:#bfdbfe;outline:none}.progress{height:7px;background:#e5e7eb;border-radius:99px;overflow:hidden;margin:0 0 18px}.progress span{display:block;height:100%;background:var(--blue);transition:.2s}.result h2{margin-top:0}.resultBox{background:var(--green2);border:1px solid #bbf7d0;border-radius:14px;padding:15px}.tips{margin:14px 0;padding-left:1.2rem}.tips li{margin:6px 0}.buttons{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.btn{border:0;border-radius:11px;padding:10px 14px;font:inherit;font-weight:750;cursor:pointer;background:var(--blue);color:#fff;text-decoration:none}.btn.sub{background:#eef2f7;color:var(--text)}.source{margin-top:26px;font-size:.92rem;color:var(--muted)}.source a{color:var(--blue)}.hidden{display:none}@media(max-width:600px){.grid{grid-template-columns:1fr}.choice{min-height:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="brand" href="/mental-health-line-care/chapter-02/">← 第2章 学習ノート</a></header>
+<main>
+<section class="hero">
+<div class="icon">🧩</div>
+<h1>特性ふりかえりミニツール</h1>
+<p>長いチェックリストではなく、気になる場面を1つ選び、2〜3問だけ答えて「どんな工夫が合いそうか」を整理します。</p>
+</section>
+<div class="notice"><strong>これは診断・スクリーニングではありません。</strong> ASDやADHDの有無・確率は判定しません。似た困りごとは性格、疲労、環境、経験などでも起こります。医療上の判断が必要な場合は専門家へ相談してください。回答は保存・送信しません。</div>
+
+<section id="start" class="card">
+<p class="question">まず、今いちばん気になる場面は？</p>
+<div class="grid">
+<button class="choice" data-domain="communication"><span class="emoji">💬</span><strong>曖昧な指示・言葉</strong><small>「いい感じに」「適当に」が分かりにくい</small></button>
+<button class="choice" data-domain="change"><span class="emoji">🔄</span><strong>予定変更・刺激</strong><small>急な変更や音・人混みで消耗する</small></button>
+<button class="choice" data-domain="attention"><span class="emoji">🗂️</span><strong>段取り・注意</strong><small>整理、忘れ物、時間配分で困る</small></button>
+<button class="choice" data-domain="social"><span class="emoji">🤝</span><strong>人との距離・会話</strong><small>近づき方、雑談、暗黙の了解が難しい</small></button>
+</div>
+</section>
+
+<section id="quiz" class="card hidden" aria-live="polite">
+<div class="progress"><span id="bar" style="width:33%"></span></div>
+<p id="question" class="question"></p>
+<div id="answers" class="answers"></div>
+</section>
+
+<section id="result" class="card result hidden" aria-live="polite">
+<h2 id="resultTitle"></h2>
+<div id="resultText" class="resultBox"></div>
+<ul id="tips" class="tips"></ul>
+<div class="buttons"><button class="btn" id="again">別の場面も見る</button><a class="btn sub" href="/mental-health-line-care/chapter-02/">第2章へ戻る</a></div>
+</section>
+
+<div class="source">
+<p><strong>参考：</strong>厚生労働省の発達障害に関する資料を参考に、診断項目ではなく「困りやすい場面」と「環境調整」の観点だけを一般化しています。</p>
+<p><a href="https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyou/shougaishakoyou/shisaku/jigyounushi/e-learning/hattatsu/characteristic.html" target="_blank" rel="noopener">厚生労働省：発達障害の特性（代表例）</a><br><a href="https://kokoro.mhlw.go.jp/glossaries/word-1647/" target="_blank" rel="noopener">こころの耳：ADHD</a></p>
+</div>
+</main>
+</div>
+<script>
+const flows={
+ communication:{title:'言葉の明確さが負荷を左右するかも',qs:[
+  ['「これ、いい感じに直して」と言われると？',['目的・完成形を確認したくなる','だいたい察して進められる']],
+  ['口頭だけより、箇条書きや例がある方が？',['かなり楽','あまり変わらない']],
+  ['比喩や遠回しな言い方より？',['直接・具体的な表現が楽','どちらでも大丈夫']]],
+ tips:['依頼を「目的・期限・完成例」に分けてもらう','口頭指示は短いメモに変換する','曖昧さを感じたら「AとBならどちらですか？」と選択肢で確認する']},
+ change:{title:'変化や刺激の予告があると楽かも',qs:[
+  ['急な予定変更が入ると？',['頭の切替に時間がかかる','割とすぐ切り替えられる']],
+  ['騒音・照明・人混みで？',['集中力や体力をかなり使う','あまり影響しない']],
+  ['予定が見える状態だと？',['安心して動きやすい','あまり変わらない']]],
+ tips:['変更は可能なら早めに共有してもらう','予定を見える化する','集中作業では静かな場所やイヤーマフ等、環境を調整する']},
+ attention:{title:'段取りを外部化すると楽かも',qs:[
+  ['複数の仕事が同時に来ると？',['優先順位が分からなくなりやすい','頭の中で整理しやすい']],
+  ['締切や持ち物は？',['見える場所にないと抜けやすい','だいたい覚えていられる']],
+  ['長い作業では？',['途中で別のことに注意が移りやすい','比較的続けやすい']]],
+ tips:['タスクは頭の中ではなく一覧に出す','締切を「次にやる1個」に分解する','通知を減らし、短い集中時間＋休憩で区切る']},
+ social:{title:'対人ルールを明示すると楽かも',qs:[
+  ['初対面や職場の雑談では？',['どこまで話すか迷うことが多い','自然に調整できることが多い']],
+  ['相手の「察してほしい」に対して？',['言葉にしてもらった方が分かりやすい','表情や雰囲気で分かることが多い']],
+  ['親しさに応じた距離感は？',['近すぎ・遠すぎと言われることがある','あまり困らない']]],
+ tips:['重要なことは暗黙の了解ではなく言葉で確認する','困った場面を「誰と・どこで・何が曖昧だったか」で記録する','信頼できる人から具体的なフィードバックをもらう']}
+};
+let domain=null,step=0,answers=[];
+const start=document.getElementById('start'),quiz=document.getElementById('quiz'),result=document.getElementById('result');
+function showQuestion(){const f=flows[domain],q=f.qs[step];document.getElementById('question').textContent=q[0];document.getElementById('bar').style.width=((step+1)/f.qs.length*100)+'%';const box=document.getElementById('answers');box.innerHTML='';q[1].forEach((txt,i)=>{const b=document.createElement('button');b.className='answer';b.textContent=txt;b.onclick=()=>{answers.push(i===0?1:0);step++;step<f.qs.length?showQuestion():showResult();};box.appendChild(b);});}
+function showResult(){quiz.classList.add('hidden');result.classList.remove('hidden');const f=flows[domain],score=answers.reduce((a,b)=>a+b,0);document.getElementById('resultTitle').textContent=f.title;document.getElementById('resultText').innerHTML=score>=2?'この場面では、<strong>環境や伝え方を少し調整すると負荷が下がる可能性</strong>がありそうです。これは診断名を意味しません。':'今回の3問では強い困りごとは目立ちませんでした。ただし、場面や疲労によって変わるので、必要なら別の分野も見てみてください。';const ul=document.getElementById('tips');ul.innerHTML='';f.tips.forEach(t=>{const li=document.createElement('li');li.textContent=t;ul.appendChild(li);});}
+document.querySelectorAll('[data-domain]').forEach(b=>b.onclick=()=>{domain=b.dataset.domain;step=0;answers=[];start.classList.add('hidden');result.classList.add('hidden');quiz.classList.remove('hidden');showQuestion();});
+document.getElementById('again').onclick=()=>{domain=null;step=0;answers=[];result.classList.add('hidden');quiz.classList.add('hidden');start.classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'});};
+</script>
+</body>
+</html>
