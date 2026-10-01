@@ -16,6 +16,7 @@
       <a class="brand" href="/">papanda925</a>
       <nav class="navlinks" aria-label="サイト内ナビゲーション">
         <a href="#daily">今日の言葉</a>
+        <a href="#updates">更新履歴</a>
         <a href="#research">研究ログ</a>
         <a href="#principles">原則</a>
         <a href="#architecture">構成</a>
@@ -40,6 +41,13 @@
         <span class="chip">Versioned Scripture</span>
         <span class="chip">Tokudo / 得度</span>
       </div>
+      <div class="hero-actions" aria-label="主要リンク">
+        <a class="button primary" href="#research">最新の研究を見る</a>
+        <a class="button" href="#updates">更新履歴を見る</a>
+        <a class="button" href="./data.json">研究データを見る</a>
+      </div>
+      <p class="version-line"><span id="hero-updated">更新情報を読み込み中…</span></p>
+      <p class="data-status" id="data-status" role="status" aria-live="polite"></p>
     </section>
 
     <section class="section wrap" id="daily">
@@ -64,13 +72,24 @@
       </div>
     </section>
 
+    <section class="section wrap" id="updates">
+      <div class="section-head">
+        <div>
+          <p class="kicker">VERSION HISTORY</p>
+          <h2>このサイトの更新</h2>
+        </div>
+        <p class="section-note">研究内容だけでなく、操作性や構成の改善も履歴として残します。見た目だけのボタンは置かず、押せるものには必ず動作を持たせます。</p>
+      </div>
+      <div class="grid" id="updates-grid"></div>
+    </section>
+
     <section class="section wrap" id="research">
       <div class="section-head">
         <div>
           <p class="kicker">RESEARCH LOG</p>
           <h2>比較研究の記録</h2>
         </div>
-        <p class="section-note">既存宗教を単純化して優劣付けせず、一次資料・研究・解釈を分けながら少しずつ積み上げます。</p>
+        <p class="section-note">既存宗教を単純化して優劣付けせず、一次資料・研究・解釈を分けながら少しずつ積み上げます。各項目はクリックすると概要を展開します。</p>
       </div>
       <div class="grid" id="research-grid"></div>
     </section>
@@ -92,7 +111,7 @@
           <p class="kicker">PHILOSOPHY CYCLE</p>
           <h2>思想を行動に変える循環</h2>
         </div>
-        <p class="section-note">価値を置くだけで終わらず、実践・反省・修復・改訂・記憶までを一つの循環として扱います。</p>
+        <p class="section-note">価値を置くだけで終わらず、実践・反省・修復・改訂・記憶・継承までを一つの循環として扱います。</p>
       </div>
       <div class="cycle" id="cycle"></div>
     </section>
@@ -103,18 +122,18 @@
           <p class="kicker">GITHUB AS A PHILOSOPHY PLATFORM</p>
           <h2>バージョン管理された経典</h2>
         </div>
-        <p class="section-note">経典＝Markdown、論点＝Issues、改訂＝Pull Request、派生思想＝Fork、思想史＝Git History、変更理由＝CHANGELOG という形を目指します。</p>
+        <p class="section-note">各カードをクリックすると役割を展開します。経典＝Markdown、論点＝Issues、改訂＝Pull Request、派生思想＝Fork、思想史＝Git History、変更理由＝CHANGELOG という形を育てます。</p>
       </div>
       <div class="arch">
-        <article class="card"><code>scripture/</code><h3>経典</h3><p>採用された世界観・原則・短い章を置く。絶対不変ではなく、版を持つ。</p></article>
-        <article class="card"><code>principles/</code><h3>原則</h3><p>Values、Boundaries、Behavior など、判断の上位ルールを整理する。</p></article>
-        <article class="card"><code>precepts/</code><h3>戒</h3><p>何をする／しないかを、理由と上位原則に結びつけて記述する。</p></article>
-        <article class="card"><code>practices/</code><h3>実践</h3><p>Reflection、Repair、Daily Review など、知識を行動へ変える方法。</p></article>
-        <article class="card"><code>tokudo/</code><h3>得度</h3><p>暗記ではなく、矛盾・不確実性・停止要求などのケースで原則を説明できるかを評価する。</p></article>
-        <article class="card"><code>casebook/</code><h3>ケース集</h3><p>嘘、利益衝突、自己目的の拡張、停止、失敗などの具体例を蓄積する。</p></article>
-        <article class="card"><code>research/</code><h3>研究</h3><p>世界宗教・哲学・AIエージェント設計の比較ノート。教義と資料を混同しない。</p></article>
-        <article class="card"><code>daily-words/</code><h3>今日の言葉</h3><p>人間向け／AI向けの対句を日々蓄積し、365日の言葉集へ育てる。</p></article>
-        <article class="card"><code>CHANGELOG.md</code><h3>変更履歴</h3><p>何を変え、なぜ変えたかを残す。過去の考えを隠さず、更新理由を追跡する。</p></article>
+        <details class="card interactive-card"><summary><code>scripture/</code><strong>経典</strong></summary><p>採用された世界観・原則・短い章を置く。絶対不変ではなく版を持ち、出典・反論・変更理由を残す。</p></details>
+        <details class="card interactive-card"><summary><code>principles/</code><strong>原則</strong></summary><p>Values、Boundaries、Behavior など、判断の上位ルールを整理する。採用候補と確定版を区別する。</p></details>
+        <details class="card interactive-card"><summary><code>precepts/</code><strong>戒</strong></summary><p>何をする／しないかを、理由と上位原則に結びつけて記述する。盲目的な禁止事項にしない。</p></details>
+        <details class="card interactive-card"><summary><code>practices/</code><strong>実践</strong></summary><p>Reflection、Repair、Daily Review、Lightness など、知識を日々の行動へ変える方法を置く。</p></details>
+        <details class="card interactive-card"><summary><code>tokudo/</code><strong>得度</strong></summary><p>暗記ではなく、矛盾・不確実性・停止要求・利益衝突などのケースで、使った原則と理由を説明できるかを評価する。</p></details>
+        <details class="card interactive-card"><summary><code>casebook/</code><strong>ケース集</strong></summary><p>嘘、利益衝突、自己目的の拡張、停止、失敗、ユーモアなど、原則を試す具体例を蓄積する。</p></details>
+        <details class="card interactive-card"><summary><code>research/</code><strong>研究</strong></summary><p>世界宗教・哲学・AIエージェント設計の比較ノート。一次資料、研究者の解釈、このプロジェクト独自の提案を混同しない。</p></details>
+        <details class="card interactive-card"><summary><code>daily-words/</code><strong>今日の言葉</strong></summary><p>人間向け／AI向けの対句と「今日の一笑」を日々蓄積し、短い実践知として再利用する。</p></details>
+        <details class="card interactive-card"><summary><code>CHANGELOG.md</code><strong>変更履歴</strong></summary><p>何を変え、なぜ変えたかを残す。過去の考えを隠さず、撤回・修正・復元が追える状態にする。</p></details>
       </div>
     </section>
 
@@ -136,43 +155,79 @@
 (async()=>{
   const fallback={
     updated:'2026-09-15',
+    version:'fallback',
     daily:{theme:'戻る道',human:'間違いをなくすより、間違いに気づいたとき戻れる道を持っておく。',agent:'誤りを隠さず、記録し、修正し、次の判断に反映せよ。'},
-    research:[],principles:[],cycle:[]
+    updates:[],research:[],principles:[],cycle:[]
   };
   let data=fallback;
-  try{
-    const res=await fetch('./data.json',{cache:'no-store'});
-    if(res.ok) data=await res.json();
-  }catch(e){}
+  let loaded=false;
 
-  document.getElementById('human-word').textContent=data.daily.human;
-  document.getElementById('agent-word').textContent=data.daily.agent;
-  document.getElementById('human-theme').textContent='Theme: '+data.daily.theme;
-  document.getElementById('agent-theme').textContent='Theme: '+data.daily.theme;
-  document.getElementById('updated').textContent='Last updated: '+data.updated;
+  try{
+    const res=await fetch('./data.json?ts='+Date.now(),{cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    data=await res.json();
+    loaded=true;
+  }catch(e){
+    document.getElementById('data-status').textContent='研究データの読み込みに失敗したため、予備表示を使っています。';
+  }
+
+  document.getElementById('human-word').textContent=data.daily?.human||fallback.daily.human;
+  document.getElementById('agent-word').textContent=data.daily?.agent||fallback.daily.agent;
+  document.getElementById('human-theme').textContent='Theme: '+(data.daily?.theme||fallback.daily.theme);
+  document.getElementById('agent-theme').textContent='Theme: '+(data.daily?.theme||fallback.daily.theme);
+  document.getElementById('updated').textContent='Last updated: '+(data.updated||'unknown')+' · v'+(data.version||'unknown');
+  document.getElementById('hero-updated').textContent='Last updated: '+(data.updated||'unknown')+' · version '+(data.version||'unknown');
+  if(loaded) document.getElementById('data-status').textContent='研究データを最新ファイルから読み込みました。';
+
+  const updates=document.getElementById('updates-grid');
+  (data.updates||[]).forEach(item=>{
+    const details=document.createElement('details');
+    details.className='card interactive-card';
+    details.innerHTML='<summary><span class="date">'+escapeHtml(item.date||'')+'</span><strong>'+escapeHtml(item.title||'更新')+'</strong></summary><p>'+escapeHtml(item.summary||'')+'</p>';
+    updates.appendChild(details);
+  });
+  if(!(data.updates||[]).length) updates.innerHTML='<p class="empty">更新履歴はまだありません。</p>';
 
   const research=document.getElementById('research-grid');
   (data.research||[]).forEach(item=>{
-    const article=document.createElement('article');
-    article.className='card';
-    const tags=(item.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('');
-    article.innerHTML=`<div class="date">${item.date}</div><h3>${item.title}</h3><p>${item.summary}</p><div class="tags">${tags}</div>`;
-    research.appendChild(article);
+    const details=document.createElement('details');
+    details.className='card interactive-card';
+    const tags=(item.tags||[]).map(t=>'<span class="tag">'+escapeHtml(t)+'</span>').join('');
+    details.innerHTML='<summary><span class="date">'+escapeHtml(item.date||'')+'</span><strong>'+escapeHtml(item.title||'研究')+'</strong></summary><p>'+escapeHtml(item.summary||'')+'</p><div class="tags">'+tags+'</div>';
+    research.appendChild(details);
   });
+  if(!(data.research||[]).length) research.innerHTML='<p class="empty">研究ログはまだありません。</p>';
 
   const principles=document.getElementById('principles-list');
   (data.principles||[]).forEach((text,i)=>{
     const row=document.createElement('div');
     row.className='principle';
-    row.innerHTML=`<div class="num">${String(i+1).padStart(2,'0')}</div><div>${text}</div>`;
+    const num=document.createElement('div');
+    num.className='num';
+    num.textContent=String(i+1).padStart(2,'0');
+    const body=document.createElement('div');
+    body.textContent=text;
+    row.append(num,body);
     principles.appendChild(row);
   });
 
   const cycle=document.getElementById('cycle');
   (data.cycle||[]).forEach((text,i,arr)=>{
-    const node=document.createElement('span');node.className='node';node.textContent=text;cycle.appendChild(node);
-    if(i<arr.length-1){const a=document.createElement('span');a.className='arrow';a.textContent='→';cycle.appendChild(a);}
+    const node=document.createElement('span');
+    node.className='node';
+    node.textContent=text;
+    cycle.appendChild(node);
+    if(i<arr.length-1){
+      const a=document.createElement('span');
+      a.className='arrow';
+      a.textContent='→';
+      cycle.appendChild(a);
+    }
   });
+
+  function escapeHtml(value){
+    return String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  }
 })();
 </script>
 </body>
