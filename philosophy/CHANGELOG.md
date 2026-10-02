@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-10-03 — v0.3.2
+- 初期仏教の `vedanā → taṇhā` と SN 36.6「第二の矢」を研究。
+- ストア派「印象と同意」と同一視せず、反応を固定・増幅しないという実践上の接点を比較。
+- `research/2026-10-03-buddhism-feeling-craving-second-arrow.md` を追加し、`research/essence.md` に横断エッセンスを反映。
+- `data.json` の研究ログ、原則候補、今日の言葉、今日の一笑を更新。
+
 ## 2026-10-03 — v0.3.1
 - ストア派の「印象と同意」を研究し、穏やかさを「感情を消すこと」ではなく「判断を急ぎすぎない余白」として整理。
 - `research/2026-10-03-stoic-impression-assent-calm.md` を追加。
