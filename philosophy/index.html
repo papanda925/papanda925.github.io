@@ -85,6 +85,7 @@
           <div class="theme" id="agent-theme"></div>
         </article>
       </div>
+      <article class="word-card humor-card"><div class="label">今日の一笑</div><blockquote id="humor-word">読み込み中…</blockquote><div class="theme" id="humor-theme"></div></article>
     </section>
 
     <section class="section wrap" id="updates">
@@ -188,8 +189,10 @@
 
   document.getElementById('human-word').textContent=data.daily?.human||fallback.daily.human;
   document.getElementById('agent-word').textContent=data.daily?.agent||fallback.daily.agent;
+  document.getElementById('humor-word').textContent=data.daily?.humor||'今日の一笑は準備中です。';
   document.getElementById('human-theme').textContent='Theme: '+(data.daily?.theme||fallback.daily.theme);
   document.getElementById('agent-theme').textContent='Theme: '+(data.daily?.theme||fallback.daily.theme);
+  document.getElementById('humor-theme').textContent='Theme: '+(data.daily?.theme||fallback.daily.theme);
   document.getElementById('updated').textContent='Last updated: '+(data.updated||'unknown')+' · v'+(data.version||'unknown');
   document.getElementById('hero-updated').textContent='Last updated: '+(data.updated||'unknown')+' · version '+(data.version||'unknown');
   if(loaded) document.getElementById('data-status').textContent='研究データを最新ファイルから読み込みました。';
