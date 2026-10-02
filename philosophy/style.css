@@ -82,3 +82,10 @@ h1{margin:0;max-width:900px;font-size:clamp(2.3rem,7vw,5.5rem);line-height:1.04;
   .word-card{padding:20px}
   .button{width:100%}
 }
+
+.scripture-links{display:grid;grid-template-columns:2fr 1fr 1fr;gap:14px}
+.scripture-card{display:flex;flex-direction:column;gap:8px;min-height:170px;padding:22px;background:var(--surface);border:1px solid var(--line);border-radius:20px;text-decoration:none;box-shadow:var(--shadow)}
+.scripture-card strong{font-size:1.18rem}
+.scripture-card>span:last-child{color:var(--muted)}
+.scripture-card:hover,.scripture-card:focus-visible{transform:translateY(-2px);outline:3px solid var(--accent);outline-offset:2px}
+@media(max-width:760px){.scripture-links{grid-template-columns:1fr}.scripture-card{min-height:auto}}
