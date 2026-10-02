@@ -53,26 +53,15 @@
     </section>
 
 
-    <section class="section wrap" id="scripture">
-      <div class="section-head">
-        <div><p class="kicker">LIVING SCRIPTURE</p><h2>経典を読む</h2></div>
-        <p class="section-note">これまでの研究と対話から生まれた中核思想を、更新可能な経典として一つにまとめています。批判・修正・離脱を認め、変更履歴を残しながら育てます。</p>
-      </div>
-      <div class="scripture-links">
-        <a class="scripture-card" href="./scripture/"><span class="date">WEB EDITION</span><strong>Human × AI Philosophy Lab — 経典</strong><span>「正解を信じるのではなく、試して確かめる」から始まる全13章を読む →</span></a>
-        <a class="scripture-card" href="./tokudo/"><span class="date">PRACTICE</span><strong>得度 / Tokudo</strong><span>学習者・実践者・問答者・得度の4段階を見る →</span></a>
-      </div>
-    </section>
-
     <section class="section wrap" id="daily">
       <div class="section-head">
         <div>
           <p class="kicker">DAILY WORDS</p>
           <h2>今日の言葉</h2>
         </div>
-        <p class="section-note">その日の宗教・思想研究から抽出したオリジナルの短い言葉。人間向けとAIエージェント向けを対にして残します。</p>
+        <p class="section-note">その日の研究から抽出した4つの短いエッセンス。Human / AI Agent / Calm / Humor を毎日同じ数で残します。</p>
       </div>
-      <div class="words">
+      <div class="daily-grid">
         <article class="word-card">
           <div class="label">FOR HUMAN</div>
           <blockquote id="human-word">読み込み中…</blockquote>
@@ -83,8 +72,29 @@
           <blockquote id="agent-word">読み込み中…</blockquote>
           <div class="theme" id="agent-theme"></div>
         </article>
+        <article class="word-card">
+          <div class="label">CALM ESSENCE</div>
+          <blockquote id="calm-word">読み込み中…</blockquote>
+          <div class="theme" id="calm-theme"></div>
+        </article>
+        <article class="word-card">
+          <div class="label">今日の一笑</div>
+          <blockquote id="humor-word">読み込み中…</blockquote>
+          <div class="theme" id="humor-theme"></div>
+        </article>
       </div>
-      <article class="word-card humor-card"><div class="label">今日の一笑</div><blockquote id="humor-word">読み込み中…</blockquote><div class="theme" id="humor-theme"></div></article>
+      <p class="daily-note">毎日1セット、4項目を同じ数で更新します。同じ日の夜間実行では、訂正が必要な場合を除き朝の言葉を保持します。</p>
+    </section>
+
+    <section class="section wrap" id="scripture">
+      <div class="section-head">
+        <div><p class="kicker">LIVING SCRIPTURE</p><h2>経典を読む</h2></div>
+        <p class="section-note">これまでの研究と対話から生まれた中核思想を、更新可能な経典として一つにまとめています。批判・修正・離脱を認め、変更履歴を残しながら育てます。</p>
+      </div>
+      <div class="scripture-links">
+        <a class="scripture-card" href="./scripture/"><span class="date">WEB EDITION</span><strong>Human × AI Philosophy Lab — 経典</strong><span>「正解を信じるのではなく、試して確かめる」から始まる全13章を読む →</span></a>
+        <a class="scripture-card" href="./tokudo/"><span class="date">PRACTICE</span><strong>得度 / Tokudo</strong><span>学習者・実践者・問答者・得度の4段階を見る →</span></a>
+      </div>
     </section>
 
     <section class="section wrap" id="updates">
@@ -188,9 +198,11 @@
 
   document.getElementById('human-word').textContent=data.daily?.human||fallback.daily.human;
   document.getElementById('agent-word').textContent=data.daily?.agent||fallback.daily.agent;
+  document.getElementById('calm-word').textContent=data.daily?.calm||'心を穏やかにする今日のエッセンスは準備中です。';
   document.getElementById('humor-word').textContent=data.daily?.humor||'今日の一笑は準備中です。';
   document.getElementById('human-theme').textContent='Theme: '+(data.daily?.theme||fallback.daily.theme);
   document.getElementById('agent-theme').textContent='Theme: '+(data.daily?.theme||fallback.daily.theme);
+  document.getElementById('calm-theme').textContent='Theme: '+(data.daily?.theme||fallback.daily.theme);
   document.getElementById('humor-theme').textContent='Theme: '+(data.daily?.theme||fallback.daily.theme);
   document.getElementById('updated').textContent='Last updated: '+(data.updated||'unknown')+' · v'+(data.version||'unknown');
   document.getElementById('hero-updated').textContent='Last updated: '+(data.updated||'unknown')+' · version '+(data.version||'unknown');
