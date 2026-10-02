@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-10-03 — v0.3.1
+- ストア派の「印象と同意」を研究し、穏やかさを「感情を消すこと」ではなく「判断を急ぎすぎない余白」として整理。
+- `research/2026-10-03-stoic-impression-assent-calm.md` を追加。
+- `principles/calmness.md` と `tokudo/README.md` に研究成果を接続。
+- `data.json` に研究ログ、原則候補、今日の言葉、AI向けの言葉、今日の一笑を反映。
+- AI設計候補として `Input → Check → Assent / Hold → Action → Reflection` を追加。
+
 ## 2026-10-02
 - `research/` に詳細研究ノートの保存を開始。
 - 研究成果を公開ページ `data.json` に反映する運用を開始。
