@@ -16,6 +16,7 @@
       <a class="brand" href="/">papanda925</a>
       <nav class="navlinks" aria-label="サイト内ナビゲーション">
         <a href="#scripture">経典</a>
+        <a href="./humor/">笑い</a>
         <a href="#daily">今日の言葉</a>
         <a href="#updates">更新履歴</a>
         <a href="#research">研究ログ</a>
@@ -78,7 +79,8 @@
           <div class="theme" id="calm-theme"></div>
         </article>
         <article class="word-card">
-          <div class="label">今日の一笑</div>
+          <div class="label" id="humor-label">今日の一笑</div>
+          <div class="humor-prompt" id="humor-prompt"></div>
           <blockquote id="humor-word">読み込み中…</blockquote>
           <div class="theme" id="humor-theme"></div>
         </article>
@@ -199,6 +201,8 @@
   document.getElementById('human-word').textContent=data.daily?.human||fallback.daily.human;
   document.getElementById('agent-word').textContent=data.daily?.agent||fallback.daily.agent;
   document.getElementById('calm-word').textContent=data.daily?.calm||'心を穏やかにする今日のエッセンスは準備中です。';
+  document.getElementById('humor-label').textContent='今日の一笑・'+(data.daily?.humor_type||'ひとこと');
+  document.getElementById('humor-prompt').textContent=data.daily?.humor_prompt||'';
   document.getElementById('humor-word').textContent=data.daily?.humor||'今日の一笑は準備中です。';
   document.getElementById('human-theme').textContent='Theme: '+(data.daily?.theme||fallback.daily.theme);
   document.getElementById('agent-theme').textContent='Theme: '+(data.daily?.theme||fallback.daily.theme);
