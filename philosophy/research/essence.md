@@ -35,3 +35,21 @@ AIエージェントの Identity / Values / Boundaries / Behavior / Reflection /
 注意: 現実の危険、不正、損害への退避・異議・境界設定は「不要な反応」として抑圧しない。
 
 Research: `2026-10-03-buddhism-feeling-craving-second-arrow.md`
+
+
+## 2026-10-03 横断エッセンス — 反応前の余白から反応後の修復へ
+
+ストア派・初期仏教に続き、クルアーン3:134–135の怒りの抑制、赦し、過ちへの非固執を検討した。三者を同一理論とはしない。
+
+プロジェクト独自の横断モデル候補:
+
+**Notice → Pause → Bound → Act → Check Impact → Repair**
+
+- Human Essence: 怒りを否定せず決定権を渡さない。誤ったら固執せず戻る。
+- Agent Essence: Hold に加え、出力後の Impact Check / Repair / Amendment を持つ。
+- Calm Essence: 反応前の余白と、反応後に戻れる余白の両方を持つ。
+- Humor Essence: 自分を完成品として神聖化せず、修正可能性を残す。
+
+注意: 赦しと、安全確保・境界設定・責任追及を同一視しない。
+
+Research: `2026-10-03-islam-anger-forgiveness-return.md`
