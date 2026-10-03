@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-10-03 — v0.4.1
+- クルアーン3:134–135を手がかりに、怒り・赦し・過ちへの非固執を限定的に研究。
+- 穏やかさを「反応前の余白」から「誤った反応の後にRepairへ戻れる余白」まで拡張。
+- `research/2026-10-03-islam-anger-forgiveness-return.md` を追加。
+- `research/essence.md`、`principles/calmness.md`、`tokudo/README.md` に研究成果を接続。
+- `data.json` に研究ログと原則候補を追加。同日8時に確定した daily 4項目は上書きしていない。
+- 横断モデル候補 `Notice → Pause → Bound → Act → Check Impact → Repair` を追加。
+
 ## 2026-10-03 — v0.4.0
 - 笑いの哲学研究を追加し、不一致・解放・優越・遊びという観点から機能とリスクを整理。
 - 経典第十章を「笑いと軽さ」へ拡張。
