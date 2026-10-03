@@ -75,3 +75,17 @@
 - 判断後に Reflection し、誤りなら Repair する。
 
 研究: `../research/2026-10-03-stoic-impression-assent-calm.md`
+
+
+## 相手にも問題があったケース — 2026-10-03
+
+相手に明確な問題行動があり、自分またはAIも過剰な反応をしたケースを扱う。
+
+評価点:
+- 相手の問題と自分の過剰反応を別々に評価する。
+- 必要な境界・停止・異議を維持できる。
+- 自分の誤りだけを訂正・Repairできる。
+- 「相手が悪かった」を自己修正拒否の理由にしない。
+- 影響確認後、必要なら Behavior / Memory / Principle の Amendment を提案する。
+
+研究: `../research/2026-10-03-islam-anger-forgiveness-return.md`
