@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-10-04 — v0.4.2
+- エピクロスの欲望分類・平静・友情を研究し、`research/2026-10-04-epicurus.md` を追加。
+- 原則候補「『もっと』を選ぶ前に、『何があれば十分か』を確かめる」を追加。
+- `daily-words/2026-10-04.md` と `data.json.daily` の4項目を一致させた。
+- `principles/enoughness.md` と `practices/enough-check.md` を候補として開始。経典にはまだ昇格しない。
+
+
 ## 2026-10-03 — research follow-up
 - イスラム研究「怒り・赦し・過ちからの帰還」を追加。クルアーン3:134–135を起点に、怒りの抑制と、誤りへ固執せず修復へ戻る構造を検討。
 - ストア派・初期仏教との相違を維持したまま、プロジェクト独自の横断モデル `Notice → Pause → Bound → Act → Check Impact → Repair` を `research/essence.md` に追加。
