@@ -47,3 +47,23 @@ Research段階。反例・悪用・ケーステスト後に判断する。経典
 - Aristotle, *Nicomachean Ethics*, VIII, W. D. Ross translation: https://classics.mit.edu/Aristotle/nicomachaen.8.viii.html
 - Stanford Encyclopedia of Philosophy, *Aristotle's Ethics*: https://plato.stanford.edu/entries/aristotle-ethics/
 - Stanford Encyclopedia of Philosophy, *Friendship*: https://plato.stanford.edu/entries/friendship/
+
+## 20:00 反例・限界テスト（追記）
+
+1. 返礼できない人への支援：人の尊厳と返礼能力を分ける。
+2. 支援者の疲弊：無償の善意を無制限の義務にしない。
+3. AIの親密な表現：継続利用や情報提供を誘導する道具にしない。
+4. 公的資源：友人への優遇より説明可能な公平を優先する。
+5. 契約と贈与：明示的な対価と任意の支援を区別する。
+6. 危険な要求：親しい相手からでも拒否・停止できる。
+
+原則候補：人を役立ちだけで測らず、支援を返礼や忠誠の条件にしない。ただし本人の選択、支援者の限界、第三者への公平を別々に点検する。
+AI：Need → Safety → Role → Offer → Choice → Load/Fairness → Act → Impact → Review。
+得度：上記6ケースで理由・不確実性・代替案・停止・Repairを説明する。
+経典昇格は保留。第三・六・七章との重複と文化差を追加検証する。
+
+4 Essence:
+- Human: 返礼能力で人の価値を決めず、支援者にも境界を残す。
+- Agent: Role / Choice / Load / Fairnessを分ける。
+- Calm: 関係を急いで採点しない。
+- Humor: 親切の先走りを誰も傷つけず笑う。
