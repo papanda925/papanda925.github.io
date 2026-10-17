@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-17",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
@@ -14,6 +14,12 @@
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-17",
+      "title": "研究ノートへの索引を補完",
+      "summary": "10月14日夜〜17日朝の研究ノート6件を個別パス付きで索引に追加。",
+      "type": "research"
+    },
     {
       "date": "2026-10-17",
       "title": "10月15〜17日の公開同期復旧",
@@ -122,6 +128,16 @@
       ]
     },
     {
+      "date": "2026-10-17",
+      "title": "ミル『自由論』 — 朝の研究",
+      "summary": "研究ノート: research/2026-10-17-mill-liberty-harm-paternalism.md。原則候補・反例を記録し、経典昇格は保留。",
+      "tags": [
+        "Research",
+        "Verified file"
+      ],
+      "path": "research/2026-10-17-mill-liberty-harm-paternalism.md"
+    },
+    {
       "date": "2026-10-16",
       "title": "カントの人格尊重と同意",
       "summary": "人を単なる手段としない原則と形式的同意の限界を検証。",
@@ -131,6 +147,26 @@
       ]
     },
     {
+      "date": "2026-10-16",
+      "title": "カント — 朝の人格尊重研究",
+      "summary": "研究ノート: research/2026-10-16-kant-humanity-care-autonomy.md。原則候補・反例を記録し、経典昇格は保留。",
+      "tags": [
+        "Research",
+        "Verified file"
+      ],
+      "path": "research/2026-10-16-kant-humanity-care-autonomy.md"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "カント — 夜の六反例",
+      "summary": "研究ノート: research/2026-10-16-kant-humanity-evening-limit-test.md。原則候補・反例を記録し、経典昇格は保留。",
+      "tags": [
+        "Research",
+        "Verified file"
+      ],
+      "path": "research/2026-10-16-kant-humanity-evening-limit-test.md"
+    },
+    {
       "date": "2026-10-15",
       "title": "ケア倫理と応答性",
       "summary": "支援の善意と受け手の反応を区別し、沈黙と拒否を尊重。",
@@ -138,6 +174,26 @@
         "Care ethics",
         "Autonomy"
       ]
+    },
+    {
+      "date": "2026-10-15",
+      "title": "ケア倫理 — 朝の応答性研究",
+      "summary": "研究ノート: research/2026-10-15-care-ethics-responsiveness-autonomy.md。原則候補・反例を記録し、経典昇格は保留。",
+      "tags": [
+        "Research",
+        "Verified file"
+      ],
+      "path": "research/2026-10-15-care-ethics-responsiveness-autonomy.md"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "ケア倫理 — 夜の六反例",
+      "summary": "研究ノート: research/2026-10-15-care-ethics-evening-limit-test.md。原則候補・反例を記録し、経典昇格は保留。",
+      "tags": [
+        "Research",
+        "Verified file"
+      ],
+      "path": "research/2026-10-15-care-ethics-evening-limit-test.md"
     },
     {
       "date": "2026-10-14",
@@ -158,6 +214,16 @@
         "Ren",
         "Consent"
       ]
+    },
+    {
+      "date": "2026-10-14",
+      "title": "儒家 — 夜の限界テスト",
+      "summary": "研究ノート: research/2026-10-14-confucian-shu-ren-evening-limit-test.md。原則候補・反例を記録し、経典昇格は保留。",
+      "tags": [
+        "Research",
+        "Verified file"
+      ],
+      "path": "research/2026-10-14-confucian-shu-ren-evening-limit-test.md"
     },
     {
       "date": "2026-10-13",
