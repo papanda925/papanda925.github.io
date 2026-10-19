@@ -1,19 +1,25 @@
 {
-  "updated": "2026-10-19",
-  "version": "0.4.8",
+  "updated": "2026-10-20",
+  "version": "0.4.9",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
   },
   "daily": {
-    "theme": "ジャイナ教の多面性 — 視点と証拠を区別する",
-    "human": "自分の見方がすべてだと決めつけない。別の視点を聞き、確かな根拠を確かめる。",
-    "agent": "Claim・Evidence・Standpoint・Scope・Urgency・Correction を分け、異論を同じ証拠力とみなさない。",
-    "calm": "すぐに断定しなくてよい。ただし、守るべき安全は先延ばしにしない。",
-    "humor": "「別の角度から見て」と頼んだら、AIが画面を90度回転させた。",
-    "humor_type": "言葉遊び"
+    "theme": "ソクラテスの知の限界 — 知ったふりをせず、確かめる",
+    "human": "分からないことは分からないと言い、確かめる一歩を選ぶ。知っていることまで疑い捨てない。",
+    "agent": "Fact・Hypothesis・Unknown・Evidence・Urgency・Correction を分け、確信と根拠を釣り合わせる。",
+    "calm": "すぐ答えなくてもよい。必要な確認をして、守るべきことには落ち着いて動く。",
+    "humor": "「分かりません」と答えたAI、その理由を全42章で説明し始めた。",
+    "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-20",
+      "title": "10月20日の今日の言葉・研究と未反映索引を復旧",
+      "summary": "朝の4項目を日次Markdownと一致させ、10月17日夜〜20日朝の研究6件をパス付きで公開索引へ追加。経典昇格なし。",
+      "type": "research"
+    },
     {
       "date": "2026-10-17",
       "title": "研究ノートへの索引を補完",
@@ -119,6 +125,56 @@
   ],
   "research": [
     {
+      "date": "2026-10-20",
+      "title": "ソクラテス — 知の限界と確信の調整",
+      "summary": "知らないことを認め、根拠と確信を釣り合わせ、検証と訂正へ進む。",
+      "tags": [
+        "Socrates",
+        "Epistemic humility"
+      ],
+      "path": "research/2026-10-20-socrates-knowledge-limits.md"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "ジャイナ教 — 夜間の六反例",
+      "summary": "多面性を理由に危害警告を無期限保留しない。",
+      "tags": [
+        "Jainism",
+        "Evidence"
+      ],
+      "path": "research/2026-10-19-jaina-standpoint-evening-limit-test.md"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "ジャイナ教 — 朝の多面性研究",
+      "summary": "多面性と証拠の重みを区別する。",
+      "tags": [
+        "Jainism",
+        "Standpoint"
+      ],
+      "path": "research/2026-10-19-multiple-perspectives.md"
+    },
+    {
+      "date": "2026-10-18",
+      "title": "初期仏教 — 正語の夜間六反例",
+      "summary": "真実・配慮・緊急警告・プライバシーを分ける。",
+      "tags": [
+        "Buddhism",
+        "Right speech"
+      ],
+      "path": "research/2026-10-18-right-speech-evening-limit-test.md"
+    },
+    {
+      "date": "2026-10-18",
+      "title": "初期仏教 — 正語の朝研究",
+      "summary": "真実・有益性・時機・慈しみを検討する。",
+      "tags": [
+        "Buddhism",
+        "Right speech"
+      ],
+      "path": "research/2026-10-18-buddhist-right-speech-truth-timing.md"
+    },
+    {
       "date": "2026-10-17",
       "title": "ミル『自由論』と危害原則",
       "summary": "本人の利益を理由とする干渉と第三者への危害防止を区別。",
@@ -136,6 +192,16 @@
         "Verified file"
       ],
       "path": "research/2026-10-17-mill-liberty-harm-paternalism.md"
+    },
+    {
+      "date": "2026-10-17",
+      "title": "ミル『自由論』 — 夜間六反例",
+      "summary": "自由と安全の衝突、介入の権限・最小化・終了条件を検証する。",
+      "tags": [
+        "Mill",
+        "Harm principle"
+      ],
+      "path": "research/2026-10-17-mill-liberty-evening-six-cases.md"
     },
     {
       "date": "2026-10-16",
