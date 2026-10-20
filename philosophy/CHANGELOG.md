@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-10-21 — v0.4.11 / 日次4項目の確定と過去日点検
+- `daily-words/2026-10-21.md` を新規保存し、`data.json.daily` のHuman・Agent・Calm・Humor・theme・humor_typeと一致させた。
+- 10月3〜21日の19日分を再取得し、4項目がすべて存在することを点検。10月3日と7日は旧形式だが4項目は存在するため、原文を変更しない。
+- `data.json.daily` は最新1日分を表示する仕様。過去の日次記録は `daily-words/` を正本とし、歴史を書き換えない。
+- 経典昇格なし。公開サイトのHTTP表示は別途確認が必要。
+
+
 ## 2026-10-21 — v0.4.10 / 夜間研究の公開同期
 - 10月20日夜のソクラテス六反例研究を `data.json.research` に追加。日次4項目は変更せず。
 - `index.html` の研究カードに、`path` がある場合の個別Markdown本文リンクを実装。URLはGitHubの `main/philosophy/` に限定。
