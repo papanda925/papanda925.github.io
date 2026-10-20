@@ -15,7 +15,9 @@ Judaism, Sikhism, Taoism, Shinto, folk religions, secular thought, new religions
 
 既存の `2026-10-02-belonging-return-exit.md` は横断テーマ研究の最初の詳細ノート。
 
-## 直近の研究ノート（2026年10月18〜20日）
+## 直近の研究ノート（2026年10月18〜21日）
+- [10月21日朝・『論語』2.17とソクラテスの知の境界](./2026-10-21-analects-socrates-knowledge-boundary.md)
+
 - [10月20日夜・ソクラテス六反例](./2026-10-20-socratic-ignorance-evening-six-cases.md)
 - [10月20日朝・知の限界](./2026-10-20-socrates-knowledge-limits.md)
 - [10月19日夜・多面性の限界](./2026-10-19-jaina-standpoint-evening-limit-test.md)
