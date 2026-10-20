@@ -228,6 +228,7 @@
     details.className='card interactive-card';
     const tags=(item.tags||[]).map(t=>'<span class="tag">'+escapeHtml(t)+'</span>').join('');
     details.innerHTML='<summary><span class="date">'+escapeHtml(item.date||'')+'</span><strong>'+escapeHtml(item.title||'研究')+'</strong></summary><p>'+escapeHtml(item.summary||'')+'</p><div class="tags">'+tags+'</div>';
+    if(item.path && /^research\/[a-zA-Z0-9._/-]+\.md$/.test(item.path)){const link=document.createElement('a');link.href='https://github.com/papanda925/papanda925.github.io/blob/main/philosophy/'+item.path;link.textContent='研究本文を読む →';link.target='_blank';link.rel='noopener noreferrer';details.appendChild(link);}
     research.appendChild(details);
   });
   if(!(data.research||[]).length) research.innerHTML='<p class="empty">研究ログはまだありません。</p>';
