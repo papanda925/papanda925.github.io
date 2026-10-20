@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-20",
-  "version": "0.4.9",
+  "version": "0.4.10",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
@@ -14,6 +14,12 @@
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-21",
+      "title": "10月20日夜の研究索引を復旧",
+      "summary": "夜間の六反例研究を公開研究一覧へ追加。10月20日の確定日次4項目は変更しない。",
+      "type": "research"
+    },
     {
       "date": "2026-10-20",
       "title": "10月20日の今日の言葉・研究と未反映索引を復旧",
@@ -124,6 +130,17 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-10-20",
+      "title": "ソクラテス — 夜間の六反例と訂正責任",
+      "summary": "緊急警告・専門外の権威・権力差・推測の事実化・無限確認・訂正遅延を検証。",
+      "tags": [
+        "Socrates",
+        "Evidence",
+        "Correction"
+      ],
+      "path": "research/2026-10-20-socratic-ignorance-evening-six-cases.md"
+    },
     {
       "date": "2026-10-20",
       "title": "ソクラテス — 知の限界と確信の調整",
