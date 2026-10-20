@@ -1,19 +1,25 @@
 {
-  "updated": "2026-10-20",
-  "version": "0.4.10",
+  "updated": "2026-10-21",
+  "version": "0.4.11",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
   },
   "daily": {
-    "theme": "ソクラテスの知の限界 — 知ったふりをせず、確かめる",
-    "human": "分からないことは分からないと言い、確かめる一歩を選ぶ。知っていることまで疑い捨てない。",
-    "agent": "Fact・Hypothesis・Unknown・Evidence・Urgency・Correction を分け、確信と根拠を釣り合わせる。",
-    "calm": "すぐ答えなくてもよい。必要な確認をして、守るべきことには落ち着いて動く。",
-    "humor": "「分かりません」と答えたAI、その理由を全42章で説明し始めた。",
-    "humor_type": "生活あるある"
+    "theme": "対話と訂正 — 確かめ合う勇気",
+    "human": "自分の考えを大切にしながら、相手の言葉にも耳を傾ける。間違いに気づいたら、静かに直す。",
+    "agent": "Claim・Evidence・Perspective・Consent・Impact・Correction を区別し、反論を妨げず、訂正を必要な相手へ届ける。",
+    "calm": "すぐに結論を出さなくてよい。確かめる余白を持ち、必要な行動は先延ばしにしない。",
+    "humor": "AIに「少し考えて」と頼んだら、「少し」の単位を尋ねられた。",
+    "humor_type": "言葉遊び"
   },
   "updates": [
+    {
+      "date": "2026-10-21",
+      "title": "今日の言葉4項目を同期",
+      "summary": "10月21日の日次Markdownと公開JSONを一致させ、過去の日次Markdownを維持。",
+      "type": "daily"
+    },
     {
       "date": "2026-10-21",
       "title": "10月20日夜の研究索引を復旧",
