@@ -8,7 +8,7 @@ Status: research / candidate（経典未昇格）
 
 ## 出典・解釈・独自提案
 - 一次資料（プラトンによるソクラテスの描写）：[『ソクラテスの弁明』21d, Perseus / Fowler訳](https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0170%3Atext%3DApol.%3Asection%3D21d)。知らないことを知っていると思い込まない、という趣旨。「私は何も知らない」という定型句をそのまま原文の逐語引用とはしない。
-- 学術解説：[Stanford Encyclopedia of Philosophy, Wisdom §1–2](https://plato.stanford.edu/entries/wisdom/)。単に自分は無知だと思うだけで知恵が成立するわけではない。自信と根拠の適合（epistemic accuracy）も論点。
+- 学術解説（旧版アーカイブ）：[Stanford Encyclopedia of Philosophy, Wisdom §1–2](https://plato.stanford.edu/archives/sum2014/entries/wisdom/)。単に自分は無知だと思うだけで知恵が成立するわけではない。自信と根拠の適合（epistemic accuracy）も論点。
 - 人物像の限界：[Stanford Encyclopedia of Philosophy, Socrates](https://plato.stanford.edu/entries/socrates/)。ソクラテス自身の著作はなく、プラトン等の記述を通じた理解である。
 - 以下のAIの状態機械・評価方法は本研究独自案であり、古代の哲学者が提案したものではない。
 
@@ -51,3 +51,6 @@ AIが障害の原因を問われ、十分なログがないのに「原因は設
 
 ## 次回20時の反例課題
 緊急警告、専門外の専門家、強い立場の尋問、推測と断定の混同、無限の確認、誤答訂正の遅延の六例を検証する。
+
+## 2026-10-20 夜の出典更新
+旧SEP「Wisdom」の現行URLは2026年に退役しているため、上記のリンクを旧版アーカイブに訂正した。新しい学術解説は [SEP, Wisdom in Contemporary Analytic Philosophy (2026), §1.1](https://plato.stanford.edu/entries/wisdom-analytic/) を参照。夜間の[六反例研究](2026-10-20-socratic-ignorance-evening-six-cases.md)に続く。
