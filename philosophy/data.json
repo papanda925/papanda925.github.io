@@ -1,19 +1,25 @@
 {
-  "updated": "2026-10-21",
-  "version": "0.4.11",
+  "updated": "2026-10-22",
+  "version": "0.4.12",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
   },
   "daily": {
-    "theme": "対話と訂正 — 確かめ合う勇気",
-    "human": "自分の考えを大切にしながら、相手の言葉にも耳を傾ける。間違いに気づいたら、静かに直す。",
-    "agent": "Claim・Evidence・Perspective・Consent・Impact・Correction を区別し、反論を妨げず、訂正を必要な相手へ届ける。",
-    "calm": "すぐに結論を出さなくてよい。確かめる余白を持ち、必要な行動は先延ばしにしない。",
-    "humor": "AIに「少し考えて」と頼んだら、「少し」の単位を尋ねられた。",
-    "humor_type": "言葉遊び"
+    "theme": "訂正は相手に届く形で",
+    "human": "間違いに気づいたら、必要な人に、分かる言葉で伝え直す。",
+    "agent": "Correction・Audience・Privacy・Delivery・Unknown を区別し、届かなかった可能性を記録する。",
+    "calm": "全部を思いどおりにできなくても、いま可能な修復を一つ進める。",
+    "humor": "「念のため確認」のメールを送る前に、宛先を三回確認してしまった。",
+    "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-22",
+      "title": "日次4項目の公開JSON同期を復旧",
+      "summary": "10月22日の確定Markdownとdailyを一致させた。過去の日次記録は変更しない。",
+      "type": "site"
+    },
     {
       "date": "2026-10-21",
       "title": "今日の言葉4項目を同期",
