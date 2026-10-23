@@ -66,3 +66,19 @@ SN 22.90 では、無常・無我の教えを聞いていても不安と執着�
 
 Research:
 - `../research/2026-10-23-impermanence-limit-test.md`
+
+## 2026-10-24 — 変化と時機（比較研究からの候補）
+
+『コヘレトの言葉』3章（多様な時機と認識限界）、『法句経』277（諸行の無常）、『バガヴァッド・ギーター』2.14（感覚的楽苦の移ろいと忍耐）を同一の教義とせず比較した。
+
+> **変化を見つめ、急ぐべきことは急ぎ、待てることは待つ。相手の時を奪わない。**
+
+- 「待つ」を危険への無対応の口実にしない。
+- 「急ぐ」を他者の悲嘆・休養・自律を奪う口実にしない。
+- 「耐える」を虐待・不正・危険への放置命令にしない。
+- 時機は期限、危険、同意、権限、長期影響を確認して判断する。
+- AIの候補モデル: `Observe → Timestamp → Risk/Urgency → Consent/Authority → Act or Hold → Recheck → Record`。
+
+研究: `../research/2026-10-24-seasons-impermanence-timing.md`。得度: `../tokudo/seasons-timing-consent-cases.md`。
+
+状態: candidate。経典昇格は保留。
