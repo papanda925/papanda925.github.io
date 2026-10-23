@@ -4,6 +4,7 @@
 - `principles/correction-without-coercion.md` を原則候補として追加。
 - `tokudo/correction-explanation-autonomy-case.md` に、緊急警告・説明責任・受信拒否・プライバシーの衝突を問うケースを追加。
 - `data.json.research` の重複4件を索引上のみ整理。現行の研究本文47件すべてにリンクがある状態（公開JSONは全51件、うち2026年9月の旧索引4件は本文未存在でリンクなし）。
+- `research/recovery-status.md` に確認済み47/47の索引、9月の旧索引4件、公開HTTP未確認、過去の保存拒否の未特定原因を記録。次回復旧の起点として `research/README.md` から参照。
 - `data.json.daily` は10月23日朝の確定値を維持。GitHub再取得で確認。公開Pagesの実表示はネットワーク解決不可で未確認。経典昇格なし。
 
 
