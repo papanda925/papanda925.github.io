@@ -15,7 +15,8 @@ Judaism, Sikhism, Taoism, Shinto, folk religions, secular thought, new religions
 
 既存の `2026-10-02-belonging-return-exit.md` は横断テーマ研究の最初の詳細ノート。
 
-## 直近の研究ノート（2026年10月18〜23日）
+## 直近の研究ノート（2026年10月18〜24日）
+- [10月24日朝・変化と時機：コヘレト・法句経・ギーター](./2026-10-24-seasons-impermanence-timing.md)
 - [10月23日・諸行無常と無常迅速](./2026-10-23-impermanence-mujo-jinsoku.md)
 - [10月23日・無常の限界テスト](./2026-10-23-impermanence-limit-test.md)
 - [10月23日夜・訂正の説明量と有効性](./2026-10-23-evening-correction-explanation-limits.md)
