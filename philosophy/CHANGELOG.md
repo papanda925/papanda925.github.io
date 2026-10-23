@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-10-24 朝 — v0.4.17 / 時機と無常の横断比較
+- 『コヘレトの言葉』3章、『法句経』277、『バガヴァッド・ギーター』2.14を区別して比較し、`research/2026-10-24-seasons-impermanence-timing.md` を保存。
+- `daily-words/2026-10-24.md` と `data.json.daily` のテーマ・Human・Agent・Calm・Humor・humor_typeを同期。
+- `principles/impermanence.md` に時機の原則候補と危険・自律の例外を追記。`tokudo/seasons-timing-consent-cases.md` に4ケースを追加。
+- `data.json.research` は54件、うち50件に実在Markdownへのパスがあり、欠落リンク・重複パスは0。旧9月索引4件の本文未存在は継続課題。
+- `index.html` のデータ読込コードは確認したが、公開GitHub PagesのHTTP表示は取得できず未確認。
+- 研究・日次・公開JSON・原則・得度・研究READMEは保存後にGitHub再取得確認。過去の日次記録・経典本文は変更していない。経典昇格なし。
+
+
 ## 2026-10-23 — v0.4.16 / 無常の限界テスト
 - `research/2026-10-23-impermanence-limit-test.md` を追加。
 - SN 22.90 の不安・執着の反例、曹洞宗の無常法話、ストア派の移ろい受容を比較。
