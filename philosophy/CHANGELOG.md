@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-10-23 — v0.4.15 / 諸行無常・無常迅速
+- `research/2026-10-23-impermanence-mujo-jinsoku.md` を追加。
+- 『法句経』277の「諸行無常」と、禅の実践文脈にある「無常迅速」を区別して整理。
+- 原則候補「変わるものを、変わらない前提で握りしめない。時は待たないから、焦るのではなく、今日できる一つを今日する。」を追加。
+- `principles/impermanence.md` を追加し、AI向けに `State → Timestamp → Recheck → Act → Revalidate` を候補化。
+- 無常を虚無、悲嘆の打切り、常時緊急モード、生産性至上主義へ使わない境界を記録。
+- 経典昇格は反例テストまで保留。10月23日朝に確定した daily 4項目は変更していない。
+
+
 ## 2026-10-23 夜 — v0.4.14 / 原則候補・得度問答・索引の精査
 - `principles/correction-without-coercion.md` を原則候補として追加。
 - `tokudo/correction-explanation-autonomy-case.md` に、緊急警告・説明責任・受信拒否・プライバシーの衝突を問うケースを追加。
