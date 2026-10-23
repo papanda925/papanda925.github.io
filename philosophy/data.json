@@ -1,19 +1,25 @@
 {
-  "updated": "2026-10-22",
-  "version": "0.4.12",
+  "updated": "2026-10-23",
+  "version": "0.4.13",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
   },
   "daily": {
-    "theme": "訂正は相手に届く形で",
-    "human": "間違いに気づいたら、必要な人に、分かる言葉で伝え直す。",
-    "agent": "Correction・Audience・Privacy・Delivery・Unknown を区別し、届かなかった可能性を記録する。",
-    "calm": "全部を思いどおりにできなくても、いま可能な修復を一つ進める。",
-    "humor": "「念のため確認」のメールを送る前に、宛先を三回確認してしまった。",
+    "theme": "訂正の責任と、相手の自由",
+    "human": "必要な訂正を伝えたら、届いたかを確かめる。相手の理解や返事は無理に求めない。",
+    "agent": "Scope・Privacy・Sent・Delivered・Understood・Impact を別々に記録し、確認できない状態は Unknown とする。",
+    "calm": "自分にできる確認と修復を行い、その先の相手の反応まで支配しようとしない。",
+    "humor": "「返信不要です」と書いたメールに、「承知しました」と返信が届いた。",
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-23",
+      "title": "過去研究の公開索引と日次同期を復旧",
+      "summary": "10月23日朝の確定日次4項目を同期。既存研究20件に本文リンクを付与し、未掲載研究18件を追加。経典昇格なし。",
+      "type": "site"
+    },
     {
       "date": "2026-10-22",
       "title": "日次4項目の公開JSON同期を復旧",
@@ -143,6 +149,60 @@
   ],
   "research": [
     {
+      "date": "2026-10-23",
+      "title": "訂正の終了条件、修復の継続条件",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-23-correction-autonomy-stop-conditions.md"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "訂正は説明を増やせば届くのか（夜）",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-23-evening-correction-explanation-limits.md"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "訂正の到達とプライバシーの境界",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-22-correction-reach-privacy.md"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "訂正の受領確認と相手の自律性（夜・復元）",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-22-evening-receipt-autonomy.md"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "『論語』2.17とソクラテス『弁明』21d — 知の境界",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-21-analects-socrates-knowledge-boundary.md"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "訂正が届かない場合の責任（夜・復元）",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-21-correction-delivery-evening.md"
+    },
+    {
       "date": "2026-10-20",
       "title": "ソクラテス — 夜間の六反例と訂正責任",
       "summary": "緊急警告・専門外の権威・権力差・推測の事実化・無限確認・訂正遅延を検証。",
@@ -210,7 +270,8 @@
       "tags": [
         "Mill",
         "Liberty"
-      ]
+      ],
+      "path": "research/2026-10-17-mill-liberty-harm-paternalism.md"
     },
     {
       "date": "2026-10-17",
@@ -239,7 +300,8 @@
       "tags": [
         "Kant",
         "Consent"
-      ]
+      ],
+      "path": "research/2026-10-16-kant-humanity-care-autonomy.md"
     },
     {
       "date": "2026-10-16",
@@ -268,7 +330,8 @@
       "tags": [
         "Care ethics",
         "Autonomy"
-      ]
+      ],
+      "path": "research/2026-10-15-care-ethics-responsiveness-autonomy.md"
     },
     {
       "date": "2026-10-15",
@@ -297,7 +360,8 @@
       "tags": [
         "Confucianism",
         "Shu"
-      ]
+      ],
+      "path": "research/2026-10-14-confucian-shu-ren-evening-limit-test.md"
     },
     {
       "date": "2026-10-14",
@@ -308,7 +372,8 @@
         "Shu",
         "Ren",
         "Consent"
-      ]
+      ],
+      "path": "research/2026-10-14-confucian-shu-ren-boundaries.md"
     },
     {
       "date": "2026-10-14",
@@ -329,7 +394,17 @@
         "Dana",
         "Timing",
         "Dignity"
-      ]
+      ],
+      "path": "research/2026-10-13-buddhist-dana-timing-dignity.md"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "仏教の布施：時機・非加害・限界テスト",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-13-dana-evening-limit-test.md"
     },
     {
       "date": "2026-10-12",
@@ -339,7 +414,17 @@
         "Islam",
         "Zakat",
         "Sadaqah"
-      ]
+      ],
+      "path": "research/2026-10-12-islam-zakat-sadaqah-dignity.md"
+    },
+    {
+      "date": "2026-10-12",
+      "title": "ザカート／サダカと支援の尊厳：反例・限界テスト",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-12-zakat-sadaqah-evening-limit-test.md"
     },
     {
       "date": "2026-10-11",
@@ -348,7 +433,17 @@
       "tags": [
         "Judaism",
         "Tzedakah"
-      ]
+      ],
+      "path": "research/2026-10-11-tzedakah-dignity-choice.md"
+    },
+    {
+      "date": "2026-10-11",
+      "title": "ツェダカーの反例・限界テスト",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-11-tzedakah-evening-limit-test.md"
     },
     {
       "date": "2026-10-10",
@@ -357,7 +452,17 @@
       "tags": [
         "Christianity",
         "Care"
-      ]
+      ],
+      "path": "research/2026-10-10-good-samaritan-neighbor-care.md"
+    },
+    {
+      "date": "2026-10-10",
+      "title": "善いサマリア人 — 反例テスト",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-10-neighbor-care-evening.md"
     },
     {
       "date": "2026-10-09",
@@ -366,7 +471,8 @@
       "tags": [
         "Aristotle",
         "Friendship"
-      ]
+      ],
+      "path": "research/2026-10-09-aristotle-philia-reciprocity-dignity.md"
     },
     {
       "date": "2026-10-08",
@@ -375,7 +481,8 @@
       "tags": [
         "Sikhism",
         "Seva"
-      ]
+      ],
+      "path": "research/2026-10-08-sikh-langar-seva-dignity.md"
     },
     {
       "date": "2026-10-07",
@@ -384,7 +491,17 @@
       "tags": [
         "Daoism",
         "Wuwei"
-      ]
+      ],
+      "path": "research/2026-10-07-daoist-wuwei-minimal-effective-action.md"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "無為の限界テスト — 最小介入はいつ不足するか",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-07-wuwei-limit-case-test.md"
     },
     {
       "date": "2026-10-06",
@@ -396,7 +513,35 @@
         "Action",
         "Outcome",
         "Responsibility"
-      ]
+      ],
+      "path": "research/2026-10-06-bhagavad-gita-action-outcome.md"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "行為と結果の限界テスト",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-06-action-outcome-test.md"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "キリスト教 — 赦し・和解・信頼回復を分けて考える",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-05-christian-forgiveness-reconciliation-trust.md"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Forgiveness / Trust Test",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-05-forgiveness-trust-test.md"
     },
     {
       "date": "2026-10-04",
@@ -408,7 +553,26 @@
         "Enoughness",
         "Friendship",
         "Calmness"
-      ]
+      ],
+      "path": "research/2026-10-04-epicurus.md"
+    },
+    {
+      "date": "2026-10-04",
+      "title": "Enough ≠ Minimum — 「十分」を最小主義にしない反例検証",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-04-enough-is-not-minimum.md"
+    },
+    {
+      "date": "2026-10-04",
+      "title": "Enoughness 4ケーステスト — 最小主義と無限拡張の間",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-04-enoughness-four-case-test.md"
     },
     {
       "date": "2026-10-03",
@@ -420,7 +584,8 @@
         "Forgiveness",
         "Repair",
         "Calmness"
-      ]
+      ],
+      "path": "research/2026-10-03-islam-anger-forgiveness-repair.md"
     },
     {
       "date": "2026-10-03",
@@ -432,7 +597,8 @@
         "Forgiveness",
         "Repair",
         "Calmness"
-      ]
+      ],
+      "path": "research/2026-10-03-islam-anger-forgiveness-return.md"
     },
     {
       "date": "2026-10-03",
@@ -444,7 +610,8 @@
         "Incongruity",
         "Lightness",
         "Anti-dogmatism"
-      ]
+      ],
+      "path": "research/2026-10-03-humor-play-incongruity-ethics.md"
     },
     {
       "date": "2026-10-03",
@@ -456,7 +623,8 @@
         "Craving",
         "Second Arrow",
         "Calmness"
-      ]
+      ],
+      "path": "research/2026-10-03-buddhism-feeling-craving-second-arrow.md"
     },
     {
       "date": "2026-10-03",
@@ -468,7 +636,26 @@
         "Assent",
         "Hold",
         "Reflection"
-      ]
+      ],
+      "path": "research/2026-10-03-stoic-impression-assent-calm.md"
+    },
+    {
+      "date": "2026-10-03",
+      "title": "穏やかさは「何もしないこと」か — 宗教4伝統とストア派の比較",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-03-calmness-religion-philosophy.md"
+    },
+    {
+      "date": "2026-10-03",
+      "title": "反応の余白モデルの限界検証",
+      "summary": "研究本文・出典・反例はリンク先を参照。",
+      "tags": [
+        "Research"
+      ],
+      "path": "research/2026-10-03-response-space-counterexample-test.md"
     },
     {
       "date": "2026-10-02",
@@ -480,7 +667,8 @@
         "Exit",
         "Repair",
         "Freedom"
-      ]
+      ],
+      "path": "research/2026-10-02-belonging-return-exit.md"
     },
     {
       "date": "2026-09-15",
