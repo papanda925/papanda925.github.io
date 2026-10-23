@@ -29,3 +29,5 @@ Judaism, Sikhism, Taoism, Shinto, folk religions, secular thought, new religions
 - [10月19日朝・多面性](./2026-10-19-multiple-perspectives.md)
 - [10月18日夜・正語の六反例](./2026-10-18-right-speech-evening-limit-test.md)
 - [10月18日朝・正語](./2026-10-18-buddhist-right-speech-truth-timing.md)
+
+復旧・同期の未解決事項: [正本同期・復旧台帳](./recovery-status.md)。
