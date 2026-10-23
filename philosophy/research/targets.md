@@ -34,6 +34,14 @@
 - Open-source religion / オープンソース宗教
 - AI-related religious and philosophical systems
 
+## Cross-cutting themes
+
+- 無常・時間・死生 — 諸行無常、無常迅速、memento mori、時間性、変化と執着、先延ばしと焦燥の境界
+- 穏やかさ・回復 — 反応の余白、受容、修復、休むこと
+- 笑い・軽さ — 緊張緩和、視点転換、反教条主義
+- 自律・境界 — 同意、離脱、停止、プライバシー、支援の限界
+- 誤り・訂正 — 不確実性、訂正、Repair、Amendment、履歴と責任
+
 ## Common comparison axes
 
 1. 人間や苦しみをどう捉えるか
