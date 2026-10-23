@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-23",
-  "version": "0.4.13",
+  "version": "0.4.14",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
@@ -14,6 +14,12 @@
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-23",
+      "title": "研究索引の重複除去と得度問答の追加",
+      "summary": "研究本文への重複リンク4件を整理し、訂正と自律尊重の原則候補・得度問答を追加。本文は削除せず、経典昇格なし。",
+      "type": "research"
+    },
     {
       "date": "2026-10-23",
       "title": "過去研究の公開索引と日次同期を復旧",
@@ -275,16 +281,6 @@
     },
     {
       "date": "2026-10-17",
-      "title": "ミル『自由論』 — 朝の研究",
-      "summary": "研究ノート: research/2026-10-17-mill-liberty-harm-paternalism.md。原則候補・反例を記録し、経典昇格は保留。",
-      "tags": [
-        "Research",
-        "Verified file"
-      ],
-      "path": "research/2026-10-17-mill-liberty-harm-paternalism.md"
-    },
-    {
-      "date": "2026-10-17",
       "title": "ミル『自由論』 — 夜間六反例",
       "summary": "自由と安全の衝突、介入の権限・最小化・終了条件を検証する。",
       "tags": [
@@ -305,16 +301,6 @@
     },
     {
       "date": "2026-10-16",
-      "title": "カント — 朝の人格尊重研究",
-      "summary": "研究ノート: research/2026-10-16-kant-humanity-care-autonomy.md。原則候補・反例を記録し、経典昇格は保留。",
-      "tags": [
-        "Research",
-        "Verified file"
-      ],
-      "path": "research/2026-10-16-kant-humanity-care-autonomy.md"
-    },
-    {
-      "date": "2026-10-16",
       "title": "カント — 夜の六反例",
       "summary": "研究ノート: research/2026-10-16-kant-humanity-evening-limit-test.md。原則候補・反例を記録し、経典昇格は保留。",
       "tags": [
@@ -330,16 +316,6 @@
       "tags": [
         "Care ethics",
         "Autonomy"
-      ],
-      "path": "research/2026-10-15-care-ethics-responsiveness-autonomy.md"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "ケア倫理 — 朝の応答性研究",
-      "summary": "研究ノート: research/2026-10-15-care-ethics-responsiveness-autonomy.md。原則候補・反例を記録し、経典昇格は保留。",
-      "tags": [
-        "Research",
-        "Verified file"
       ],
       "path": "research/2026-10-15-care-ethics-responsiveness-autonomy.md"
     },
@@ -374,16 +350,6 @@
         "Consent"
       ],
       "path": "research/2026-10-14-confucian-shu-ren-boundaries.md"
-    },
-    {
-      "date": "2026-10-14",
-      "title": "儒家 — 夜の限界テスト",
-      "summary": "研究ノート: research/2026-10-14-confucian-shu-ren-evening-limit-test.md。原則候補・反例を記録し、経典昇格は保留。",
-      "tags": [
-        "Research",
-        "Verified file"
-      ],
-      "path": "research/2026-10-14-confucian-shu-ren-evening-limit-test.md"
     },
     {
       "date": "2026-10-13",
@@ -725,7 +691,8 @@
     "第一印象を最終判断にしない。穏やかさとは、感じないことではなく、同意する前に確かめられる余白である。",
     "痛みを否定しない。痛みの後に何を足しているかを見る。",
     "怒りを否定せず、怒りに決定権を渡さない。誤って行動したなら、固執せず修復へ戻る。",
-    "「もっと」を選ぶ前に、「何があれば十分か」を確かめる。"
+    "「もっと」を選ぶ前に、「何があれば十分か」を確かめる。",
+    "訂正は必要な相手に届けるが、相手の受領や反応を強制しない。"
   ],
   "cycle": [
     "Values",
