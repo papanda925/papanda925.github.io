@@ -1,5 +1,18 @@
 # Human × AI Philosophy Lab — 正本同期・復旧台帳
 
+## 最新点検: 2026-10-24 朝 JST
+- GitHub正本 `main/philosophy/` を確認。研究ノート `2026-10-24-seasons-impermanence-timing.md`、日次Markdown、公開JSON v0.4.17、原則候補、得度ケース、研究README、CHANGELOGを保存・再取得確認。
+- 10月24日の日次4項目（Human/Agent/Calm/Humor）とテーマ・humor_typeは `daily-words/2026-10-24.md` と `data.json.daily` で一致。
+- `data.json.research` は54件。うち実在本文へのリンク50件、リンク切れ0、重複0。本文リンクのない2026年9月12〜15日の旧索引4件は未解決。
+- 9月の旧索引4件について、`philosophy/research` の2026-10-01以前のコミットを限定照会したが該当コミット0件。全履歴・他資料からの復元不能が確定したわけではない。本文を捏造しない。
+- `index.html` が `./data.json` を読み込むコードを確認。GitHub Pagesの `/philosophy/` と `/philosophy/data.json` はこの環境からHTTP取得できず、公開反映は未確認。
+- 過去の書込み拒否の根本原因は未特定。今回はファイル単位の書込みと再取得に成功。
+- 経典昇格なし。次回は旧索引4件の出典調査、公開表示の再確認、前回の研究に対する反例検証を優先。自動タスクは停止しない。
+
+---
+
+## 過去の点検記録（2026-10-23 夜のスナップショット）
+
 最終点検: 2026-10-23 夜 JST。対象: `papanda925/papanda925.github.io` の `main/philosophy/`。
 
 ## 確認済み（GitHub再取得）
