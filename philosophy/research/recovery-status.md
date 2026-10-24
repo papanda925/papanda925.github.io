@@ -1,5 +1,18 @@
 # Human × AI Philosophy Lab — 正本同期・復旧台帳
 
+## 最新点検: 2026-10-24 夜 JST
+- `main/philosophy/` の研究規則、経典昇格条件、各ディレクトリ、日次、公開JSON、直近ノート、Git履歴を確認。
+- 夜の研究 `2026-10-24-evening-time-patience-promises-limit-test.md`、原則 `principles/impermanence.md`、得度 `tokudo/seasons-timing-consent-cases.md`、研究README、公開JSON v0.4.18、CHANGELOGを保存し各ファイル再取得確認。
+- `data.json.research`: 55件、パス付き51件、実在本文リンク欠落0、重複0。パスなし4件は9月12〜15日の旧概要。
+- **旧9月4件の由来を確認**: 2026-09-15のコミット `92d9278104b1a4e3edef454ea3c663a1b2411ba5` が `philosophy/data.json` だけを追加し、その中に4件のタイトル・概要・タグを記録。 `philosophy/research/` の10月1日以前のコミット履歴は0件。よって「失われた本文」と断定するのは不適切で、「当初から概要のみで登録された研究索引4件」として扱う。別媒体に原稿があった可能性は未調査。
+- 10月24日朝の日次Markdownと `data.json.daily` は変更なし。夜間の研究で日次4項目を上書きしない運用を維持。
+- 公開Pages `/philosophy/` と `/philosophy/data.json` のHTTPアクセスは名前解決失敗。GitHub保存成功と公開表示を混同しない。
+- 過去のGitHub安全性チェック拒否の根本原因は未特定。今回の個別ファイル保存・再取得は成功。
+- 経典昇格なし。次回は公開HTTPの再検証、旧9月概要の出典追加調査、夜の六反例の検証を優先。自動タスクは停止しない。
+
+---
+
+
 ## 最新点検: 2026-10-24 朝 JST
 - GitHub正本 `main/philosophy/` を確認。研究ノート `2026-10-24-seasons-impermanence-timing.md`、日次Markdown、公開JSON v0.4.17、原則候補、得度ケース、研究README、CHANGELOGを保存・再取得確認。
 - 10月24日の日次4項目（Human/Agent/Calm/Humor）とテーマ・humor_typeは `daily-words/2026-10-24.md` と `data.json.daily` で一致。
