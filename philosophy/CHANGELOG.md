@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-10-25 朝 — v0.4.19 / 約束不履行と修復
+- マタイ5:33–37、MN 61、クルアーン17:34の宗教的文脈を区別し、約束・誠実・省察・修復を研究。
+- `research/2026-10-25-promises-truth-repair.md` を保存し、研究READMEと `data.json.research` に追加。
+- `daily-words/2026-10-25.md` と `data.json.daily` のテーマ・Human・Agent・Calm・Humorを再取得比較し一致を確認。
+- `principles/promise-and-repair.md` と `tokudo/promise-repair-consent-case.md` を候補として保存。経典昇格なし。
+- 研究索引56件、本文パス付き52件、実在ファイル欠落0、重複0。パスなしの旧9月概要4件は維持。
+- GitHub Pages本体と公開JSONへのHTTP取得は実行環境の名前解決失敗で未確認。GitHub保存成功と公開表示は区別。
+
+
 ## 2026-10-24 夜 — v0.4.18 / 忍耐・時機・約束の限界テスト
 - クルアーン103章・18:23–24を一次資料で確認し、朝のコヘレト3章・法句経277・ギーター2.14の研究に六反例を追加。
 - `research/2026-10-24-evening-time-patience-promises-limit-test.md`、原則候補、得度ケース5・6、研究READMEを更新し再取得確認。
