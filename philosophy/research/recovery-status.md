@@ -1,5 +1,18 @@
 # Human × AI Philosophy Lab — 正本同期・復旧台帳
 
+## 最新点検: 2026-10-25 朝 JST
+- 正本README、研究対象・Essence、経典README・昇格規則、principles/practices/tokudo/daily-words/researchのディレクトリ、index.html、data.json、CHANGELOG、直近研究とGit履歴を取得・確認。
+- 新研究 `2026-10-25-promises-truth-repair.md`、日次Markdown、公開JSON v0.4.19、研究README、原則候補、得度問答、CHANGELOGをファイル単位で保存し、再取得内容の一致を確認。
+- `data.json.research` 56件（本文パス付き52件、パスなし4件）。研究ディレクトリ内の本文リンク欠落0、重複パス0。
+- 10月25日の `daily-words/2026-10-25.md` と `data.json.daily` の theme/human/agent/calm/humor を照合し5項目一致。過去日次と経典は変更なし。
+- 公開GitHub Pagesと公開JSONのHTTP確認は名前解決エラーにより未確認。GitHub上の更新が閲覧者へ配信済みとは断定しない。
+- 9月12〜15日の旧研究4件は2026-09-15に概要のみ登録された履歴であり、原文の紛失と断定しない。別媒体の原稿有無は未確認。
+- 過去の安全性チェック拒否の根本原因は不明。今回の書込みでは拒否なし。失敗しても定期研究は停止しない。
+- 次回優先: 公開HTTP再確認、旧9月概要の別媒体調査、約束・修復原則の反例・他解釈検証。経典昇格は保留。
+
+---
+
+
 ## 最新点検: 2026-10-24 夜 JST
 - `main/philosophy/` の研究規則、経典昇格条件、各ディレクトリ、日次、公開JSON、直近ノート、Git履歴を確認。
 - 夜の研究 `2026-10-24-evening-time-patience-promises-limit-test.md`、原則 `principles/impermanence.md`、得度 `tokudo/seasons-timing-consent-cases.md`、研究README、公開JSON v0.4.18、CHANGELOGを保存し各ファイル再取得確認。
