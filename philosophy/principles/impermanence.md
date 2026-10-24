@@ -82,3 +82,15 @@ Research:
 研究: `../research/2026-10-24-seasons-impermanence-timing.md`。得度: `../tokudo/seasons-timing-consent-cases.md`。
 
 状態: candidate。経典昇格は保留。
+
+## 2026-10-24 夜 — 時機の判断と責任（追加反例）
+
+クルアーン103章（時間・善行・真実・忍耐）と18:23–24（将来の断言への戒め）を、コヘレト3章、法句経277、ギーター2.14と同一視せず比較した。
+
+> **未来を断言せず、今日の責任を曖昧にしない。待つなら、何を待ち、いつ確かめるかを決める。**
+
+- 期限・権限・本人の意思が不明な待機には再確認条件を持つ。
+- 危険な遅延、約束からの逃避、忍耐の強制を認めない。
+- 実装候補: `Observe → Timestamp → Risk → Deadline → Consent/Authority → Act / Hold / Escalate → Recheck → Record/Repair`。
+
+研究: [夜の限界テスト](../research/2026-10-24-evening-time-patience-promises-limit-test.md)。状態: candidate、経典昇格保留。
