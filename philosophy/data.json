@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-24",
-  "version": "0.4.17",
+  "version": "0.4.18",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
@@ -14,6 +14,12 @@
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-24",
+      "title": "夜の時機・忍耐・約束の限界テストを追加",
+      "summary": "イスラムの時間・真実・忍耐・将来の約束を一次資料で確認し、六反例を検討。朝の今日の言葉4項目は変更せず。",
+      "type": "research"
+    },
     {
       "date": "2026-10-24",
       "title": "時機の横断研究と日次4項目を同期",
@@ -172,6 +178,23 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-10-24",
+      "title": "時機の限界テスト — 忍耐・真実・将来の約束",
+      "summary": "クルアーン103章・18:23–24を加え、コヘレト3章・法句経277・ギーター2.14と教義を混同せず比較。緊急時の待機、悲嘆、納期、権限失効、忍耐の強制、生産性偏重の六反例で『待つなら再確認条件を持つ』という候補を検証。経典昇格なし。",
+      "tags": [
+        "Time",
+        "Islam",
+        "Ecclesiastes",
+        "Buddhism",
+        "Hinduism",
+        "Promise",
+        "Patience",
+        "Consent",
+        "Counterexample"
+      ],
+      "path": "research/2026-10-24-evening-time-patience-promises-limit-test.md"
+    },
     {
       "date": "2026-10-24",
       "title": "変化と時機 — コヘレト3章・法句経277・ギーター2.14の比較",
