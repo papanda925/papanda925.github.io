@@ -1,5 +1,17 @@
 # Human × AI Philosophy Lab — 正本同期・復旧台帳
 
+## 最新点検: 2026-10-26 朝 JST
+- 研究規則（README、targets、essence、経典READMEとpromotion）、原則・実践・得度・日次のディレクトリ、index.html、公開JSON、CHANGELOG、直近研究、Git履歴を再取得。
+- 10月25日夜の「約束の自発性と依拠」を引き継ぎ、マイモニデス2:9–10、マタイ5:23–24、MN 61を比較した「謝罪・償い・赦しの境界」を新規保存。
+- `research/2026-10-26-restitution-forgiveness-boundaries.md`、`daily-words/2026-10-26.md`、`data.json` v0.4.21、原則候補、実践候補、得度問答、研究README、CHANGELOGをファイル単位で保存し再取得確認。
+- `data.json.research` 58件（本文パス54件、旧9月概要4件）。研究ディレクトリの実在ファイルと照合し、パス欠落0・重複0。
+- 10月26日の日次Markdownと公開JSONは theme/human/agent/calm/humor の5項目一致。過去の日次4項目と経典本文は変更なし。
+- 公開サイト `https://papanda925.github.io/philosophy/` と公開JSONのHTTP取得は実行環境のDNS名前解決エラーで未確認。GitHub保存と実表示を区別する。
+- 未解決: 公開Pages実表示、旧9月概要4件の別媒体原稿の有無、過去のGitHub書込み拒否の根本原因、赦し規範と現代の被害者保護の緊張、AI実装の実証。
+- 次回20時: 朝の日次4項目を上書きせず、謝罪反復・接触停止・補償義務・緊急連絡の反例を深掘りし、公開HTTPを再確認。部分的な保存失敗でも継続研究を停止しない。
+
+---
+
 ## 最新点検: 2026-10-25 夜 JST
 - 正本の研究対象・Essence・経典昇格規則、原則・実践・得度・日次、index.html、公開JSON、変更履歴、直近研究、Git履歴を確認。
 - 夜の研究 `2026-10-25-evening-promise-voluntariness-reliance-boundaries.md` を新規保存し、原則候補、得度問答、研究README、公開JSON v0.4.20、CHANGELOGを個別更新。各ファイルGitHub再取得確認済み。
