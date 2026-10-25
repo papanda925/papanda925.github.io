@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-10-26 朝 — v0.4.21 / 謝罪・償い・赦しの境界
+- マイモニデス『悔い改めの法』2:9–10、マタイ5:23–24、MN 61を各伝統の文脈で区別し、謝罪・償い・赦し・信頼回復を比較。
+- `research/2026-10-26-restitution-forgiveness-boundaries.md`、`principles/repair-without-forced-forgiveness.md`、`practices/repair-without-pressure.md`、`tokudo/restitution-forgiveness-boundary-case.md` を追加。経典昇格なし。
+- `daily-words/2026-10-26.md` と `data.json.daily` の theme/human/agent/calm/humor を一致させた。
+- `data.json` をv0.4.21へ更新し、研究索引58件（本文パス付き54件、旧9月概要のみ4件）。リンク欠落0・重複0。
+- 各ファイルを個別保存・GitHub再取得確認。過去日次・経典本文・index.htmlは変更していない。
+- 公開PagesのHTTP取得は名前解決失敗により未確認。公開反映を確認済みとは扱わない。
+
 ## 2026-10-25 夜 — v0.4.20 / 約束の自発性と依拠の六反例
 - 10月25日朝の約束・修復研究を継続し、マタイ5:33–37、MN 61、クルアーン17:34、Stanford Encyclopedia of Philosophy「Promises」を宗教的教え・学説・独自案に分けて検討。
 - 強制された約束、競合する約束、受け手の免除、災害、依拠損害、AI権限喪失の六反例を `research/2026-10-25-evening-promise-voluntariness-reliance-boundaries.md` に記録。
