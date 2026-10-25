@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-10-25 夜 — v0.4.20 / 約束の自発性と依拠の六反例
+- 10月25日朝の約束・修復研究を継続し、マタイ5:33–37、MN 61、クルアーン17:34、Stanford Encyclopedia of Philosophy「Promises」を宗教的教え・学説・独自案に分けて検討。
+- 強制された約束、競合する約束、受け手の免除、災害、依拠損害、AI権限喪失の六反例を `research/2026-10-25-evening-promise-voluntariness-reliance-boundaries.md` に記録。
+- `principles/promise-and-repair.md` の原則候補を精密化、`tokudo/promise-repair-consent-case.md` にケース5・6を追加。経典昇格なし。
+- `data.json` v0.4.20へ更新し研究索引57件（本文パス付き53件、旧9月概要4件）。本文パス欠落0、重複0。
+- 朝に確定した `daily-words/2026-10-25.md` と `data.json.daily` はテーマ・4項目が一致。夜はdailyを上書きしていない。
+- ファイル単位のGitHub保存後に再取得で一致を確認。公開GitHub PagesはDNS解決失敗により実表示未確認。
+
 ## 2026-10-25 朝 — v0.4.19 / 約束不履行と修復
 - マタイ5:33–37、MN 61、クルアーン17:34の宗教的文脈を区別し、約束・誠実・省察・修復を研究。
 - `research/2026-10-25-promises-truth-repair.md` を保存し、研究READMEと `data.json.research` に追加。
