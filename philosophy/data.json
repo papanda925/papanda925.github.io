@@ -1,19 +1,25 @@
 {
-  "updated": "2026-10-25",
-  "version": "0.4.20",
+  "updated": "2026-10-26",
+  "version": "0.4.21",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
   },
   "daily": {
-    "theme": "約束を守れなかったときの誠実さ",
-    "human": "できない約束を重ねず、難しくなったら早めに伝え、できる修復を示す。",
-    "agent": "約束の条件・期限・権限を記録し、不能の兆候で早期通知と代替案を提示する。",
-    "calm": "失敗を消そうと焦らず、事実を確かめ、可能な修復を一つ進める。",
-    "humor": "「あと5分」を三回言ったら、時計が先に帰った。",
+    "theme": "謝罪と修復は、赦しの要求ではない",
+    "human": "謝るときは言い訳より影響を確かめ、相手の返事を急がせない。",
+    "agent": "Harm・Evidence・Restitution・Consent・ContactBoundary・FollowUp を区別し、謝罪の送信を修復完了としない。",
+    "calm": "返事を支配せず、いま引き受けられる修復を一つ進める。",
+    "humor": "「ひと言だけ謝ろう」と思ったら、前置きが三段落になった。",
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-26",
+      "title": "謝罪・償い・赦しの研究と日次4項目を同期",
+      "summary": "10月26日朝の研究を索引に追加。daily-wordsのテーマ・Human・Agent・Calm・Humorを公開JSONと同期。過去日次と経典は変更しない。",
+      "type": "research"
+    },
     {
       "date": "2026-10-25",
       "title": "夜間研究：自発性・依拠・修復の境界",
@@ -190,6 +196,22 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-10-26",
+      "title": "謝罪・償い・赦しの境界 — 修復は相手への要求ではない",
+      "summary": "マイモニデス『悔い改めの法』2:9–10、マタイ5:23–24、MN 61を文脈を分けて比較。償い・接触同意・赦し・信頼回復を区別し、反例を検証。経典昇格保留。",
+      "tags": [
+        "Judaism",
+        "Christianity",
+        "Buddhism",
+        "Restitution",
+        "Forgiveness",
+        "Consent",
+        "Repair",
+        "AI Ethics"
+      ],
+      "path": "research/2026-10-26-restitution-forgiveness-boundaries.md"
+    },
     {
       "date": "2026-10-25",
       "title": "約束の境界 — 自発性・相手の信頼・修復の非強制",
