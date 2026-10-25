@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-25",
-  "version": "0.4.19",
+  "version": "0.4.20",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
@@ -14,6 +14,12 @@
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-25",
+      "title": "夜間研究：自発性・依拠・修復の境界",
+      "summary": "約束の六反例と世俗倫理学を追加。朝のdailyは変更せず、原則候補と得度問答を更新。",
+      "type": "research"
+    },
     {
       "date": "2026-10-25",
       "title": "約束・真実・修復の研究と日次4項目を公開同期",
@@ -184,6 +190,23 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-10-25",
+      "title": "約束の境界 — 自発性・相手の信頼・修復の非強制",
+      "summary": "マタイ5:33–37、MN 61、クルアーン17:34と約束の倫理学を区別して比較。威圧、相反する約束、免除、不可抗力、依拠損害、AI権限喪失の六反例を検証。原則候補を精密化し、経典昇格は保留。",
+      "tags": [
+        "Promises",
+        "Voluntariness",
+        "Reliance",
+        "Christianity",
+        "Buddhism",
+        "Islam",
+        "Ethics",
+        "Consent",
+        "Counterexample"
+      ],
+      "path": "research/2026-10-25-evening-promise-voluntariness-reliance-boundaries.md"
+    },
     {
       "date": "2026-10-25",
       "title": "約束を守れなかったときの誠実さ — 真実・省察・修復",
