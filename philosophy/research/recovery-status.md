@@ -1,5 +1,17 @@
 # Human × AI Philosophy Lab — 正本同期・復旧台帳
 
+## 最新点検: 2026-10-25 夜 JST
+- 正本の研究対象・Essence・経典昇格規則、原則・実践・得度・日次、index.html、公開JSON、変更履歴、直近研究、Git履歴を確認。
+- 夜の研究 `2026-10-25-evening-promise-voluntariness-reliance-boundaries.md` を新規保存し、原則候補、得度問答、研究README、公開JSON v0.4.20、CHANGELOGを個別更新。各ファイルGitHub再取得確認済み。
+- `data.json.research` 57件（本文パス付き53件、9月12〜15日の概要のみ4件）。研究ディレクトリの一覧と照合し本文パス欠落0・重複0。
+- 10月25日朝の `daily-words/2026-10-25.md` と `data.json.daily` の theme/human/agent/calm/humor は5項目一致。夜は日次4項目を変更していない。
+- `index.html` と経典本文は未変更。経典昇格なし。
+- 公開Pagesおよび公開JSONのHTTP取得はDNS解決失敗（curl HTTP 000）で未確認。GitHub正本の更新が実表示されたとは断定しない。
+- 未解決: 公開サイトの外部確認、旧9月概要4件の別媒体での詳細原稿の有無、過去のGitHub書込み拒否の原因、約束の倫理学上の異論とAI設計の実証。
+- 次回優先: 公開ページ再確認、原則の反例追加・実証計画、旧9月概要の出典調査。保存失敗があっても継続研究は停止しない。
+
+---
+
 ## 最新点検: 2026-10-25 朝 JST
 - 正本README、研究対象・Essence、経典README・昇格規則、principles/practices/tokudo/daily-words/researchのディレクトリ、index.html、data.json、CHANGELOG、直近研究とGit履歴を取得・確認。
 - 新研究 `2026-10-25-promises-truth-repair.md`、日次Markdown、公開JSON v0.4.19、研究README、原則候補、得度問答、CHANGELOGをファイル単位で保存し、再取得内容の一致を確認。
