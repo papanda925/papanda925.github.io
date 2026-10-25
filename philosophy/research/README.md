@@ -15,7 +15,8 @@ Judaism, Sikhism, Taoism, Shinto, folk religions, secular thought, new religions
 
 既存の `2026-10-02-belonging-return-exit.md` は横断テーマ研究の最初の詳細ノート。
 
-## 直近の研究ノート（2026年10月18〜25日）
+## 直近の研究ノート（2026年10月18〜26日）
+- [10月26日朝・謝罪・償い・赦しの境界](./2026-10-26-restitution-forgiveness-boundaries.md)
 - [10月25日夜・約束の自発性と依拠の六反例](./2026-10-25-evening-promise-voluntariness-reliance-boundaries.md)
 - [10月25日朝・約束を守れなかったときの誠実さ](./2026-10-25-promises-truth-repair.md)
 - [10月24日夜・忍耐と約束の限界テスト](./2026-10-24-evening-time-patience-promises-limit-test.md)
