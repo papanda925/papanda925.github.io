@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-10-26 夜 — v0.4.22 / 反復謝罪と接触停止の限界テスト
+- 朝の謝罪・償い・赦し研究を継続。マイモニデス2:9–10、MN 61、国連経済社会理事会決議2002/12とUNODC修復的司法資料を区別し、八反例を検証。
+- `research/2026-10-26-evening-repeated-apology-contact-boundaries.md` を追加。原則・実践・得度に停止条件、通知義務、補償の区別を追記。経典昇格なし。
+- `data.json` v0.4.22、研究索引59件（本文パス55件、旧9月概要4件）。研究パスの欠落0・重複0。
+- 朝の `daily-words/2026-10-26.md` と `data.json.daily` は変更せず、テーマ・Human・Agent・Calm・Humor・humor_typeが一致することを再確認。
+- ファイル単位で保存・GitHub再取得を実施。公開Pagesと公開JSONのHTTP確認はDNS名前解決失敗のため未確認。
+
+
 ## 2026-10-26 朝 — v0.4.21 / 謝罪・償い・赦しの境界
 - マイモニデス『悔い改めの法』2:9–10、マタイ5:23–24、MN 61を各伝統の文脈で区別し、謝罪・償い・赦し・信頼回復を比較。
 - `research/2026-10-26-restitution-forgiveness-boundaries.md`、`principles/repair-without-forced-forgiveness.md`、`practices/repair-without-pressure.md`、`tokudo/restitution-forgiveness-boundary-case.md` を追加。経典昇格なし。
