@@ -26,3 +26,12 @@
 - AIの記録 → `drafted`、`sent`、`delivered`、`restitution_executed`、`forgiven` を混同しない。
 
 [夜の反例研究](../research/2026-10-26-evening-repeated-apology-contact-boundaries.md)を参照。法的義務や緊急時の具体的対応は個別の専門判断が必要。
+
+## 2026-10-27 朝 — 停止・再開の5分点検
+1. **同意**: allowed/refused/withdrawn/unknown を明示。未返信は unknown。
+2. **目的**: 謝罪・通常連絡・補償・法定通知・安全通知を分ける。
+3. **根拠**: 連絡拒否があるなら通常送信は停止。例外の必要性と適法性を担当者が判断。
+4. **再開**: 相手の新たな同意または独立した通知根拠について、目的・経路・承認者・期限を記録。
+5. **事後**: 送信・到達・受領・影響・再停止を別々に確認。ジョブ再起動で停止を失わない。
+
+AIによる自動再開は実装しない。例外を無条件で許可しない。詳しくは[10月27日朝の研究](../research/2026-10-27-consent-unknown-resume-authority.md)。
