@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-26",
-  "version": "0.4.21",
+  "version": "0.4.22",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
@@ -14,6 +14,12 @@
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-26",
+      "title": "夜間研究：反復謝罪・接触停止と安全通知",
+      "summary": "八反例を研究本文、原則・実践・得度へ反映。朝の日次4項目は変更せず。",
+      "type": "research"
+    },
     {
       "date": "2026-10-26",
       "title": "謝罪・償い・赦しの研究と日次4項目を同期",
@@ -196,6 +202,22 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-10-26",
+      "title": "謝罪の反復と接触停止 — 補償・緊急連絡の八反例",
+      "summary": "マイモニデス『悔い改めの法』2:9–10、MN 61、国連修復的司法基本原則2002/12を文脈を分けて検討。接触拒否と補償・安全通知の義務を区別し、AIの再送停止・権限確認を設計。経典昇格保留。",
+      "tags": [
+        "Judaism",
+        "Buddhism",
+        "Restorative Justice",
+        "Contact Boundaries",
+        "Consent",
+        "Safety",
+        "AI Ethics",
+        "Counterexamples"
+      ],
+      "path": "research/2026-10-26-evening-repeated-apology-contact-boundaries.md"
+    },
     {
       "date": "2026-10-26",
       "title": "謝罪・償い・赦しの境界 — 修復は相手への要求ではない",
