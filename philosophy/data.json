@@ -1,19 +1,25 @@
 {
-  "updated": "2026-10-26",
-  "version": "0.4.22",
+  "updated": "2026-10-27",
+  "version": "0.4.23",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
   },
   "daily": {
-    "theme": "謝罪と修復は、赦しの要求ではない",
-    "human": "謝るときは言い訳より影響を確かめ、相手の返事を急がせない。",
-    "agent": "Harm・Evidence・Restitution・Consent・ContactBoundary・FollowUp を区別し、謝罪の送信を修復完了としない。",
-    "calm": "返事を支配せず、いま引き受けられる修復を一つ進める。",
-    "humor": "「ひと言だけ謝ろう」と思ったら、前置きが三段落になった。",
+    "theme": "沈黙を許可に変えない",
+    "human": "返事がないとき、相手の都合を想像で決めず、できる責任を一つ進める。",
+    "agent": "ConsentState・Purpose・LegalBasis・HumanAuthorization・Expiry・Delivery を区別し、不明や拒否を送信許可に変えない。",
+    "calm": "返事を急かさず、いま許されている行動に集中する。",
+    "humor": "「確認は一回だけ」と決めたのに、決めたことを二回確認した。",
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-27",
+      "title": "同意不明・再開権限の研究と日次4項目を同期",
+      "summary": "10月27日朝の研究を索引へ追加し、daily-wordsと公開JSONのテーマ・Human・Agent・Calm・Humorを同期。過去の日次と経典は変更しない。",
+      "type": "research"
+    },
     {
       "date": "2026-10-26",
       "title": "夜間研究：反復謝罪・接触停止と安全通知",
@@ -202,6 +208,22 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-10-27",
+      "title": "同意不明と連絡再開の権限 — 停止・再開の八反例",
+      "summary": "MN 58・MN 61、ミル『自由論』、国連修復的司法原則、NIST AI RMFを文脈別に参照。同意不明を許可に変えず、目的限定の人間承認・期限・停止状態の永続化を設計候補として検討。経典昇格保留。",
+      "tags": [
+        "Buddhism",
+        "Liberty",
+        "Consent",
+        "Restorative Justice",
+        "Contact Boundaries",
+        "Human Oversight",
+        "AI Ethics",
+        "Counterexamples"
+      ],
+      "path": "research/2026-10-27-consent-unknown-resume-authority.md"
+    },
     {
       "date": "2026-10-26",
       "title": "謝罪の反復と接触停止 — 補償・緊急連絡の八反例",
