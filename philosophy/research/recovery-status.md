@@ -1,5 +1,19 @@
 # Human × AI Philosophy Lab — 正本同期・復旧台帳
 
+## 最新点検: 2026-10-26 夜 JST
+- 正本のREADME・研究対象・Essence・経典と昇格条件・原則・実践・得度・日次・index.html・公開JSON・CHANGELOG・直近研究・Git履歴を確認。
+- `research/2026-10-26-evening-repeated-apology-contact-boundaries.md` を保存。朝の研究から反復謝罪、拒否後の補償・安全通知、第三者経由の迂回など八反例へ発展。
+- `principles/repair-without-forced-forgiveness.md`、`practices/repair-without-pressure.md`、`tokudo/restitution-forgiveness-boundary-case.md` に反例・停止条件を追記。
+- `data.json` v0.4.22。研究索引59件、本文パス55件、旧9月の概要のみ4件。研究ディレクトリ一覧との照合でパス欠落0、重複0。
+- 10月26日朝の `daily-words/2026-10-26.md` と `data.json.daily` のテーマ・4項目・humor_typeの一致を確認。夜は上書きしていない。
+- GitHubの各更新ファイルは書込み後に再取得確認。経典昇格なし。
+- 公開ページと公開JSONのHTTPアクセスは実行環境のDNS名前解決失敗。実際の配信は未確認。
+- 未解決: 公開Pages実表示、9月12〜15日の概要4件の別媒体原稿の有無、過去のGitHub書込み拒否の根本原因、宗教的赦し規範と現代の同意原則の緊張、AI設計の実証。
+- 次回は公開HTTP再検証と、同意が不明な場合の停止・再開権限、既存の未解決事項を優先。保存失敗があっても継続研究を停止しない。
+
+---
+
+
 ## 最新点検: 2026-10-26 朝 JST
 - 研究規則（README、targets、essence、経典READMEとpromotion）、原則・実践・得度・日次のディレクトリ、index.html、公開JSON、CHANGELOG、直近研究、Git履歴を再取得。
 - 10月25日夜の「約束の自発性と依拠」を引き継ぎ、マイモニデス2:9–10、マタイ5:23–24、MN 61を比較した「謝罪・償い・赦しの境界」を新規保存。
