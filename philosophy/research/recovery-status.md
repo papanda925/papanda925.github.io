@@ -1,5 +1,18 @@
 # Human × AI Philosophy Lab — 正本同期・復旧台帳
 
+## 最新点検: 2026-10-27 夜 JST
+- 正本README、研究対象・Essence、経典README・昇格規則、原則・実践・得度・日次一覧、index.html、data.json、CHANGELOG、直近研究、Git履歴を確認。直近コミットには宗教用語連載の新規保存を確認。
+- 夜の研究「再開承認が取り消されたとき、AIは本当に止まれるか」を追加。MN 61、クルアーン4:58、NIST AI RMF、未査読のAI権限撤回プレプリントを文脈別に比較。八反例と4 Essenceを保存。原則・実践・得度も追加。経典昇格なし。
+- 「宗教用語の知恵と一笑」第1回・煩悩の出典を補強。HTML記事 `articles/religious-terms/index.html` を作成し、研究トップ `index.html` に導線を追加。研究連載方針も更新。
+- `data.json` v0.4.24、研究索引61件（本文リンク57件、旧9月概要のみ4件）。研究ディレクトリと照合し欠落0、重複0。朝の `daily-words/2026-10-27.md` と公開JSONの theme/human/agent/calm/humor/humor_type の6項目一致。夜は朝の日次を変更していない。
+- ファイル単位でGitHubへ直接保存し、各ファイル再取得内容一致を確認。**GitHub Actionsは使用していない**。
+- 公開HP `/philosophy/`、宗教用語記事 `/philosophy/articles/religious-terms/`、公開JSONはHTTP取得を試行したが実行環境のDNS名前解決失敗。**GitHub正本更新成功・公開ページ実表示は未確認**。
+- 未解決：公開HTTP表示、旧9月研究概要4件の別媒体原稿の有無、過去のGitHub書込み拒否の原因、外部API受理と撤回の競合の実装試験、法域別の安全通知、宗教用語記事の継続的なHTML掲載。
+- 次回優先：公開ページを再確認。停止・撤回の実証可能なテスト条件を検討し、宗教用語の次回記事「アーメン」の一次資料を確認。保存失敗でも定期研究は停止しない。
+
+---
+
+
 ## 最新点検: 2026-10-27 朝 JST
 - README、targets、essence、経典README・昇格条件、原則・実践・得度・日次の一覧、index.html、data.json、CHANGELOG、直近研究、Gitコミット履歴を再取得。
 - 10月26日夜の「接触拒否後の再送停止」を継続し、10月27日朝「同意不明・再開権限」を研究。MN 58/61、ミル、国連決議2002/12、NIST AI RMFを文脈別に参照。経典昇格なし。
