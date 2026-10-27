@@ -30,3 +30,8 @@
 - [宗教用語の知恵と一笑・HTML版](../articles/religious-terms/index.html)を追加し、研究トップ `index.html` からリンクした。
 - 連載のMarkdownは編集正本、HTMLは閲覧用。毎朝新記事を追加する際はHTMLにも新記事への導線を追加する。
 - GitHub Actionsは使用しない。GitHubのファイル単位更新・再取得で確認し、公開HTTPは別に確認する。
+
+## 第2回（2026-10-28）
+- [アーメン――「お祈り終了」の合図だけ？](../articles/religious-terms/2026-10-28-amen.md)
+- [HP版の第2回](../articles/religious-terms/index.html#amen-title)
+- ユダヤ教・キリスト教の出典を区別し、礼拝での応答と契約同意・AI承認を同一視しない。
