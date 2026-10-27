@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-10-27 夜 — v0.4.24 / 承認撤回後の停止と宗教用語連載HP
+- 朝の「同意不明と再開権限」を継続し、仏教MN 61、クルアーン4:58、NIST AI RMF、未査読プレプリントを区別して、撤回・期限切れ・権限失効・再起動・送信競合・外部API受理の八反例を検証。
+- `research/2026-10-27-evening-revoked-authorization-stop.md`、`principles/revoked-authorization-stop.md`、`practices/revocation-stop-check.md`、`tokudo/revoked-authority-stop-case.md` を新規保存。経典昇格なし。AI停止保証は未実装・未実証。
+- `articles/religious-terms/index.html` を新規作成し、研究トップ `index.html` に「宗教用語の知恵と一笑」導線を追加。10月27日の「煩悩」記事の出典を補強。GitHub Actionsは使わず、GitHubのファイル単位更新で保存。
+- `data.json` v0.4.24、研究索引61件（本文パス57件、旧9月概要のみ4件）。10月27日朝の日次4項目は変更せず、`daily-words/2026-10-27.md` と一致。
+- GitHubファイル再取得は成功。公開HPとJSONのHTTP取得は実行環境のDNS名前解決失敗で未確認。GitHub保存と閲覧者への公開表示は区別する。
+
+
 ## 2026-10-27 朝 — v0.4.23 / 同意不明と連絡再開の権限
 - 10月26日夜の接触停止研究を継続。MN 58/61、ミル『自由論』、国連修復的司法原則、NIST AI RMFの文脈を区別し、同意不明・拒否・撤回・再開権限の八反例を研究。
 - `research/2026-10-27-consent-unknown-resume-authority.md`、`daily-words/2026-10-27.md` を追加。原則・実践・得度に停止条件と再開権限の確認を追記。
