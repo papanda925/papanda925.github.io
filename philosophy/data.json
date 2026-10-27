@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-27",
-  "version": "0.4.23",
+  "version": "0.4.24",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
@@ -14,6 +14,12 @@
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-27",
+      "title": "夜間研究：委任・撤回・停止の検証と宗教用語HP連載",
+      "summary": "朝の今日の言葉は維持。承認撤回の八反例とAI停止設計候補を研究し、宗教用語「煩悩」のHTML記事をトップページから読める構成にした。公開HTTP表示は別途確認。",
+      "type": "research"
+    },
     {
       "date": "2026-10-27",
       "title": "同意不明・再開権限の研究と日次4項目を同期",
@@ -208,6 +214,21 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-10-27",
+      "title": "夜間研究：承認撤回後にAIは止まれるか — 委託・省察・八反例",
+      "summary": "仏教MN 61、クルアーン4:58、NIST AI RMFと未査読のAI権限撤回研究を文脈別に比較。期限切れ、旧ジョブ、再起動、外部API受理の境界を検証。日次4項目は朝のまま保持し、経典昇格は保留。",
+      "tags": [
+        "Buddhism",
+        "Islam",
+        "Trust",
+        "Revocation",
+        "Agent Ethics",
+        "Authorization",
+        "Counterexamples"
+      ],
+      "path": "research/2026-10-27-evening-revoked-authorization-stop.md"
+    },
     {
       "date": "2026-10-27",
       "title": "同意不明と連絡再開の権限 — 停止・再開の八反例",
