@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-10-28 朝 — v0.4.25 / アーメン・理解と応答の境界／宗教用語連載第2回
+- ユダヤ教『ネヘミヤ記』8:6、キリスト教『コリントの信徒への手紙一』14:16、Chabadの解説、カトリック教会のカテキズム1061–1065を確認。宗教的応答と現代の契約・AI承認を混同しない研究を追加。
+- `research/2026-10-28-amen-understanding-affirmation-boundaries.md`、原則候補、実践、得度問答を保存。8反例と4 Essenceを抽出。経典昇格なし。
+- `articles/religious-terms/2026-10-28-amen.md` を追加、`articles/religious-terms/index.html` に第2回全文を掲載、トップ `index.html` に第2回への導線を追加。
+- `daily-words/2026-10-28.md` と `data.json.daily` の6項目を同期。研究索引62件（本文パス58件、旧9月概要4件）。公開データ v0.4.25。
+- GitHub Actionsを使わず、GitHubのファイル単位の直接保存・再取得確認を実施。公開Pagesの実表示は別途点検。
+
+
 ## 2026-10-27 夜 — v0.4.24 / 承認撤回後の停止と宗教用語連載HP
 - 朝の「同意不明と再開権限」を継続し、仏教MN 61、クルアーン4:58、NIST AI RMF、未査読プレプリントを区別して、撤回・期限切れ・権限失効・再起動・送信競合・外部API受理の八反例を検証。
 - `research/2026-10-27-evening-revoked-authorization-stop.md`、`principles/revoked-authorization-stop.md`、`practices/revocation-stop-check.md`、`tokudo/revoked-authority-stop-case.md` を新規保存。経典昇格なし。AI停止保証は未実装・未実証。
