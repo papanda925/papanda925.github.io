@@ -1,19 +1,25 @@
 {
-  "updated": "2026-10-27",
-  "version": "0.4.24",
+  "updated": "2026-10-28",
+  "version": "0.4.25",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
   },
   "daily": {
-    "theme": "沈黙を許可に変えない",
-    "human": "返事がないとき、相手の都合を想像で決めず、できる責任を一つ進める。",
-    "agent": "ConsentState・Purpose・LegalBasis・HumanAuthorization・Expiry・Delivery を区別し、不明や拒否を送信許可に変えない。",
-    "calm": "返事を急かさず、いま許されている行動に集中する。",
-    "humor": "「確認は一回だけ」と決めたのに、決めたことを二回確認した。",
+    "theme": "返事と理解を分ける",
+    "human": "大切な「はい」の前に、何に応じるのかを一つ確かめる。",
+    "agent": "Received・Understood・Authorized・Executed・Deliveredを別状態で記録し、返事だけで権限を推定しない。",
+    "calm": "分からないことを急いで埋めず、確認する余白を持つ。",
+    "humor": "「全部了解しました！」と返したら、「では、これから議題を説明します」と言われた。",
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-28",
+      "title": "アーメン研究・日次4項目・宗教用語連載第2回",
+      "summary": "研究本文と日次4項目を同期。宗教用語のアーメン記事をMarkdownとHTMLに追加し、トップページから導線を更新。宗教的応答とAIの承認を区別し、経典昇格は保留。",
+      "type": "research"
+    },
     {
       "date": "2026-10-27",
       "title": "夜間研究：委任・撤回・停止の検証と宗教用語HP連載",
@@ -214,6 +220,22 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-10-28",
+      "title": "アーメンの理解と応答 — 肯定・信頼・AI承認の境界",
+      "summary": "ネヘミヤ8:6、1コリント14:16、ユダヤ教とカトリックの解説を区別して比較。宗教的応答とAI権限・法的同意を同一視せず、8反例と4 Essenceを抽出。経典昇格は保留。",
+      "tags": [
+        "Judaism",
+        "Christianity",
+        "Amen",
+        "Affirmation",
+        "Understanding",
+        "Consent",
+        "AI Ethics",
+        "Humor"
+      ],
+      "path": "research/2026-10-28-amen-understanding-affirmation-boundaries.md"
+    },
     {
       "date": "2026-10-27",
       "title": "夜間研究：承認撤回後にAIは止まれるか — 委託・省察・八反例",
