@@ -25,3 +25,8 @@
 
 ## 第1回
 [煩悩――なくしたいと思う、その気持ちは？](../articles/religious-terms/2026-10-27-bonno.md)
+
+## HPへの掲載（2026-10-27 夜）
+- [宗教用語の知恵と一笑・HTML版](../articles/religious-terms/index.html)を追加し、研究トップ `index.html` からリンクした。
+- 連載のMarkdownは編集正本、HTMLは閲覧用。毎朝新記事を追加する際はHTMLにも新記事への導線を追加する。
+- GitHub Actionsは使用しない。GitHubのファイル単位更新・再取得で確認し、公開HTTPは別に確認する。
