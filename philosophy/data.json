@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-28",
-  "version": "0.4.25",
+  "version": "0.4.26",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
@@ -14,6 +14,12 @@
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-28",
+      "title": "夜間研究：アーメンの誓約・受諾と理解の境界",
+      "summary": "朝の日次4項目は維持。誓約・受諾の用法を出典再点検し、連載第2回のMarkdownとHTMLを修正。AIの受信・承認・実行の区別を原則・実践・得度問答に追加。",
+      "type": "research"
+    },
     {
       "date": "2026-10-28",
       "title": "アーメン研究・日次4項目・宗教用語連載第2回",
@@ -220,6 +226,22 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-10-28",
+      "title": "夜間研究：アーメンの誓約・受諾・祈りの応答を区別",
+      "summary": "Chabadの誓約・受諾・確認の用法を再点検し、1コリント14:16の理解可能性、ネヘミヤ8:6の応答、カトリックの信仰告白を文脈別に比較。8反例と4 Essenceを検証し、宗教用語第2回記事とHPの説明を補正。経典昇格なし。",
+      "tags": [
+        "Judaism",
+        "Christianity",
+        "Amen",
+        "Oath",
+        "Affirmation",
+        "Authorization",
+        "Humor",
+        "Counterexamples"
+      ],
+      "path": "research/2026-10-28-evening-amen-oath-understanding-scope.md"
+    },
     {
       "date": "2026-10-28",
       "title": "アーメンの理解と応答 — 肯定・信頼・AI承認の境界",
