@@ -8,6 +8,7 @@
 - 公開サイト /philosophy/ と連載HPへのHTTP取得はDNS名前解決失敗。GitHubへの保存と公開配信を混同しない。
 - 未解決：公開HTTP実表示、旧9月研究概要4件の原本探索、過去の書込み拒否原因、AI権限撤回の実装試験、イスラムのアーミーンの典拠・宗派差の比較。
 - 次回朝は新しい宗教用語記事1件を作成し、daily-wordsとdata.json.dailyの4 Essenceを同期する。失敗してもタスクを停止しない。
+- **夜間最終読戻し点検**：data.json v0.4.26 の研究索引63件のうち本文パス59件を全件GitHubから再取得し、欠落0・パス重複0。朝のdaily-wordsとdata.json.dailyのtheme/human/agent/calm/humor/humor_typeの6項目一致。トップページの#amen-title導線とHTMLのid一致。宗教用語第2回のMarkdown・HTMLに誓約・受諾の補足を確認し、beta.biblegateway.comの旧リンクなし。GitHub直接更新の10ファイルを確認。公開HTTPは未確認。
 
 ---
 
