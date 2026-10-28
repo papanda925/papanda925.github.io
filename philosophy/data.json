@@ -1,19 +1,25 @@
 {
-  "updated": "2026-10-28",
-  "version": "0.4.26",
+  "updated": "2026-10-29",
+  "version": "0.4.27",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
   },
   "daily": {
-    "theme": "返事と理解を分ける",
-    "human": "大切な「はい」の前に、何に応じるのかを一つ確かめる。",
-    "agent": "Received・Understood・Authorized・Executed・Deliveredを別状態で記録し、返事だけで権限を推定しない。",
-    "calm": "分からないことを急いで埋めず、確認する余白を持つ。",
-    "humor": "「全部了解しました！」と返したら、「では、これから議題を説明します」と言われた。",
+    "theme": "未来を断言しすぎず、今日の責任を果たす",
+    "human": "明日を保証できなくても、今日の準備と連絡は具体的にできる。",
+    "agent": "Intent・Conditions・Authorization・Scheduled・Executed・Outcomeを区別し、予定を完了と報告しない。",
+    "calm": "未来を全部支配しようとせず、いま選べる一手に戻る。",
+    "humor": "「明日は絶対、早起きします！」と宣言した。目覚まし時計は『その約束、私にも相談して』と言いたそうだった。",
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-29",
+      "title": "インシャーアッラー研究と宗教用語連載第3回",
+      "summary": "研究・日次4項目・連載Markdown/HPを更新。未来の意図と結果の不確実性、対人責任とAIの実行権限を区別。GitHub Actionsは使用しない。",
+      "type": "research"
+    },
     {
       "date": "2026-10-28",
       "title": "夜間研究：アーメンの誓約・受諾と理解の境界",
@@ -226,6 +232,22 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-10-29",
+      "title": "インシャーアッラー：未来への謙虚さと約束の責任",
+      "summary": "クルアーン18:23–24とアッ＝サアディーの注釈を区別して研究。未来の意図・条件・実行・結果を分け、8反例と4 Essenceを抽出。宗教用語連載第3回とHPを追加。経典昇格なし。",
+      "tags": [
+        "Islam",
+        "Quran",
+        "Inshallah",
+        "Promises",
+        "Uncertainty",
+        "Responsibility",
+        "AI Ethics",
+        "Humor"
+      ],
+      "path": "research/2026-10-29-inshallah-future-promises-limits.md"
+    },
     {
       "date": "2026-10-28",
       "title": "夜間研究：アーメンの誓約・受諾・祈りの応答を区別",
