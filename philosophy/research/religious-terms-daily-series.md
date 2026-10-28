@@ -35,3 +35,8 @@
 - [アーメン――「お祈り終了」の合図だけ？](../articles/religious-terms/2026-10-28-amen.md)
 - [HP版の第2回](../articles/religious-terms/index.html#amen-title)
 - ユダヤ教・キリスト教の出典を区別し、礼拝での応答と契約同意・AI承認を同一視しない。
+
+## 第3回（2026-10-29）
+- [インシャーアッラー――「明日やります」は絶対の約束？](../articles/religious-terms/2026-10-29-inshallah.md)
+- [HP版の第3回](../articles/religious-terms/index.html#inshallah-title)
+- クルアーン18:23–24と伝統内注釈を区別。神の意志・未来への謙虚さを「責任逃れ」と短絡せず、現代の約束・AI実行は研究所独自の応用と明記。
