@@ -1,5 +1,16 @@
 # Human × AI Philosophy Lab — 正本同期・復旧台帳
 
+## 最新点検: 2026-10-29 朝 JST
+- 10月28日夜の「アーメンの応答・受諾」を引き継ぎ、「インシャーアッラー」の未来の意図・不確実性・対人責任を研究。クルアーン18:23–24とアッ＝サアディーの伝統内解釈を区別。語義のCambridge本文は403で未取得と明記。
+- 研究ノート、原則候補、実践、得度問答、宗教用語第3回Markdown、daily-words/2026-10-29.md、連載HTML、研究トップ、data.json、研究索引、連載方針、CHANGELOGをGitHub直接更新。GitHub Actions不使用。経典昇格なし。
+- data.json v0.4.27、研究索引64件（本文パス60件、旧9月概要のみ4件）。今日の言葉の6項目をMarkdownと公開JSONで同期。
+- 研究トップから第3回 #inshallah-title への導線を追加。公開HPのHTTP確認は試行するが、GitHub正本の保存成功と公開配信は区別する。
+- 未解決：公開Pagesの実表示、旧9月4件の別媒体原稿有無、過去のGitHub書込み拒否の根本原因、AI権限撤回の実装試験、イスラムのアーミーンの別途比較。
+- 次回夜は朝のdailyを維持し、第3回の出典・表現・HP導線、条件付きの約束に依拠した他者への影響を再点検。保存失敗でもタスクを停止しない。
+
+---
+
+
 ## 最新点検: 2026-10-28 夜 JST
 - 朝の研究・宗教用語連載第2回を引き継ぎ、Chabadの解説にある「誓約・条件の受諾・確認」の用法を補足。朝の記事は祈り・肯定に重点があり、この幅を十分説明していなかったため、MarkdownとHPのHTMLを小変更で修正。
 - research/2026-10-28-evening-amen-oath-understanding-scope.md、principles/affirmation-context-and-scope.md、practices/response-meaning-check.md、tokudo/amen-response-context-case.md を追加。経典昇格なし。AIの受信・理解・承認・実行の分離は設計案であり実装・実証ではない。
