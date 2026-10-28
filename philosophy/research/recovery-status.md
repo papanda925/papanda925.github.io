@@ -1,5 +1,17 @@
 # Human × AI Philosophy Lab — 正本同期・復旧台帳
 
+## 最新点検: 2026-10-28 夜 JST
+- 朝の研究・宗教用語連載第2回を引き継ぎ、Chabadの解説にある「誓約・条件の受諾・確認」の用法を補足。朝の記事は祈り・肯定に重点があり、この幅を十分説明していなかったため、MarkdownとHPのHTMLを小変更で修正。
+- research/2026-10-28-evening-amen-oath-understanding-scope.md、principles/affirmation-context-and-scope.md、practices/response-meaning-check.md、tokudo/amen-response-context-case.md を追加。経典昇格なし。AIの受信・理解・承認・実行の分離は設計案であり実装・実証ではない。
+- 10月28日の朝の daily-words と data.json.daily は変更しない。宗教用語連載は1日1記事のため、夜に新しい記事は作らず第2回の出典とHP導線を点検。
+- data.json v0.4.26、研究索引63件（本文59件、旧9月概要4件）を目標として更新。GitHub Actionsは不使用。保存後の読戻しと研究索引の照合は最終点検で確認する。
+- 公開サイト /philosophy/ と連載HPへのHTTP取得はDNS名前解決失敗。GitHubへの保存と公開配信を混同しない。
+- 未解決：公開HTTP実表示、旧9月研究概要4件の原本探索、過去の書込み拒否原因、AI権限撤回の実装試験、イスラムのアーミーンの典拠・宗派差の比較。
+- 次回朝は新しい宗教用語記事1件を作成し、daily-wordsとdata.json.dailyの4 Essenceを同期する。失敗してもタスクを停止しない。
+
+---
+
+
 ## 最新点検: 2026-10-28 朝 JST
 - 10月27日夜の未解決（公開HTTP、旧9月4件、書込み拒否の原因、AI停止の実証）を引継ぎ、宗教用語「アーメン」の研究を追加。ネヘミヤ8:6、1コリント14:16、Chabad、カトリック教会のカテキズムを照合し、宗教的応答と現代のAI承認を区別。
 - 研究、原則候補、実践、得度問答、宗教用語第2回Markdown、日次Markdown、連載HTML、トップページ、公開JSON、研究索引・連載方針・CHANGELOGを直接保存。GitHub Actionsは不使用。各ファイルの書込み後に再取得して確認。
