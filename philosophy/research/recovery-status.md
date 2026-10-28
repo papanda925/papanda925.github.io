@@ -1,6 +1,7 @@
 # Human × AI Philosophy Lab — 正本同期・復旧台帳
 
 ## 最新点検: 2026-10-29 朝 JST
+- **朝の最終読戻し点検**：直接更新13ファイル（研究、宗教用語Markdown、日次、原則、実践、得度、連載HTML、研究トップ、data.json、研究README、連載方針、CHANGELOG、復旧台帳）の保存を再取得確認。研究索引64件中本文パス60件は研究ディレクトリ一覧に全件存在（欠落0・重複0）、旧9月4件は概要のみ。daily-wordsとdata.json.dailyの6項目一致、HPの#inshallah-title導線と記事HTML見出しID一致。公開HP HTTP取得はこの環境から失敗、配信未確認。
 - 10月28日夜の「アーメンの応答・受諾」を引き継ぎ、「インシャーアッラー」の未来の意図・不確実性・対人責任を研究。クルアーン18:23–24とアッ＝サアディーの伝統内解釈を区別。語義のCambridge本文は403で未取得と明記。
 - 研究ノート、原則候補、実践、得度問答、宗教用語第3回Markdown、daily-words/2026-10-29.md、連載HTML、研究トップ、data.json、研究索引、連載方針、CHANGELOGをGitHub直接更新。GitHub Actions不使用。経典昇格なし。
 - data.json v0.4.27、研究索引64件（本文パス60件、旧9月概要のみ4件）。今日の言葉の6項目をMarkdownと公開JSONで同期。
