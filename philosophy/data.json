@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-29",
-  "version": "0.4.27",
+  "version": "0.4.28",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
@@ -14,6 +14,12 @@
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-29",
+      "title": "夜間：条件付きの約束・依拠の出典再点検",
+      "summary": "クルアーン17:34・16:91とヤコブ4:13–17を追加検証。宗教用語第3回とHP本文を補足し、原則・実践・得度に反例を追加。朝のdailyは変更しない。",
+      "type": "research"
+    },
     {
       "date": "2026-10-29",
       "title": "インシャーアッラー研究と宗教用語連載第3回",
@@ -232,6 +238,23 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-10-29",
+      "title": "夜間研究：インシャーアッラーと条件付きの約束・他者の依拠",
+      "summary": "クルアーン18:23–24、17:34、16:91とヤコブ4:13–17を区別。未来の不確実性と約束への責任、依拠・変更通知・AI権限の八反例を検討。宗教用語第3回を補足。朝の日次は不変、経典昇格なし。",
+      "tags": [
+        "Islam",
+        "Christianity",
+        "Quran",
+        "James",
+        "Inshallah",
+        "Promises",
+        "Reliance",
+        "AI Ethics",
+        "Humor"
+      ],
+      "path": "research/2026-10-29-evening-inshallah-conditional-promises-reliance.md"
+    },
     {
       "date": "2026-10-29",
       "title": "インシャーアッラー：未来への謙虚さと約束の責任",
