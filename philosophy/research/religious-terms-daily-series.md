@@ -40,3 +40,8 @@
 - [インシャーアッラー――「明日やります」は絶対の約束？](../articles/religious-terms/2026-10-29-inshallah.md)
 - [HP版の第3回](../articles/religious-terms/index.html#inshallah-title)
 - クルアーン18:23–24と伝統内注釈を区別。神の意志・未来への謙虚さを「責任逃れ」と短絡せず、現代の約束・AI実行は研究所独自の応用と明記。
+
+## 第4回（2026-10-30）
+- [カルマ――「自業自得」で片づけていいの？](../articles/religious-terms/2026-10-30-karma.md)
+- [HP版の第4回](../articles/religious-terms/index.html#karma-title)
+- 『ギーター』2.47、初期仏教AN 6.63、ジャイナ教の学術解説を区別。「本人のカルマだから被害に遭った」と決めつける被害者非難を避ける。
