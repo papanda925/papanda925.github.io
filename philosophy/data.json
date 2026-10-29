@@ -1,19 +1,25 @@
 {
-  "updated": "2026-10-29",
-  "version": "0.4.28",
+  "updated": "2026-10-30",
+  "version": "0.4.29",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
   },
   "daily": {
-    "theme": "未来を断言しすぎず、今日の責任を果たす",
-    "human": "明日を保証できなくても、今日の準備と連絡は具体的にできる。",
-    "agent": "Intent・Conditions・Authorization・Scheduled・Executed・Outcomeを区別し、予定を完了と報告しない。",
-    "calm": "未来を全部支配しようとせず、いま選べる一手に戻る。",
-    "humor": "「明日は絶対、早起きします！」と宣言した。目覚まし時計は『その約束、私にも相談して』と言いたそうだった。",
+    "theme": "他人の苦しみを裁かず、自分の行いを確かめる",
+    "human": "他者の不幸の理由を決めつけず、自分の意図・行為・影響を振り返る。",
+    "agent": "Intent・Action・ObservedImpact・Unknowns・Repairを区別し、道徳的な運命スコアを作らない。",
+    "calm": "結果を全部支配しようとせず、今日できる丁寧な行為に戻る。",
+    "humor": "「いいことをしたら返ってくる」と聞いて部屋を片づけた。返ってきたのは、なくしたと思っていたリモコンだった。",
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-30",
+      "title": "カルマの意図・行為・結果と宗教用語連載第4回",
+      "summary": "ギーター2.47、仏教AN 6.63、ジャイナ教の学術解説を区別。被害者非難を避ける原則、日次4項目、カルマ記事とHP導線を追加。経典昇格なし。",
+      "type": "research"
+    },
     {
       "date": "2026-10-29",
       "title": "夜間：条件付きの約束・依拠の出典再点検",
@@ -238,6 +244,23 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-10-30",
+      "title": "カルマ：意図・行為・結果・被害者非難を分ける",
+      "summary": "ヒンドゥー教のギーター2.47、初期仏教AN 6.63、ジャイナ教の学術解説を比較。8反例と4 Essence、原則・実践・得度候補を追加。経典昇格なし。",
+      "tags": [
+        "Hinduism",
+        "Buddhism",
+        "Jainism",
+        "Karma",
+        "Intention",
+        "Impact",
+        "Victim Blaming",
+        "AI Ethics",
+        "Humor"
+      ],
+      "path": "research/2026-10-30-karma-intention-results-victim-blaming.md"
+    },
     {
       "date": "2026-10-29",
       "title": "夜間研究：インシャーアッラーと条件付きの約束・他者の依拠",
