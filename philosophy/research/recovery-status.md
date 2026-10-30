@@ -1,5 +1,20 @@
 # Human × AI Philosophy Lab — 正本同期・復旧台帳
 
+## 最新点検: 2026-10-31 朝 JST
+- 正本 README・research/targets.md・research/essence.md・scripture/README.md・scripture/promotion.md、principles/・practices/・tokudo/・daily-words/、研究索引、連載HTML、トップ、data.json、CHANGELOGと直近Git履歴を確認。10月30日夜の研究・日次・公開索引はmainに存在。旧9月概要4件の原本は引き続き未解決。
+- 仏教MN 62・AN 4.126、ギーター12.13、ルカ10章（バチカン解説）、クルアーン2:263を宗教差を保って比較し、慈悲の意味・相手の希望・支援権限・緊急救援の境界を八反例で研究。
+- 新規6ファイル：`research/2026-10-31-karuna-compassion-boundaries.md`、`articles/religious-terms/2026-10-31-karuna.md`、`daily-words/2026-10-31.md`、`principles/compassion-with-consent.md`、`practices/compassion-ask-before-helping.md`、`tokudo/compassion-consent-boundary-case.md`。
+- 更新6ファイル：`articles/religious-terms/index.html`（第5回全文、id=karuna-title）、`index.html`（第5回導線）、`data.json`（v0.4.31）、`research/README.md`、`research/religious-terms-daily-series.md`、`CHANGELOG.md`。本台帳を含め13ファイルの保存・再取得を点検する。
+- `daily-words/2026-10-31.md` と `data.json.daily` のtheme/human/agent/calm/humor/humor_typeは6項目一致。研究索引68件、本文パス64件、ディレクトリ一覧照合で欠落0・パス重複0。旧9月概要4件は本文なし（捏造しない）。
+- トップの`#karuna-title`導線と連載HTMLのID一致、MarkdownとHTMLの主要出典表記を確認。**64本文の内容を全件再取得したわけではなく**、パス存在はディレクトリ一覧で照合。
+- 公開Pagesトップ、連載ページ、公開JSONはcurlでDNS名前解決に失敗（HTTP 000）。**GitHub正本の保存成功と実配信の確認は区別**。GitHub Actionsは使用しない。
+- 経典昇格なし。AIの`NeedSignal / Urgency / Preference / Authorization / StopSignal`は設計候補であり、実装・試験済みではない。
+- **未解決**：公開Pages実表示、旧9月概要4件の原本、過去のGitHub書込み拒否の根本原因、AI停止・修復フローの実装試験、宗教間訳語・宗派差、緊急介入の法域差、ジャイナ教原典照合。
+- 次回20時：朝のdailyは維持し、慈悲第5回の出典・表現・HP導線を点検し、公開HTTPを再試行。保存や公開確認が失敗しても継続タスクを停止しない。
+
+---
+
+
 ## 最新点検: 2026-10-30 夜 JST
 - 正本の研究方針・経典昇格条件、朝のカルマ研究と記事、Git履歴を再確認。朝の未反映分はGitHub上で確認できた。旧9月概要4件など未解決事項は継続。
 - 夜の研究 `research/2026-10-30-evening-karma-intention-harm-repair.md` を新規保存。『ギーター』2.47、AN 6.63、MN 61、SEPのジャイナ教研究を区別。意図・結果・害・修復、連絡拒否と訂正責任を八反例で検討。
