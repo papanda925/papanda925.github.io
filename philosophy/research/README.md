@@ -16,6 +16,7 @@ Judaism, Sikhism, Taoism, Shinto, folk religions, secular thought, new religions
 既存の `2026-10-02-belonging-return-exit.md` は横断テーマ研究の最初の詳細ノート。
 
 ## 直近の研究ノート（2026年10月18〜30日）
+- [10月30日夜・カルマ、MN 61と善意の後の修復](./2026-10-30-evening-karma-intention-harm-repair.md)
 - [10月30日朝・カルマ、意図・結果・被害者非難の境界](./2026-10-30-karma-intention-results-victim-blaming.md)
 - [10月29日夜・条件付きの約束、他者の依拠と責任](./2026-10-29-evening-inshallah-conditional-promises-reliance.md)
 - [10月29日朝・インシャーアッラー、未来の意図と責任](./2026-10-29-inshallah-future-promises-limits.md)
