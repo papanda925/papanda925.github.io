@@ -45,3 +45,8 @@
 - [カルマ――「自業自得」で片づけていいの？](../articles/religious-terms/2026-10-30-karma.md)
 - [HP版の第4回](../articles/religious-terms/index.html#karma-title)
 - 『ギーター』2.47、初期仏教AN 6.63、ジャイナ教の学術解説を区別。「本人のカルマだから被害に遭った」と決めつける被害者非難を避ける。
+
+## 第5回（2026-10-31）
+- [慈悲（じひ）――「助けたい！」だけで助けになる？](../articles/religious-terms/2026-10-31-karuna.md)
+- [HP版の第5回](../articles/religious-terms/index.html#karuna-title)
+- 初期仏教MN 62・AN 4.126、ギーター12.13、ルカ10章、クルアーン2:263を別々の文脈で比較。慈悲を押し付けず、緊急時の救援を遅らせない。助ける前の希望・権限確認は現代への独自応用。
