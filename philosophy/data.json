@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-30",
-  "version": "0.4.29",
+  "version": "0.4.30",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
@@ -14,6 +14,12 @@
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-30",
+      "title": "夜間研究：カルマ、意図・害・修復とMN 61",
+      "summary": "ギーター2.47とAN 6.63の限界を再確認し、MN 61の行為前・最中・後の省察を追加。宗教間の教義差を保ち、連載第4回・得度問答を補強。朝のdailyは変更なし。経典昇格なし。",
+      "type": "research"
+    },
     {
       "date": "2026-10-30",
       "title": "カルマの意図・行為・結果と宗教用語連載第4回",
@@ -244,6 +250,23 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-10-30",
+      "title": "夜間研究：カルマ、意図・害・修復とMN 61",
+      "summary": "ギーター2.47とAN 6.63の限界を再確認し、MN 61の行為前・最中・後の省察を追加。宗教間の教義差を保ち、連載第4回・得度問答を補強。朝のdailyは変更なし。経典昇格なし。",
+      "tags": [
+        "Buddhism",
+        "Hinduism",
+        "Jainism",
+        "Karma",
+        "MN61",
+        "Intention",
+        "Harm",
+        "Repair",
+        "AI Ethics"
+      ],
+      "path": "research/2026-10-30-evening-karma-intention-harm-repair.md"
+    },
     {
       "date": "2026-10-30",
       "title": "カルマ：意図・行為・結果・被害者非難を分ける",
