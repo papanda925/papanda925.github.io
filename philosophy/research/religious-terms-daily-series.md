@@ -50,3 +50,8 @@
 - [慈悲（じひ）――「助けたい！」だけで助けになる？](../articles/religious-terms/2026-10-31-karuna.md)
 - [HP版の第5回](../articles/religious-terms/index.html#karuna-title)
 - 初期仏教MN 62・AN 4.126、ギーター12.13、ルカ10章、クルアーン2:263を別々の文脈で比較。慈悲を押し付けず、緊急時の救援を遅らせない。助ける前の希望・権限確認は現代への独自応用。
+
+## 第6回（2026-11-01）
+- [シャローム――「こんにちは」だけじゃない？](../articles/religious-terms/2026-11-01-shalom.md)
+- [HP版の第6回](../articles/religious-terms/index.html#shalom-title)
+- 民数記6:26、詩編34:15、イザヤ32:17とユダヤ思想解説を区別。平和を沈黙・同意・安全と短絡しない。
