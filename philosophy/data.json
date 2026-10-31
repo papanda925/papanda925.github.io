@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-31",
-  "version": "0.4.31",
+  "version": "0.4.32",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
@@ -14,6 +14,12 @@
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-10-31",
+      "title": "夜間研究：慈悲と捨、支援の限界と無関心の違い",
+      "summary": "MN 62・AN 4.126と後代解説を区別。連載第5回の慈悲・捨の説明を補足し、原則・実践・得度に八反例を追加。朝の今日の言葉は不変。経典昇格なし。",
+      "type": "research"
+    },
     {
       "date": "2026-10-31",
       "title": "慈悲・相手の意思・緊急性の境界と宗教用語連載第5回",
@@ -256,6 +262,22 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-10-31",
+      "title": "夜間研究：慈悲と捨――無関心と支援の限界",
+      "summary": "MN 62・AN 4.126と後代の仏教解説を区別し、慈悲と捨を対立語にしない。支援拒否・緊急対応・支援者の限界・AI停止を八反例で検討。朝のdailyは不変。経典昇格なし。",
+      "tags": [
+        "Buddhism",
+        "Compassion",
+        "Equanimity",
+        "Karuna",
+        "Upekkha",
+        "Boundaries",
+        "AI Ethics",
+        "Humor"
+      ],
+      "path": "research/2026-10-31-evening-compassion-equanimity-not-indifference.md"
+    },
     {
       "date": "2026-10-31",
       "title": "慈悲（karuṇā）と支援の意思・境界・緊急性",
