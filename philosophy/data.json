@@ -1,19 +1,25 @@
 {
-  "updated": "2026-11-01",
-  "version": "0.4.34",
+  "updated": "2026-11-02",
+  "version": "0.4.35",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
   },
   "daily": {
-    "theme": "シャローム――静けさと安心を混同しない",
-    "human": "異議を言える自由と、言わない自由の両方を尊重する。",
-    "agent": "NoComplaintをSafetyVerifiedやConsentGrantedと同一視せず、権限と影響を別々に確かめる。",
-    "calm": "急いで全員を一致させず、話す・保留する・距離を取る余白を残す。",
-    "humor": "「平和な会議にしましょう！」と宣言したら全員が黙った。議事録には「異議なし」。心の中には「議題なし？」。",
-    "humor_type": "会議あるある"
+    "theme": "ダルマ――「自分の役割」は誰が決める？",
+    "human": "自分の責任を考える。ただし、他人が押し付けた役割を無条件に引き受けない。",
+    "agent": "AssignedRoleとValidAuthorityとActualCapabilityを区別し、権限外の依頼は保留・確認する。",
+    "calm": "「全部自分がやる」を一度ほどき、できることと相談すべきことを分ける。",
+    "humor": "「私の役割は何でも屋です」と名乗ったら、プリンターからも相談が来た。まずは担当表を印刷しよう。",
+    "humor_type": "職場あるある"
   },
   "updates": [
+    {
+      "date": "2026-11-02",
+      "title": "ダルマと役割の境界／宗教用語第7回",
+      "summary": "ダルマの宗教間の意味を分け、第7回記事・日次4 Essence・原則・実践・得度を追加。経典昇格なし。",
+      "type": "research"
+    },
     {
       "date": "2026-11-01",
       "title": "夜間：シャロームと調停、平和と正義の緊張",
@@ -274,6 +280,22 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-11-02",
+      "title": "ダルマ――役割・教え・規範と押し付けの境界",
+      "summary": "ギーター3.35と法句経183の用法を区別し、ジャイナ教・シク教の関連語を留保付きで比較。八反例、4 Essence、AIの役割・権限分離を検討。経典昇格なし。",
+      "tags": [
+        "Hinduism",
+        "Buddhism",
+        "Dharma",
+        "Dhamma",
+        "Duty",
+        "Consent",
+        "AI Ethics",
+        "Humor"
+      ],
+      "path": "research/2026-11-02-dharma-duty-teachings-boundaries.md"
+    },
     {
       "date": "2026-11-01",
       "title": "夜間：シャロームと正義の緊張、調停の自由と限界",
