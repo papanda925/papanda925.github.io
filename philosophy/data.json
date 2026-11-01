@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-01",
-  "version": "0.4.33",
+  "version": "0.4.34",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
@@ -14,6 +14,12 @@
     "humor_type": "会議あるある"
   },
   "updates": [
+    {
+      "date": "2026-11-01",
+      "title": "夜間：シャロームと調停、平和と正義の緊張",
+      "summary": "聖書とラビ文献の異論を比較し、宗教用語第6回・原則・実践・得度を補足。朝のdailyは不変。経典昇格なし。",
+      "type": "research"
+    },
     {
       "date": "2026-11-01",
       "title": "シャローム・平和と声の自由／宗教用語第6回",
@@ -268,6 +274,22 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-11-01",
+      "title": "夜間：シャロームと正義の緊張、調停の自由と限界",
+      "summary": "ゼカリヤ8:16とサンヘドリン6bの異論を区別。和解の提案と強制、安全・権力差・拒否権を八反例で検討。宗教的教義と現代のAI設計は別。経典昇格なし。",
+      "tags": [
+        "Judaism",
+        "Shalom",
+        "Justice",
+        "Mediation",
+        "Consent",
+        "Power Asymmetry",
+        "AI Ethics",
+        "Humor"
+      ],
+      "path": "research/2026-11-01-evening-shalom-justice-mediation-boundaries.md"
+    },
     {
       "date": "2026-11-01",
       "title": "シャローム――平和・正義・安心と沈黙の違い",
