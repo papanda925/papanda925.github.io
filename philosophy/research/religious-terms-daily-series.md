@@ -55,3 +55,8 @@
 - [シャローム――「こんにちは」だけじゃない？](../articles/religious-terms/2026-11-01-shalom.md)
 - [HP版の第6回](../articles/religious-terms/index.html#shalom-title)
 - 民数記6:26、詩編34:15、イザヤ32:17とユダヤ思想解説を区別。平和を沈黙・同意・安全と短絡しない。
+
+## 第7回（2026-11-02）
+- [ダルマ――「自分の役割」は誰が決める？](../articles/religious-terms/2026-11-02-dharma.md)
+- [HP版の第7回](../articles/religious-terms/index.html#dharma-title)
+- 『ギーター』3.35、法句経183、Britannica、シク教解説を文脈別に確認。ジャイナ教等の原典未照合を明示し、役割の強制や差別を正当化しない。
