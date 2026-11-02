@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-02",
-  "version": "0.4.35",
+  "version": "0.4.36",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
@@ -14,6 +14,12 @@
     "humor_type": "職場あるある"
   },
   "updates": [
+    {
+      "date": "2026-11-02",
+      "title": "夜間：ダルマの役割・ヴァルナと現代の権利",
+      "summary": "宗教用語第7回の出典・身分の文脈を補足し、研究・原則・実践・得度を更新。朝のdailyは不変、経典昇格なし。",
+      "type": "research"
+    },
     {
       "date": "2026-11-02",
       "title": "ダルマと役割の境界／宗教用語第7回",
@@ -280,6 +286,22 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-11-02",
+      "title": "夜間：ダルマのヴァルナ・現代の権利・役割の境界",
+      "summary": "ギーター3.35/18.41/18.47、法句経183–185、国連社会権規約6–7条を出典別に比較。身分と役割の歴史的文脈を残し、現代の権利・AI権限とは分離。八反例と4 Essence。経典昇格なし。",
+      "tags": [
+        "Hinduism",
+        "Buddhism",
+        "Dharma",
+        "Varna",
+        "Human Rights",
+        "Consent",
+        "AI Authorization",
+        "Humor"
+      ],
+      "path": "research/2026-11-02-evening-dharma-varna-rights-role-limits.md"
+    },
     {
       "date": "2026-11-02",
       "title": "ダルマ――役割・教え・規範と押し付けの境界",
