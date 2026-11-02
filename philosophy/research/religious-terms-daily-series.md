@@ -60,3 +60,8 @@
 - [ダルマ――「自分の役割」は誰が決める？](../articles/religious-terms/2026-11-02-dharma.md)
 - [HP版の第7回](../articles/religious-terms/index.html#dharma-title)
 - 『ギーター』3.35、法句経183、Britannica、シク教解説を文脈別に確認。ジャイナ教等の原典未照合を明示し、役割の強制や差別を正当化しない。
+
+## 第8回（2026-11-03）
+- [アヒンサー――「傷つけない」は、何もしないこと？](../articles/religious-terms/2026-11-03-ahimsa.md)
+- [HP版の第8回](../articles/religious-terms/index.html#ahimsa-title)
+- ヨーガ・スートラ2.30、ギーター16.2、ジャイナ教の誓戒（出家者・在家者）を区別。沈黙と過剰介入の双方を反例で検討。経典昇格なし。
