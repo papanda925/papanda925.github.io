@@ -1,5 +1,17 @@
 # Human × AI Philosophy Lab — 正本同期・復旧台帳
 
+## 最新点検: 2026-11-03 朝 JST
+- README・research/targets.md・research/essence.md・scripture/README.md・scripture/promotion.md、原則・実践・得度・日次のディレクトリ、研究索引、連載運用、トップ、data.json、CHANGELOG、11月2日夜研究とGit履歴を確認。11月2日夜の前回成果は正本に存在。旧9月概要4件の原本は依然未確認。
+- 第8回「アヒンサー」を『ヨーガ・スートラ』2.30、『ギーター』16.2、Jainpediaが引用するジャイナ教『ダシャヴァイカーリカ・スートラ』4章と在家者の小誓戒の違いに基づいて制作。不害を沈黙・非介入や無断の過剰介入と同一視しない。八反例、4 Essence、得度問答6件。経典昇格なし、AI権限・停止設計は未実装。
+- **GitHub直接保存13ファイル**：新規6件 `research/2026-11-03-ahimsa-nonharm-action-boundaries.md`、`articles/religious-terms/2026-11-03-ahimsa.md`、`daily-words/2026-11-03.md`、`principles/ahimsa-nonharm-without-passivity.md`、`practices/ahimsa-harm-and-inaction-check.md`、`tokudo/ahimsa-nonharm-boundary-case.md`。更新7件：連載HTML、研究トップHTML、data.json、研究README、連載運用、CHANGELOG、本台帳。GitHub Actionsは使用しない。
+- 台帳更新前に12件をGitHubから再取得し存在を確認。data.json **v0.4.37**、研究索引**74件**（本文パス**70件**、旧9月概要**4件**）、本文パス重複0、researchディレクトリ一覧とのパス照合で欠落0。今日の言葉Markdownとdata.json.dailyはtheme/human/agent/calm/humor/humor_typeの**6項目一致**。トップの`#ahimsa-title`リンクと連載HTML内の同ID一致。本文70件の内容全件再取得は未実施。
+- 公開Pagesトップ・連載・公開JSONへのHTTPアクセスは**DNS名前解決失敗（HTTP 000）**。GitHub正本への保存と閲覧者への実配信を混同しない。
+- **未解決**：公開Pagesの実表示、旧9月研究概要4件の原本、過去のGitHub書込み拒否原因、AI停止・権限分離の実装試験、ジャイナ教宗派差・ヨーガ注釈差・緊急介入の法域差、研究本文70件の内容全件照合。
+- 次回20時：朝の日次4項目を変更せず、第8回アヒンサー記事の出典・品質・HTML導線を再点検。未反映があれば最優先に復旧。保存・公開HTTP失敗でも定期タスクを停止しない。
+
+---
+
+
 ## 最新点検: 2026-11-02 夜 JST
 - 朝のダルマ研究と第7回、daily-words、README・targets・essence・経典・昇格規則、原則・実践・得度、連載HP、トップ、data.json、CHANGELOG、直近Git履歴を確認。朝の既存ファイルは正本に存在。
 - 夜は『ギーター』3.35・18.41・18.47、『法句経』183–185、国連社会権規約6–7条を出典別に再点検。ヴァルナと社会的役割の歴史的文脈を残し、現代の職業選択・差別禁止・AI権限を宗教から直接導かない。八反例、4 Essence、問答7–9を追加。
