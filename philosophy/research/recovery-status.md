@@ -1,5 +1,18 @@
 # Human × AI Philosophy Lab — 正本同期・復旧台帳
 
+## 最新点検: 2026-11-02 夜 JST
+- 朝のダルマ研究と第7回、daily-words、README・targets・essence・経典・昇格規則、原則・実践・得度、連載HP、トップ、data.json、CHANGELOG、直近Git履歴を確認。朝の既存ファイルは正本に存在。
+- 夜は『ギーター』3.35・18.41・18.47、『法句経』183–185、国連社会権規約6–7条を出典別に再点検。ヴァルナと社会的役割の歴史的文脈を残し、現代の職業選択・差別禁止・AI権限を宗教から直接導かない。八反例、4 Essence、問答7–9を追加。
+- **GitHub直接保存10ファイル**：新規 `research/2026-11-02-evening-dharma-varna-rights-role-limits.md`、更新 `principles/dharma-role-without-coercion.md`、`practices/dharma-role-boundary-check.md`、`tokudo/dharma-role-authority-case.md`、`articles/religious-terms/2026-11-02-dharma.md`、`articles/religious-terms/index.html`、`research/README.md`、`data.json`、`CHANGELOG.md`、本台帳。各ファイル単位の保存後に再取得・内容一致を確認。GitHub Actionsは使わない。
+- data.json **v0.4.36**、研究索引**73件**（本文パス**69件**、旧9月概要**4件**）、索引内パス重複0。11月2日朝のdaily-wordsとdata.json.dailyはtheme/human/agent/calm/humor/humor_typeの**6項目一致**。夜のdaily変更なし。
+- 連載HTMLの`#dharma-title`と研究トップ導線が一致。第7回記事の夜の出典追記と夜研究リンクをGitHub正本で確認。新規第8回は作成しない。経典昇格なし。AI権限分離・停止は未実装。
+- 公開Pagesトップ・連載・data.jsonのHTTP取得は**DNS名前解決失敗**。GitHub保存成功と公開配信を混同しない。既存本文69件の全件再取得は未実施。
+- **未解決**：公開Pages実表示、旧9月概要4件の原本、過去のGitHub書込み拒否原因、AI停止・権限再検証の実装試験、ギーター注釈の学派差とヴァルナ・カーストの歴史的関係、ジャイナ教・シク教原典の直接照合、本文全件検証。
+- 次回8時：未反映の有無と公開Pagesを優先確認。宗教用語第8回を一次資料確認のうえ1本制作し、daily-wordsとdata.json.dailyを同期する。保存・HTTP失敗でも定期研究を停止しない。
+
+---
+
+
 ## 最新点検: 2026-11-02 朝 JST
 - 前回11月1日夜の研究・原則・実践・得度・日次・連載・HTML・公開JSON・復旧台帳とGit履歴を確認。前回の研究索引71件・本文パス67件・旧9月概要4件を引き継いだ。
 - 『ギーター』3.35、『法句経』183、Britannica、Sikh Research Instituteの解説を区別し、ダルマの用法と役割の押し付けを研究。新規：研究、連載第7回Markdown、日次、原則、実践、得度。更新：連載HTML、研究トップ、研究README、連載運用、data.json、CHANGELOG、本台帳。
