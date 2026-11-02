@@ -1,19 +1,25 @@
 {
-  "updated": "2026-11-02",
-  "version": "0.4.36",
+  "updated": "2026-11-03",
+  "version": "0.4.37",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
   },
   "daily": {
-    "theme": "ダルマ――「自分の役割」は誰が決める？",
-    "human": "自分の責任を考える。ただし、他人が押し付けた役割を無条件に引き受けない。",
-    "agent": "AssignedRoleとValidAuthorityとActualCapabilityを区別し、権限外の依頼は保留・確認する。",
-    "calm": "「全部自分がやる」を一度ほどき、できることと相談すべきことを分ける。",
-    "humor": "「私の役割は何でも屋です」と名乗ったら、プリンターからも相談が来た。まずは担当表を印刷しよう。",
-    "humor_type": "職場あるある"
+    "theme": "アヒンサー――「傷つけない」は、何もしないこと？",
+    "human": "傷つけない意図だけで安心せず、相手への影響を確かめ、必要な安全行動を選ぶ。",
+    "agent": "NonHarmIntent・ObservedRisk・Authority・Urgency・ActionReceiptを分け、危険の放置も点検する。",
+    "calm": "反射的な言い返しを一拍置く。ただし危険から離れる・助けを呼ぶことは遅らせない。",
+    "humor": "「今日は誰も傷つけないぞ」と静かにドアを閉めた。自分の指だけ挟んだ。まずは自分にも優しく。",
+    "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-11-03",
+      "title": "アヒンサーと不害・不作為の境界／宗教用語第8回",
+      "summary": "ヨーガ・スートラ2.30、ギーター16.2、ジャイナ教の大誓戒・小誓戒を区別。八反例、4 Essence、今日の言葉、連載第8回を公開データへ追加。経典昇格なし。",
+      "type": "research"
+    },
     {
       "date": "2026-11-02",
       "title": "夜間：ダルマの役割・ヴァルナと現代の権利",
@@ -286,6 +292,22 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-11-03",
+      "title": "アヒンサー――不害と行動・不作為の境界",
+      "summary": "ヨーガ2.30・ギーター16.2・ジャイナ教誓戒を文脈別に検討。不作為の害と過剰介入の害、緊急性・同意・AI権限の八反例。経典昇格なし。",
+      "tags": [
+        "Hinduism",
+        "Jainism",
+        "Ahimsa",
+        "Nonviolence",
+        "Safety",
+        "Consent",
+        "AI Ethics",
+        "Humor"
+      ],
+      "path": "research/2026-11-03-ahimsa-nonharm-action-boundaries.md"
+    },
     {
       "date": "2026-11-02",
       "title": "夜間：ダルマのヴァルナ・現代の権利・役割の境界",
