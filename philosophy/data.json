@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-03",
-  "version": "0.4.37",
+  "version": "0.4.38",
   "project": {
     "title": "Human × AI Philosophy Lab",
     "subtitle": "世界の宗教・哲学・生き方から、人間とAIエージェントに使えるエッセンスを抽出する"
@@ -14,6 +14,12 @@
     "humor_type": "生活あるある"
   },
   "updates": [
+    {
+      "date": "2026-11-03",
+      "title": "夜間：アヒンサーと積極的な不害、権限の境界",
+      "summary": "宗教用語第8回のJainpedia解説・出家者と在家者の違いを補足。夜研究・原則・実践・得度を更新。朝のdailyは維持、経典昇格なし。",
+      "type": "research"
+    },
     {
       "date": "2026-11-03",
       "title": "アヒンサーと不害・不作為の境界／宗教用語第8回",
@@ -292,6 +298,22 @@
     }
   ],
   "research": [
+    {
+      "date": "2026-11-03",
+      "title": "夜間：アヒンサーの積極的配慮と介入の境界",
+      "summary": "Jainpediaの不害解説で積極的な保護の側面と出家者・在家者の誓戒差を確認。危険の放置・無断介入・限定的保護の八反例。朝の日次4 Essenceは維持、経典昇格なし。",
+      "tags": [
+        "Jainism",
+        "Hinduism",
+        "Ahimsa",
+        "Non-harm",
+        "Protection",
+        "Consent",
+        "AI Ethics",
+        "Humor"
+      ],
+      "path": "research/2026-11-03-evening-ahimsa-active-protection-restraint-boundaries.md"
+    },
     {
       "date": "2026-11-03",
       "title": "アヒンサー――不害と行動・不作為の境界",
