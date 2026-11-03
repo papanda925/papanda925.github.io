@@ -65,3 +65,8 @@
 - [アヒンサー――「傷つけない」は、何もしないこと？](../articles/religious-terms/2026-11-03-ahimsa.md)
 - [HP版の第8回](../articles/religious-terms/index.html#ahimsa-title)
 - ヨーガ・スートラ2.30、ギーター16.2、ジャイナ教の誓戒（出家者・在家者）を区別。沈黙と過剰介入の双方を反例で検討。経典昇格なし。
+
+## 第9回（2026-11-04）
+- [サティ――気づくことは、すべてを我慢すること？](../articles/religious-terms/2026-11-04-sati.md)
+- [HP版](../articles/religious-terms/index.html#sati-title)
+- SN 47.2・MN 10を英訳で確認。経典昇格なし。
