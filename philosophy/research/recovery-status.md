@@ -1,5 +1,10 @@
 # Human × AI Philosophy Lab — 正本同期・復旧台帳
 
+## 最新点検: 2026-11-04 朝 JST
+- 第9回サティ、日次4項目、研究・原則・実践・得度を追加。data.json v0.4.39。SN 47.2・MN 10の英訳を参照。公開PagesのHTTP確認、原語照合、AI実装試験は未解決。保存失敗時は次回優先復旧。定期研究は停止しない。
+
+---
+
 ## 最新点検: 2026-11-03 夜 JST
 - 朝の第8回アヒンサーと朝のdaily-wordsを維持。README、targets、essence、経典と昇格規則、原則・実践・得度、研究索引、連載HTML、トップ、data.json、CHANGELOG、Git履歴を参照。Jainpediaの不害・五大誓戒を再確認し、積極的な配慮、出家者・在家者の差、保護行為の限定を補足。宗教とAIの権限設計は別。
 - GitHub直接更新：新規夜研究 `research/2026-11-03-evening-ahimsa-active-protection-restraint-boundaries.md`、更新 `principles/ahimsa-nonharm-without-passivity.md`、`practices/ahimsa-harm-and-inaction-check.md`、`tokudo/ahimsa-nonharm-boundary-case.md`、`articles/religious-terms/2026-11-03-ahimsa.md`、`articles/religious-terms/index.html`、`research/README.md`、`data.json`、`CHANGELOG.md`、本台帳。GitHub Actions不使用。保存後の読戻しを実施。
