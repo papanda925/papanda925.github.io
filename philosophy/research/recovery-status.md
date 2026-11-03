@@ -3,8 +3,8 @@
 ## 最新点検: 2026-11-03 夜 JST
 - 朝の第8回アヒンサーと朝のdaily-wordsを維持。README、targets、essence、経典と昇格規則、原則・実践・得度、研究索引、連載HTML、トップ、data.json、CHANGELOG、Git履歴を参照。Jainpediaの不害・五大誓戒を再確認し、積極的な配慮、出家者・在家者の差、保護行為の限定を補足。宗教とAIの権限設計は別。
 - GitHub直接更新：新規夜研究 `research/2026-11-03-evening-ahimsa-active-protection-restraint-boundaries.md`、更新 `principles/ahimsa-nonharm-without-passivity.md`、`practices/ahimsa-harm-and-inaction-check.md`、`tokudo/ahimsa-nonharm-boundary-case.md`、`articles/religious-terms/2026-11-03-ahimsa.md`、`articles/religious-terms/index.html`、`research/README.md`、`data.json`、`CHANGELOG.md`、本台帳。GitHub Actions不使用。保存後の読戻しを実施。
-- data.json v0.4.38、研究索引75件（本文パス71件・旧9月概要4件）。朝の `daily-words/2026-11-03.md` と `data.json.daily` は上書きせず6項目一致を確認する。連載HTMLに夜の補足と夜研究への導線を追加。研究トップの既存 `#ahimsa-title` 導線は保持。経典昇格なし。
-- 公開Pagesトップ・連載・JSONは外部閲覧確認に失敗したため**実配信未確認**。GitHub正本への保存と公開配信を区別。
+- data.json v0.4.38、研究索引75件（本文パス71件・旧9月概要4件）。朝の `daily-words/2026-11-03.md` と `data.json.daily` は上書きせず、theme/human/agent/calm/humor/humor_typeの6項目一致を読戻しで確認済み。研究索引75件のうち本文パス71件は索引内重複0（本文全件再取得は未実施）。連載HTMLに夜の補足と夜研究への導線を追加。研究トップの既存 `#ahimsa-title` 導線は保持。経典昇格なし。
+- 公開Pagesトップ・連載・JSONはcurlでDNS名前解決失敗（HTTP 000）のため**実配信未確認**。GitHub正本への保存と公開配信を区別。
 - **未解決**：公開Pages実表示、旧9月概要4件の原本、過去の書込み拒否原因、AI停止・権限撤回の実装試験、原語校訂本文・宗派差・法域差、既存研究本文71件の全件照合。
 - 次回8時：未反映と公開配信を先に確認し、宗教用語第9回を新規1記事制作。朝の日次4項目をMarkdownとdata.json.dailyで同期。保存や公開HTTPが失敗しても定期研究を停止しない。
 
