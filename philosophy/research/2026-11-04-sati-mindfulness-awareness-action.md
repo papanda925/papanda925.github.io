@@ -2,8 +2,8 @@
 状態：research（経典未昇格）｜資料確認：2026-11-04 JST
 
 ## 資料と文脈
-- **経典の英訳**：SN 47.2（Bhikkhu Bodhi訳）は、身体・感受・心・法の四領域を観察し、歩行・食事・会話などの日常動作における明確な理解（sampajañña）を述べる。https://suttacentral.net/sn47.2/en/bodhi
-- **別の経典英訳**：MN 10（Thanissaro Bhikkhu訳）は四念処の実践を扱い、解脱へ向かう宗教的目的を持つ。https://accesstoinsight.org/tipitaka/mn/mn.010.than
+- **経典の英訳**：SN 47.2（Bhikkhu Bodhi訳）は参照先だが、夜の再取得時に本文を表示できず、この経への日常動作の具体的帰属は保留する。https://suttacentral.net/sn47.2/en/bodhi
+- **別の経典英訳**：MN 10（Thanissaro Bhikkhu訳）は四念処と、歩行・食事・会話など日常動作における明確な理解（sampajañña）を扱い、解脱へ向かう宗教的目的を持つ。https://accesstoinsight.org/tipitaka/mn/mn.010.than
 - **解釈上の限定**：パーリ語 sati を現代の「集中力」「リラックス」「何も考えない」と同一視しない。英訳の mindfulness は文脈依存。上記は経典の英訳を介した確認であり、原語の独立校訂は未実施。
 - **研究所独自の応用**：感情・危険を認識することと、沈黙・服従・無断介入を区別する。仏教の修行目的とAIの権限設計は同一ではない。
 
@@ -24,3 +24,6 @@ A 研究知見：気づきは受動的な我慢ではなく、観察と明確な
 
 ## 未解決
 上座部以外の念・smṛtiの解釈差、パーリ語原典照合、AI設計の実装試験、緊急時の法域差。経典昇格は promotion.md の検証後。
+
+## 夜の訂正履歴
+2026-11-04：MN 10の本文を直接再確認。SN 47.2は表示制約で独立再照合できず、朝の具体的帰属を保留した。詳細：`2026-11-04-evening-sati-awareness-clear-comprehension-boundaries.md`。
