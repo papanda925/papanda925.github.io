@@ -15,7 +15,8 @@ Judaism, Sikhism, Taoism, Shinto, folk religions, secular thought, new religions
 
 既存の `2026-10-02-belonging-return-exit.md` は横断テーマ研究の最初の詳細ノート。
 
-## 直近の研究ノート（2026年10月18日〜11月4日）
+## 直近の研究ノート（2026年10月18日〜11月5日）
+- [11月5日朝・メッターと慈しみ・境界](./2026-11-05-metta-kindness-boundaries.md)
 - [11月4日夜・サティと出典再点検、気づきと明確な理解](./2026-11-04-evening-sati-awareness-clear-comprehension-boundaries.md)
 - [11月4日朝・サティと気づき・行動の境界](./2026-11-04-sati-mindfulness-awareness-action.md)
 - [11月3日夜・アヒンサーの積極的な保護と介入の境界](./2026-11-03-evening-ahimsa-active-protection-restraint-boundaries.md)
