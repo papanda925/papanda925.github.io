@@ -70,3 +70,8 @@
 - [サティ――気づくことは、すべてを我慢すること？](../articles/religious-terms/2026-11-04-sati.md)
 - [HP版](../articles/religious-terms/index.html#sati-title)
 - SN 47.2・MN 10を英訳で確認。経典昇格なし。
+
+## 第10回（2026-11-05）
+- [メッター――親切は、何でも引き受けること？](../articles/religious-terms/2026-11-05-metta.md)
+- [HP版の第10回](../articles/religious-terms/index.html#metta-title)
+- Sn 1.8の英訳を確認。慈しみと無制限な引受けを区別する。
