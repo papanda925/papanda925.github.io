@@ -75,3 +75,8 @@
 - [メッター――親切は、何でも引き受けること？](../articles/religious-terms/2026-11-05-metta.md)
 - [HP版の第10回](../articles/religious-terms/index.html#metta-title)
 - Sn 1.8の英訳を確認。慈しみと無制限な引受けを区別する。
+
+## 第11回（2026-11-06）
+- [サダカ――善意の贈り物に、恩着せがましさは付いていない？](../articles/religious-terms/2026-11-06-sadaqah.md)
+- [HP版の第11回](../articles/religious-terms/index.html#sadaqah-title)
+- クルアーン2:262–264・271を確認。善意の援助と恩着せ・受領者の尊厳を区別。経典昇格なし。
