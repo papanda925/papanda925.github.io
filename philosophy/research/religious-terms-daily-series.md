@@ -80,3 +80,8 @@
 - [サダカ――善意の贈り物に、恩着せがましさは付いていない？](../articles/religious-terms/2026-11-06-sadaqah.md)
 - [HP版の第11回](../articles/religious-terms/index.html#sadaqah-title)
 - クルアーン2:262–264・271を確認。善意の援助と恩着せ・受領者の尊厳を区別。経典昇格なし。
+
+## 第12回（2026-11-07）
+- [ミツワー――「良いことをした」だけで十分？](../articles/religious-terms/2026-11-07-mitzvah.md)
+- [HP版](../articles/religious-terms/index.html#mitzvah-title)
+- 戒めという基本語義と日常語の善行を区別。ユダヤ教の戒めをAI命令へ直訳しない。経典昇格なし。
