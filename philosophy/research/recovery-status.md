@@ -1,3 +1,9 @@
+## 最新点検: 2026-11-07 夜 JST
+- 第12回ミツワーを再点検し、夜研究ノート `research/2026-11-07-evening-mitzvah-commandment-intention-accountability.md` を追加。朝の日次は変更せず、経典昇格なし。GitHub Actions不使用。
+- 未解決：公開Pages実配信、原語と宗派差、旧9月原本、SN 47.2、AI実装試験、研究本文全件照合。失敗時も継続し次回復旧を優先する。
+
+---
+
 ## 最新点検: 2026-11-07 朝 JST
 - 第12回ミツワーの研究・記事・日次・原則・実践・得度を追加。語義と伝統的613戒めをMy Jewish Learning、Chabadで確認。経典昇格なし。GitHub Actions不使用。
 - 未解決：GitHub Pages実配信、ヘブライ語原文・宗派差、旧9月研究原本、SN 47.2、AI実装試験、研究本文全件照合。未反映分があれば次回優先、定期研究は停止しない。
