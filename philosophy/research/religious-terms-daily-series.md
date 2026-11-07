@@ -85,3 +85,8 @@
 - [ミツワー――「良いことをした」だけで十分？](../articles/religious-terms/2026-11-07-mitzvah.md)
 - [HP版](../articles/religious-terms/index.html#mitzvah-title)
 - 戒めという基本語義と日常語の善行を区別。ユダヤ教の戒めをAI命令へ直訳しない。経典昇格なし。
+
+## 第13回（2026-11-08）
+- [セヴァ――誰かのために働くとき、主役は誰？](../articles/religious-terms/2026-11-08-seva.md)
+- [HP版の第13回](../articles/religious-terms/index.html#seva-title)
+- シク教の奉仕とランガルの平等を紹介。無償労働の強制やAI無断操作の根拠としない。
