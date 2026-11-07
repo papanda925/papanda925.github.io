@@ -1,3 +1,6 @@
+## 2026-11-08｜セヴァ：奉仕・平等・尊厳
+- [研究ノート](2026-11-08-seva-service-equality-boundaries.md)：シク教の奉仕とランガル、現代AIへの応用を区別。
+
 ## 2026-11-07｜ミツワー：善行と戒め・責任の区別
 - [研究ノート](2026-11-07-mitzvah-commandment-good-deed-boundaries.md)：伝統的語義と日常用法、AI権限への独自応用を区別。
 
