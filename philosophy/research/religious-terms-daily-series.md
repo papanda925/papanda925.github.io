@@ -90,3 +90,8 @@
 - [セヴァ――誰かのために働くとき、主役は誰？](../articles/religious-terms/2026-11-08-seva.md)
 - [HP版の第13回](../articles/religious-terms/index.html#seva-title)
 - シク教の奉仕とランガルの平等を紹介。無償労働の強制やAI無断操作の根拠としない。
+
+## 第14回（2026-11-09）
+- [アガペー――愛は、何でも許すこと？](../articles/religious-terms/2026-11-09-agape.md)
+- [HP版の第14回](../articles/religious-terms/index.html#agape-title)
+- 『1コリント』13章を確認。愛と真実、不正を区別。AI設計は独自応用。経典昇格なし。
