@@ -95,3 +95,8 @@
 - [アガペー――愛は、何でも許すこと？](../articles/religious-terms/2026-11-09-agape.md)
 - [HP版の第14回](../articles/religious-terms/index.html#agape-title)
 - 『1コリント』13章を確認。愛と真実、不正を区別。AI設計は独自応用。経典昇格なし。
+
+## 第15回（2026-11-10）
+- [タワックル――信じて任せるなら、準備は要らない？](../articles/religious-terms/2026-11-10-tawakkul.md)
+- [HP版](../articles/religious-terms/index.html#tawakkul-title)
+- クルアーン3:159・65:3を確認。神への信頼と相談・決断の関係を扱い、業務・AIへの翻訳は独自応用と明示。経典昇格なし。
