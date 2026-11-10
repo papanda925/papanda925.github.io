@@ -1,3 +1,6 @@
+## 2026-11-11 朝 — アニッチャ（無常）と変化・責任
+- [研究ノート](2026-11-11-anicca-change-responsibility.md) / [宗教用語第16回](../articles/religious-terms/2026-11-11-anicca.md)
+
 - 2026-11-10 朝：[タワックルと相談・決断・信頼](2026-11-10-tawakkul-consultation-trust-responsibility.md) — 宗教用語第15回、4 Essence、得度問答。経典未昇格。
 ## 2026-11-09｜アガペー：愛・真実・境界
 - [研究ノート](2026-11-09-agape-love-truth-boundaries.md)：『1コリント』13章と現代の同意・境界を区別。
