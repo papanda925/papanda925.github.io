@@ -100,3 +100,8 @@
 - [タワックル――信じて任せるなら、準備は要らない？](../articles/religious-terms/2026-11-10-tawakkul.md)
 - [HP版](../articles/religious-terms/index.html#tawakkul-title)
 - クルアーン3:159・65:3を確認。神への信頼と相談・決断の関係を扱い、業務・AIへの翻訳は独自応用と明示。経典昇格なし。
+
+## 第16回（2026-11-11）
+- [アニッチャ（無常）――「どうせ変わる」なら約束も要らない？](../articles/religious-terms/2026-11-11-anicca.md)
+- [HP版](../articles/religious-terms/index.html#anicca-title)
+- 『法句経』277–279偈を確認。条件づけられたものの無常と、現代の約束・同意・AI権限の見直しを区別。経典昇格なし。
