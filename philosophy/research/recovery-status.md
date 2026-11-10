@@ -1,3 +1,9 @@
+## 最新点検: 2026-11-11 朝 JST
+- 第16回アニッチャ（無常）の研究・記事・今日の言葉・原則・実践・得度をGitHub直接保存。『法句経』277–279偈を参照。data.json.dailyとの一致を点検。経典昇格なし、AI未実装、GitHub Actions不使用。
+- 継続課題：公開Pages実配信、パーリ語原文校訂・宗派差、旧9月原本4件、SN 47.2、AI権限停止試験、研究全件照合。保存失敗があれば次回最優先で復旧。定期研究を停止しない。
+
+---
+
 ## 最新点検: 2026-11-10 夜 JST
 - 第15回タワックルと朝の日次・data.json.daily・連載HTMLをGitHub正本で点検。夜研究 `research/2026-11-10-evening-tawakkul-trust-accountability-limits.md` を新規保存。朝のdaily-wordsとdata.json.dailyは変更せず。経典昇格なし、AI実装なし、GitHub Actions不使用。
 - 未解決：公開Pages実配信、原語・古典注釈・学派差、旧9月原本4件、SN 47.2、AI権限停止試験、研究全件照合。未反映があれば次回優先。定期研究は停止しない。
