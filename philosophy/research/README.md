@@ -1,3 +1,6 @@
+## 2026-11-12 朝 — ウペッカー（捨）と平静・無関心
+- [研究ノート](2026-11-12-upekkha-equanimity-not-indifference.md) / [宗教用語第17回](../articles/religious-terms/2026-11-12-upekkha.md)。経典未昇格。
+
 ## 2026-11-11 朝 — アニッチャ（無常）と変化・責任
 - [研究ノート](2026-11-11-anicca-change-responsibility.md) / [宗教用語第16回](../articles/religious-terms/2026-11-11-anicca.md)
 
