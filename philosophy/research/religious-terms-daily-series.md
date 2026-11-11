@@ -105,3 +105,8 @@
 - [アニッチャ（無常）――「どうせ変わる」なら約束も要らない？](../articles/religious-terms/2026-11-11-anicca.md)
 - [HP版](../articles/religious-terms/index.html#anicca-title)
 - 『法句経』277–279偈を確認。条件づけられたものの無常と、現代の約束・同意・AI権限の見直しを区別。経典昇格なし。
+
+## 第17回（2026-11-12）
+- [ウペッカー（捨）――落ち着くことは、見て見ぬふり？](../articles/religious-terms/2026-11-12-upekkha.md)
+- [HP版](../articles/religious-terms/index.html#upekkha-title)
+- 四梵住の捨と無関心を区別。原典全文・宗派差は継続照合。経典未昇格。
