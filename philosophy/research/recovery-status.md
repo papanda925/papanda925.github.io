@@ -1,3 +1,9 @@
+## 最新点検: 2026-11-13 朝 JST
+- 第18回サントーシャの研究・記事・日次4 Essence・原則・実践・得度を追加。data.jsonとHTML導線を同期。経典昇格なし、AI未実装、GitHub Actions不使用。
+- 公開Pagesの実配信は未確認。旧9月原本4件、SN 47.2、AN 4.125、AI停止試験、研究全件照合、原語・学派差が未解決。保存失敗があれば次回優先し、定期研究は停止しない。
+
+---
+
 ## 最新点検: 2026-11-12 夜 JST
 - 朝に未反映と報告された既存7ファイル（data.json、連載HTML、研究トップ、研究README、連載運用文書、CHANGELOG、復旧台帳）は現行mainに反映済み。第17回 #upekkha-title と朝のdaily-words / data.json.daily一致を確認。二重更新なし。
 - 夜研究 `research/2026-11-12-evening-upekkha-calm-alerts-intervention.md` を追加。経典昇格なし、AI実装なし、GitHub Actions不使用。公開Pages HTTP取得失敗で実配信未確認。
