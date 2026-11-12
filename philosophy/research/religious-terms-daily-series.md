@@ -110,3 +110,8 @@
 - [ウペッカー（捨）――落ち着くことは、見て見ぬふり？](../articles/religious-terms/2026-11-12-upekkha.md)
 - [HP版](../articles/religious-terms/index.html#upekkha-title)
 - 四梵住の捨と無関心を区別。原典全文・宗派差は継続照合。経典未昇格。
+
+## 第18回（2026-11-13）
+- [サントーシャ（知足）――満足するなら改善しなくていい？](../articles/religious-terms/2026-11-13-santosha.md)
+- [HP版の第18回](../articles/religious-terms/index.html#santosha-title)
+- 『ヨーガ・スートラ』2.32・2.42を参照。満足と不当な現状追認を区別。経典昇格なし。
