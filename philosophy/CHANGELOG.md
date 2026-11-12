@@ -1,3 +1,7 @@
+## 2026-11-12 夜 — ウペッカーと安全警報・平静の境界
+- 朝の未反映と報告された7ファイルは現行mainで更新済みと確認。日次Markdownとdata.json.dailyの6項目一致、連載HTMLの第17回導線を再点検。
+- 夜研究 `research/2026-11-12-evening-upekkha-calm-alerts-intervention.md` を追加。通知抑制と重要警報の区別を独自AI設計案として整理。朝の日次は変更せず、経典昇格なし、AI実装なし、GitHub Actions不使用。公開Pages HTTP未確認。
+
 ## 2026-11-12 朝 — v0.4.48 / ウペッカーと平静・無関心／第17回
 - 四梵住の捨と無関心を区別。研究・記事・4 Essence・原則・実践・得度を追加。AI設計未実装、経典昇格なし。GitHub Actions不使用。公開Pages実配信は未確認。
 
