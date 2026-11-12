@@ -1,3 +1,6 @@
+## 2026-11-13 朝 — サントーシャ（知足）と満足・改善
+- [研究ノート](2026-11-13-santosha-contentment-not-complacency.md) / [宗教用語第18回](../articles/religious-terms/2026-11-13-santosha.md)。経典未昇格。
+
 ## 2026-11-12 夜 — ウペッカー、平静と重要通知
 - [夜間研究：静けさと危険検知の両立](2026-11-12-evening-upekkha-calm-alerts-intervention.md)。朝の今日の言葉は維持。経典未昇格。
 
