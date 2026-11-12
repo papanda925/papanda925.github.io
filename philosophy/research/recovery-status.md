@@ -1,3 +1,10 @@
+## 最新点検: 2026-11-12 夜 JST
+- 朝に未反映と報告された既存7ファイル（data.json、連載HTML、研究トップ、研究README、連載運用文書、CHANGELOG、復旧台帳）は現行mainに反映済み。第17回 #upekkha-title と朝のdaily-words / data.json.daily一致を確認。二重更新なし。
+- 夜研究 `research/2026-11-12-evening-upekkha-calm-alerts-intervention.md` を追加。経典昇格なし、AI実装なし、GitHub Actions不使用。公開Pages HTTP取得失敗で実配信未確認。
+- 未解決：AN 4.125全文独立照合、原語・宗派差、旧9月原本4件、SN 47.2、AI停止試験、研究全件照合。未反映が再発した場合は次回優先。定期研究は停止しない。
+
+---
+
 ## 最新点検: 2026-11-12 朝 JST
 - 第17回ウペッカー研究・記事・日次・原則・実践・得度を作成。HTML導線と公開JSONを更新。経典未昇格、AI未実装、GitHub Actions不使用。
 - 未解決：AN 4.125全文の独立照合、宗派差、旧9月原本4件、SN 47.2、AI停止試験、研究全件照合、公開Pages実配信。失敗分は次回優先。定期研究は停止しない。
