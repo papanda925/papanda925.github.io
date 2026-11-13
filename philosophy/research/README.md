@@ -1,3 +1,6 @@
+## 2026-11-14 朝 — テシュヴァと立ち返り・償い
+- [研究ノート](2026-11-14-teshuvah-return-repair-accountability.md) / [宗教用語第19回](../articles/religious-terms/2026-11-14-teshuvah.md)。経典未昇格。
+
 ## 2026-11-13 朝 — サントーシャ（知足）と満足・改善
 - [研究ノート](2026-11-13-santosha-contentment-not-complacency.md) / [宗教用語第18回](../articles/religious-terms/2026-11-13-santosha.md)。経典未昇格。
 
