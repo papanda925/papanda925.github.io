@@ -1,3 +1,6 @@
+## 2026-11-14 朝 — v0.4.50 / テシュヴァと立ち返り・償い／第19回
+- 『ミシュネー・トーラー』悔い改めの法2章を参照。研究・原則・実践・得度・記事・日次を追加。経典昇格なし、AI未実装。GitHub Actions不使用。公開Pages実配信は別途確認。
+
 ## 2026-11-13 夜｜サントーシャ・知足と完了責任
 - 2.42原文・英訳を再取得し、知足と品質保証の完了条件を区別。夜研究 `research/2026-11-13-evening-santosha-contentment-completion-accountability.md` を追加。朝のdaily-words/data.json.dailyは維持。経典昇格なし、AI実装なし、GitHub Actions不使用。公開Pages実配信は未確認。
 
