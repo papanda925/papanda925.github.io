@@ -1,3 +1,6 @@
+## 2026-11-13 夜｜サントーシャ・知足と完了責任
+- 2.42原文・英訳を再取得し、知足と品質保証の完了条件を区別。夜研究 `research/2026-11-13-evening-santosha-contentment-completion-accountability.md` を追加。朝のdaily-words/data.json.dailyは維持。経典昇格なし、AI実装なし、GitHub Actions不使用。公開Pages実配信は未確認。
+
 ## 2026-11-13 朝｜サントーシャ（知足）
 - 宗教用語第18回、研究・今日の言葉・原則候補・3分実践・得度問答を追加。『ヨーガ・スートラ』2.32・2.42。経典昇格なし。GitHub Actions不使用。
 
