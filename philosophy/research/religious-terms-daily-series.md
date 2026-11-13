@@ -115,3 +115,8 @@
 - [サントーシャ（知足）――満足するなら改善しなくていい？](../articles/religious-terms/2026-11-13-santosha.md)
 - [HP版の第18回](../articles/religious-terms/index.html#santosha-title)
 - 『ヨーガ・スートラ』2.32・2.42を参照。満足と不当な現状追認を区別。経典昇格なし。
+
+## 第19回（2026-11-14）
+- [テシュヴァ――謝れば元どおり？](../articles/religious-terms/2026-11-14-teshuvah.md)
+- [HP版第19回](../articles/religious-terms/index.html#teshuvah-title)
+- 悔い改めと赦し・対人償いを分離し、現代AIの修復へは独自応用として区別。
