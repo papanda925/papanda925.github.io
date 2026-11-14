@@ -1,3 +1,6 @@
+## 2026-11-14 夜 — テシュヴァ、修復と赦し・接触境界
+- 夜研究 `research/2026-11-14-evening-teshuvah-repentance-repair-forgiveness-boundaries.md` を追加。謝罪・修復・赦し・信頼回復を分け、接触拒否と必要な正規通知を検討。Sefaria本文の独立全文照合は未達と明記。朝の日次とdata.json.dailyは不変更。経典昇格なし、AI未実装、GitHub Actions不使用。公開Pages HTTP実配信未確認。
+
 ## 2026-11-14 朝 — v0.4.50 / テシュヴァと立ち返り・償い／第19回
 - 『ミシュネー・トーラー』悔い改めの法2章を参照。研究・原則・実践・得度・記事・日次を追加。経典昇格なし、AI未実装。GitHub Actions不使用。公開Pages実配信は別途確認。
 
