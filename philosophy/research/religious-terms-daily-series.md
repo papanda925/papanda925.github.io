@@ -120,3 +120,8 @@
 - [テシュヴァ――謝れば元どおり？](../articles/religious-terms/2026-11-14-teshuvah.md)
 - [HP版第19回](../articles/religious-terms/index.html#teshuvah-title)
 - 悔い改めと赦し・対人償いを分離し、現代AIの修復へは独自応用として区別。
+
+## 第20回（2026-11-15）
+- [シャバット――休むのにも仕事が必要？](../articles/religious-terms/2026-11-15-shabbat.md)
+- [HP版](../articles/religious-terms/index.html#shabbat-title)
+- 出エジプト記20章・申命記5章、ユダヤ教解説を参照。休息と他者の尊厳、AI停止の境界を検討。経典昇格なし。
