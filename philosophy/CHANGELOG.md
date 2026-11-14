@@ -1,3 +1,6 @@
+## 2026-11-15 朝
+- 第20回シャバットの記事・研究・今日の言葉・原則候補・実践・得度問答を追加。data.json v0.4.51と公開導線を更新。経典昇格なし。GitHub Actions不使用。
+
 ## 2026-11-14 夜 — テシュヴァ、修復と赦し・接触境界
 - 夜研究 `research/2026-11-14-evening-teshuvah-repentance-repair-forgiveness-boundaries.md` を追加。謝罪・修復・赦し・信頼回復を分け、接触拒否と必要な正規通知を検討。Sefaria本文の独立全文照合は未達と明記。朝の日次とdata.json.dailyは不変更。経典昇格なし、AI未実装、GitHub Actions不使用。公開Pages HTTP実配信未確認。
 
