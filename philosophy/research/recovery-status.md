@@ -1,3 +1,7 @@
+## 最新点検: 2026-11-15 朝 JST
+- 第20回シャバットの研究・記事・日次・原則候補・実践・得度問答を追加。GitHubへ直接保存・読戻しを実施。経典昇格なし。
+- 公開PagesのHTTP確認は未達。原語校訂・宗派差、旧9月研究原本4件、SN 47.2、AN 4.125、AI停止設計試験、研究全件照合は継続。保存失敗があれば次回優先し、定期研究は停止しない。
+
 ## 最新点検: 2026-11-14 夜 JST
 - 朝に未確認だった既存7ファイルを正本で点検。data.json v0.4.50、連載HTMLの第19回 #teshuvah-title、トップの最新リンク、CHANGELOG・復旧台帳を確認。日次MarkdownとJSONの6項目一致。二重更新は不要。
 - 夜研究 `research/2026-11-14-evening-teshuvah-repentance-repair-forgiveness-boundaries.md` を追加。謝罪と修復・赦し・信頼回復を区別し、接触拒否の境界を研究。朝の日次は変更せず、経典昇格なし、AI未実装、GitHub Actions不使用。
