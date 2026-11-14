@@ -1,3 +1,4 @@
+- [2026-11-15 シャバット：休息・尊厳・境界](2026-11-15-shabbat-rest-dignity-boundaries.md)
 ## 2026-11-14 朝 — テシュヴァと立ち返り・償い
 - [研究ノート](2026-11-14-teshuvah-return-repair-accountability.md) / [宗教用語第19回](../articles/religious-terms/2026-11-14-teshuvah.md)。経典未昇格。
 
