@@ -1,3 +1,8 @@
+## 最新点検: 2026-11-14 夜 JST
+- 朝に未確認だった既存7ファイルを正本で点検。data.json v0.4.50、連載HTMLの第19回 #teshuvah-title、トップの最新リンク、CHANGELOG・復旧台帳を確認。日次MarkdownとJSONの6項目一致。二重更新は不要。
+- 夜研究 `research/2026-11-14-evening-teshuvah-repentance-repair-forgiveness-boundaries.md` を追加。謝罪と修復・赦し・信頼回復を区別し、接触拒否の境界を研究。朝の日次は変更せず、経典昇格なし、AI未実装、GitHub Actions不使用。
+- 公開Pages HTTP取得失敗で実配信未確認。Sefaria本文の独立全文照合、旧9月原本4件、SN 47.2、AN 4.125、AI停止試験、全研究照合が未解決。失敗時も停止せず次回再点検。
+
 ## 最新点検: 2026-11-14 朝 JST
 - 前回11月13日夜の復旧記録を確認。第19回テシュヴァの研究・記事・日次4 Essence・原則・実践・得度を追加。data.json v0.4.50 と連載HTML導線を同期。経典昇格なし、AI未実装、GitHub Actions不使用。
 - 公開Pages HTTP実配信は未確認。旧9月原本4件、SN 47.2、AN 4.125、AI停止試験、研究全件照合、宗教的赦しと現代的修復の差が継続課題。失敗分は次回最優先で再保存し、定期研究は停止しない。
