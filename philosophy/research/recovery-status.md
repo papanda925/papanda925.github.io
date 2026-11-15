@@ -1,3 +1,7 @@
+## 最新点検: 2026-11-16 朝 JST
+- 第21回サブル：研究・記事・日次4 Essence・原則・実践・得度を追加。GitHubへ直接保存・読戻し。data.json v0.4.52と日次6項目、HTML #sabr-title を点検。
+- 未解決：原語校訂・注釈差、旧9月原本4件、SN 47.2、AN 4.125、AI停止試験、研究全件照合。公開Pages実配信は別途確認。経典昇格なし、定期研究は停止しない。
+
 ## 最新点検: 2026-11-15 夜 JST
 - 朝の未確認7件は現行mainへ反映済み。data.json v0.4.51、日次Markdownとの6項目一致、連載HTML #shabbat-title、トップHTMLの第20回導線を確認。重複更新不要。
 - 夜研究 `research/2026-11-15-evening-shabbat-rest-emergency-boundaries.md` を追加。休息と安全例外の境界を検討。朝の日次は維持。経典昇格なし、AI実装なし、GitHub Actions不使用。
