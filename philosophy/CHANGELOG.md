@@ -1,3 +1,7 @@
+## 2026-11-15 夜｜シャバットと休息・緊急例外
+- 朝の未確認7ファイルを正本で再点検。data.json v0.4.51、日次Markdownとの6項目一致、連載HTML #shabbat-title とトップ導線を確認。二重更新なし。
+- 夜研究 `research/2026-11-15-evening-shabbat-rest-emergency-boundaries.md` を追加。宗教的安息とAI休止設計を区別し、通常通知と安全例外の境界を検討。朝の日次は維持、経典昇格なし、AI未実装。公開Pages HTTP未確認。GitHub Actions不使用。
+
 ## 2026-11-15 朝
 - 第20回シャバットの記事・研究・今日の言葉・原則候補・実践・得度問答を追加。data.json v0.4.51と公開導線を更新。経典昇格なし。GitHub Actions不使用。
 
