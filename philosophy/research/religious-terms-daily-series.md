@@ -130,3 +130,8 @@
 - [サブル――我慢すれば、助けを求めなくていい？](../articles/religious-terms/2026-11-16-sabr.md)
 - [HP版](../articles/religious-terms/index.html#sabr-title)
 - クルアーン2:153、3:200を参照。忍耐と危険の放置を区別し、AIの無期限待機を避ける独自応用。経典昇格なし。
+
+## 第22回（2026-11-17）
+- [カリス（恵み）――無償なら、何もしなくていい？](../articles/religious-terms/2026-11-17-charis.md)
+- [HP版](../articles/religious-terms/index.html#charis-title)
+- エフェソ2:8–10を参照。救いの賜物と善い行いを同一視せず、教派差を保留。AI応用は独自提案。経典昇格なし。
