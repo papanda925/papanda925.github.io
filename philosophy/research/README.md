@@ -1,3 +1,4 @@
+- [2026-11-16 夜 サブル：忍耐・期限・支援要請の境界](2026-11-16-evening-sabr-patience-limits-escalation.md)。朝の日次不変更、経典未昇格。
 - [2026-11-16 朝 サブル：忍耐・安全・支援](2026-11-16-sabr-patience-safety-support.md) / [宗教用語第21回](../articles/religious-terms/2026-11-16-sabr.md)。経典未昇格。
 - [2026-11-15 夜 シャバット：休息と緊急例外の境界](2026-11-15-evening-shabbat-rest-emergency-boundaries.md)
 - [2026-11-15 シャバット：休息・尊厳・境界](2026-11-15-shabbat-rest-dignity-boundaries.md)
