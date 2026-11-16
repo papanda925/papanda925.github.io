@@ -1,3 +1,7 @@
+## 最新点検: 2026-11-17 朝 JST
+- 第22回カリスの研究・記事・日次・原則・実践・得度を直接保存。data.json v0.4.53、HTML #charis-title とトップ導線を同期。経典昇格なし、AI未実装、Actions不使用。
+- 公開Pages実配信、ギリシア語原典校訂・教派差、旧9月原本4件、SN 47.2、AN 4.125、AI停止試験、研究全件照合は継続。失敗分は次回優先し、定期研究を停止しない。
+
 ## 最新点検: 2026-11-16 夜 JST
 - 朝の未確認7ファイルは現行mainに反映済み。data.json v0.4.52、11月16日日次MarkdownとJSONの6項目、連載HTML #sabr-title、トップHTML導線を再取得確認。二重更新不要。
 - 夜研究 `research/2026-11-16-evening-sabr-patience-limits-escalation.md` を追加。クルアーン2:153・3:200の原文と英訳を点検。朝の日次不変更。経典昇格なし、AI未実装、GitHub Actions不使用。
