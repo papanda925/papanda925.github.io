@@ -1,3 +1,6 @@
+## 2026-11-17 夜 — カリス、感謝と検証・同意の境界
+- USCCBエフェソ2:8–10の本文・注記を再点検。夜研究 `research/2026-11-17-evening-charis-gift-gratitude-consent-accountability.md` を追加。無償・善意と検証・同意・権限を区別。朝の日次・data.json.daily・公開HTMLは変更せず、経典昇格なし、AI未実装。公開Pages HTTP未確認、GitHub Actions不使用。
+
 ## 2026-11-17 朝 — v0.4.53 / カリス（恵み）第22回
 - エフェソ2:8–10を確認。研究・記事・日次4 Essence・原則・実践・得度を新規保存。公開HTML・data.json同期、経典昇格なし、AI未実装、GitHub Actions不使用。
 
