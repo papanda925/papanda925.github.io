@@ -135,3 +135,8 @@
 - [カリス（恵み）――無償なら、何もしなくていい？](../articles/religious-terms/2026-11-17-charis.md)
 - [HP版](../articles/religious-terms/index.html#charis-title)
 - エフェソ2:8–10を参照。救いの賜物と善い行いを同一視せず、教派差を保留。AI応用は独自提案。経典昇格なし。
+
+## 第23回（2026-11-18）
+- [アパリグラハ――手放すなら、責任まで捨てていい？](../articles/religious-terms/2026-11-18-aparigraha.md)
+- [HP版](../articles/religious-terms/index.html#aparigraha-title)
+- 『ヨーガ・スートラ』2.30・2.39とボージャ注釈を参照。不貪と生活必需品の放棄を混同せず、AIの記録保持への応用は独自案。経典未昇格。
