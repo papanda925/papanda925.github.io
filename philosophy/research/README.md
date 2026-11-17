@@ -1,3 +1,7 @@
+## 2026-11-18 朝｜アパリグラハ（不貪）と責任ある手放し
+- [研究ノート](2026-11-18-aparigraha-non-grasping-responsible-release.md)｜[第23回記事](../articles/religious-terms/2026-11-18-aparigraha.md)｜[今日の言葉](../daily-words/2026-11-18.md)
+- 『ヨーガ・スートラ』2.30・2.39、ボージャ注釈。宗教的な不貪とAIデータ最小化の独自応用を区別。経典未昇格。
+
 - [2026-11-17 カリス：恵みと善い行い](2026-11-17-charis-grace-gift-good-works.md)
 - [2026-11-16 夜 サブル：忍耐・期限・支援要請の境界](2026-11-16-evening-sabr-patience-limits-escalation.md)。朝の日次不変更、経典未昇格。
 - [2026-11-16 朝 サブル：忍耐・安全・支援](2026-11-16-sabr-patience-safety-support.md) / [宗教用語第21回](../articles/religious-terms/2026-11-16-sabr.md)。経典未昇格。
