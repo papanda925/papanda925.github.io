@@ -1,3 +1,6 @@
+## 2026-11-18 朝 — v0.4.54 / アパリグラハ（不貪）第23回
+- 『ヨーガ・スートラ』2.30・2.39、ボージャ注釈を参照。研究・記事・日次4 Essence・原則・実践・得度を追加。公開HTMLとdata.jsonを同期。経典昇格なし、AI未実装、GitHub Actions不使用。公開PagesのHTTPは別途点検。
+
 ## 2026-11-17 夜 — カリス、感謝と検証・同意の境界
 - USCCBエフェソ2:8–10の本文・注記を再点検。夜研究 `research/2026-11-17-evening-charis-gift-gratitude-consent-accountability.md` を追加。無償・善意と検証・同意・権限を区別。朝の日次・data.json.daily・公開HTMLは変更せず、経典昇格なし、AI未実装。公開Pages HTTP未確認、GitHub Actions不使用。
 
