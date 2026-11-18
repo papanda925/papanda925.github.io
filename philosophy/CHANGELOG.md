@@ -1,3 +1,8 @@
+## 2026-11-18 夜 JST — アパリグラハの反例研究
+- `research/2026-11-18-evening-aparigraha-retention-deletion-boundaries.md` を追加。削除義務と保存義務の境界、無期限保管の反例、AIの権限確認を検討。
+- 朝のdaily-wordsとdata.json.daily、公開HTML、経典は変更しない。経典昇格なし。
+- 朝の復旧台帳更新はGit履歴で反映確認。公開Pagesの実配信は未確認。
+
 ## 2026-11-18 朝 — v0.4.54 / アパリグラハ（不貪）第23回
 - 『ヨーガ・スートラ』2.30・2.39、ボージャ注釈を参照。研究・記事・日次4 Essence・原則・実践・得度を追加。公開HTMLとdata.jsonを同期。経典昇格なし、AI未実装、GitHub Actions不使用。公開PagesのHTTPは別途点検。
 
