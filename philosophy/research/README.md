@@ -1,3 +1,7 @@
+## 2026-11-19 朝｜正語と真実・有益性・時機
+- [研究ノート](2026-11-19-right-speech-truth-benefit-timing.md)｜[第24回記事](../articles/religious-terms/2026-11-19-right-speech.md)｜[今日の言葉](../daily-words/2026-11-19.md)
+- MN 58を参照。緊急報告を「穏やかさ」で遅らせない。経典未昇格。
+
 ## 2026-11-18 朝｜アパリグラハ（不貪）と責任ある手放し
 - [研究ノート](2026-11-18-aparigraha-non-grasping-responsible-release.md)｜[第23回記事](../articles/religious-terms/2026-11-18-aparigraha.md)｜[今日の言葉](../daily-words/2026-11-18.md)
 - 『ヨーガ・スートラ』2.30・2.39、ボージャ注釈。宗教的な不貪とAIデータ最小化の独自応用を区別。経典未昇格。
