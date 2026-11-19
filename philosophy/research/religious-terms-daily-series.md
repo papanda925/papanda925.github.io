@@ -144,3 +144,8 @@
 
 ## 2026-11-19 連載進捗
 - 第24回「正語」：MN 58を参照。真実・有益性・時機・緊急報告を区別。記事 `../articles/religious-terms/2026-11-19-right-speech.md`。
+
+## 第25回（2026-11-20）
+- [イフサーン――丁寧なら、相手の希望を聞かなくていい？](../articles/religious-terms/2026-11-20-ihsan.md)
+- [HP版](../articles/religious-terms/index.html#ihsan-title)
+- クルアーン16:90・2:195。善行と無断介入を区別。AI同意は独自応用。経典未昇格。
