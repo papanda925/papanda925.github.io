@@ -1,3 +1,10 @@
+## 最新点検: 2026-11-19 夜 JST
+- 朝の未確認7ファイル（data.json、連載HTML、トップHTML、研究README、連載運用文書、CHANGELOG、復旧台帳）はmainへの反映を再取得確認。重複更新なし。data.json v0.4.55と日次Markdownの6項目一致、#right-speech-title とトップ導線確認。
+- 夜間研究 `2026-11-19-evening-right-speech-truth-harm-disclosure-boundaries.md` を保存。MN 58英訳を再点検。朝の日次とHTMLは変更しない。経典昇格・AI実装なし。GitHub Actions不使用。
+- 未解決：公開Pages HTTP実配信、パーリ原文校訂・注釈差、旧9月原本4件、SN 47.2、AN 4.125、AI実装試験、研究全件照合。失敗分は次回優先し、定期研究は停止しない。
+
+---
+
 ## 最新点検: 2026-11-19 朝 JST
 - 第24回「正語」：MN 58を確認し、研究・記事・日次・原則・実践・得度を作成。公開HTML導線とdata.jsonの同期を点検。
 - 未解決：公開Pages HTTP実配信、パーリ原文校訂、旧9月原本4件、SN 47.2、AN 4.125、AI設計の実装試験、研究全件照合。GitHub Actions不使用、定期研究停止なし。
