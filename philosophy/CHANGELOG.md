@@ -1,3 +1,6 @@
+## 2026-11-19 夜 — 正語と告知・秘密保持・緊急性の境界
+- `research/2026-11-19-evening-right-speech-truth-harm-disclosure-boundaries.md` を追加。MN 58の六類型を再点検し、正確性・有益性・時機と現代の情報管理を区別。朝の7ファイルはmainへ反映済み、data.json v0.4.55、日次6項目とHP導線を確認。朝の日次とHTMLは変更せず、経典昇格・AI実装なし。公開Pages HTTPは未確認、GitHub Actions不使用。
+
 ## 2026-11-19 朝 — v0.4.55 / 正語（第24回）
 - MN 58を参照。研究・記事・日次4 Essence・原則・実践・得度を追加し、data.jsonと公開HTML導線を同期。経典未昇格、AI未実装、GitHub Actions不使用。
 
