@@ -1,3 +1,7 @@
+## 2026-11-20 朝｜第25回 イフサーン
+- クルアーン16:90・2:195を参照し、研究・宗教用語記事・日次4 Essence・原則・実践・得度問答を追加。
+- data.json v0.4.56、連載HTMLとトップ導線を更新。経典昇格・AI実装・GitHub Actionsなし。
+
 ## 2026-11-19 夜 — 正語と告知・秘密保持・緊急性の境界
 - `research/2026-11-19-evening-right-speech-truth-harm-disclosure-boundaries.md` を追加。MN 58の六類型を再点検し、正確性・有益性・時機と現代の情報管理を区別。朝の7ファイルはmainへ反映済み、data.json v0.4.55、日次6項目とHP導線を確認。朝の日次とHTMLは変更せず、経典昇格・AI実装なし。公開Pages HTTPは未確認、GitHub Actions不使用。
 
