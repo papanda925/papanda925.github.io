@@ -1,3 +1,6 @@
+## 2026-11-20 夜｜イフサーンの善意・同意・結果責任
+- `research/2026-11-20-evening-ihsan-good-intentions-accountable-help.md` を追加。クルアーン16:90・2:195の本文・文脈を再確認し、宗教教義とAIの権限設計を区別。朝の未確認7ファイルはmainで反映確認。data.json v0.4.56、日次6項目、連載 #ihsan-title とトップ導線一致。朝の日次・HTMLは変更せず。経典昇格・AI実装・GitHub Actionsなし。公開Pages HTTP実配信未確認。
+
 ## 2026-11-20 朝｜第25回 イフサーン
 - クルアーン16:90・2:195を参照し、研究・宗教用語記事・日次4 Essence・原則・実践・得度問答を追加。
 - data.json v0.4.56、連載HTMLとトップ導線を更新。経典昇格・AI実装・GitHub Actionsなし。
