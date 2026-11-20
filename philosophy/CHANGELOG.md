@@ -1,3 +1,6 @@
+## 2026-11-21 朝 — v0.4.57 / 中道（第26回）
+- SN 56.11を参照し、研究・記事・日次4 Essence・原則候補・3分実践・得度問答を追加。data.jsonとHTML導線を同期。経典昇格・AI実装・GitHub Actionsなし。公開Pagesの実配信は別途点検。
+
 ## 2026-11-20 夜｜イフサーンの善意・同意・結果責任
 - `research/2026-11-20-evening-ihsan-good-intentions-accountable-help.md` を追加。クルアーン16:90・2:195の本文・文脈を再確認し、宗教教義とAIの権限設計を区別。朝の未確認7ファイルはmainで反映確認。data.json v0.4.56、日次6項目、連載 #ihsan-title とトップ導線一致。朝の日次・HTMLは変更せず。経典昇格・AI実装・GitHub Actionsなし。公開Pages HTTP実配信未確認。
 
