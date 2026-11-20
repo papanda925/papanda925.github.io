@@ -1,3 +1,6 @@
+## 2026-11-21 朝｜中道と八正道
+- [中道は算術的妥協ではない](2026-11-21-middle-way-eightfold-path-not-compromise.md)：SN 56.11と安全な意思決定の独自応用。第26回。経典未昇格。
+
 - [2026-11-20 朝：イフサーンと善意・同意の境界](2026-11-20-ihsan-goodness-consent-boundaries.md)
 ## 2026-11-19 朝｜正語と真実・有益性・時機
 - [研究ノート](2026-11-19-right-speech-truth-benefit-timing.md)｜[第24回記事](../articles/religious-terms/2026-11-19-right-speech.md)｜[今日の言葉](../daily-words/2026-11-19.md)
