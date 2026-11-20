@@ -149,3 +149,8 @@
 - [イフサーン――丁寧なら、相手の希望を聞かなくていい？](../articles/religious-terms/2026-11-20-ihsan.md)
 - [HP版](../articles/religious-terms/index.html#ihsan-title)
 - クルアーン16:90・2:195。善行と無断介入を区別。AI同意は独自応用。経典未昇格。
+
+## 第26回（2026-11-21）
+- [中道――真ん中を選べば、いつも正しい？](../articles/religious-terms/2026-11-21-middle-way.md)
+- [HP版第26回](../articles/religious-terms/index.html#middle-way-title)
+- SN 56.11の八正道と算術的妥協を区別。経典昇格なし。
