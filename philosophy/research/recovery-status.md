@@ -1,3 +1,10 @@
+## 最新点検: 2026-11-20 夜 JST
+- 朝の未確認7ファイル（data.json、連載HTML、トップHTML、研究README、連載運用文書、CHANGELOG、復旧台帳）をmainから再取得し反映確認。data.json v0.4.56と日次Markdownの6項目一致、#ihsan-title とトップ導線を確認。重複更新不要。
+- 夜研究 `2026-11-20-evening-ihsan-good-intentions-accountable-help.md` を追加。クルアーン16:90・2:195の本文を点検。朝の日次とHTMLは不変更。経典昇格・AI実装・GitHub Actionsなし。
+- 未解決：公開Pages HTTP実配信、古典語義・注釈差、旧9月原本4件、SN 47.2、AN 4.125、AI実装試験、研究全件照合。失敗時も定期研究を停止せず次回優先。
+
+---
+
 ## 最新点検: 2026-11-20 朝 JST
 - 第25回イフサーン：研究・記事・日次・原則・実践・得度を作成。data.json v0.4.56、HTML #ihsan-title とトップ導線を更新。経典昇格・AI実装・GitHub Actionsなし。
 - 未解決：公開Pages HTTP実配信、古典語彙・注釈差、旧9月原本4件、SN 47.2、AN 4.125、AI実装試験、研究全件照合。未反映分は次回優先、定期研究は停止しない。
