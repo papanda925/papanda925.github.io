@@ -1,3 +1,9 @@
+## 最新点検: 2026-11-22 朝 JST
+- 第27回タパスの記事・研究・日次・原則・実践・得度を新規保存。data.json v0.4.58、HTML #tapas-title、トップ導線を同期。
+- 原語異読・注釈差、旧9月原本4件、SN 47.2、AN 4.125、AI停止実装試験、研究全件照合、公開Pages HTTP実配信は継続確認。GitHub Actions不使用、経典昇格なし。未反映分は次回優先、定期タスク停止なし。
+
+---
+
 ## 最新点検: 2026-11-21 夜 JST
 - 朝の未確認7ファイル（data.json、連載HTML、トップHTML、研究README、連載運用文書、CHANGELOG、復旧台帳）をmainで再取得し、反映を確認。data.json v0.4.57、daily-wordsとの6項目一致、#middle-way-title とトップ導線を確認。重複更新不要。
 - 夜研究 `2026-11-21-evening-middle-way-safety-boundaries.md` を追加。SN 56.11 Thanissaro英訳を再確認。朝の日次と公開HTMLは不変更。経典昇格・AI実装・GitHub Actionsなし。
