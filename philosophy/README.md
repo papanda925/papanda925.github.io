@@ -46,4 +46,6 @@
 - 思想史 = Git History
 - 教義変更 = CHANGELOG
 
+最新研究（2026-11-22）：[タパスと修練・限界](research/2026-11-22-tapas-discipline-and-limits.md)、[宗教用語第27回](articles/religious-terms/2026-11-22-tapas.md)。
+
 このREADMEは入口であり、詳細研究は `research/`、原則は `principles/`、得度制度は `tokudo/` に蓄積する。
