@@ -1,3 +1,10 @@
+## 最新点検: 2026-11-21 夜 JST
+- 朝の未確認7ファイル（data.json、連載HTML、トップHTML、研究README、連載運用文書、CHANGELOG、復旧台帳）をmainで再取得し、反映を確認。data.json v0.4.57、daily-wordsとの6項目一致、#middle-way-title とトップ導線を確認。重複更新不要。
+- 夜研究 `2026-11-21-evening-middle-way-safety-boundaries.md` を追加。SN 56.11 Thanissaro英訳を再確認。朝の日次と公開HTMLは不変更。経典昇格・AI実装・GitHub Actionsなし。
+- 未解決：公開Pages HTTP実配信、SuttaCentral英訳の夜間独立取得、パーリ語異読・学派差、旧9月原本4件、SN 47.2、AN 4.125、AI実装試験、研究全件照合。定期研究は停止しない。
+
+---
+
 ## 最新点検: 2026-11-21 朝 JST
 - 第26回「中道」研究・記事・日次・原則・実践・得度を保存。data.json v0.4.57、HTML #middle-way-title とトップ導線を更新。
 - 未解決：公開Pages実配信、パーリ語異読・諸学派の中道論、旧9月原本4件、SN 47.2、AN 4.125、AI実装試験、研究全件照合。失敗分は次回優先、定期研究停止なし。
