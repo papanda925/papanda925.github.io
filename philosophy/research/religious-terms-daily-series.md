@@ -154,3 +154,8 @@
 - [中道――真ん中を選べば、いつも正しい？](../articles/religious-terms/2026-11-21-middle-way.md)
 - [HP版第26回](../articles/religious-terms/index.html#middle-way-title)
 - SN 56.11の八正道と算術的妥協を区別。経典昇格なし。
+
+## 第27回（2026-11-22）
+- [タパス（修練）――苦しいほど、立派なの？](../articles/religious-terms/2026-11-22-tapas.md)
+- [HP版第27回](../articles/religious-terms/index.html#tapas-title)
+- ヨーガ・スートラ2.32・2.43。古典の苦行と現代の継続・停止条件を区別。経典昇格なし。
