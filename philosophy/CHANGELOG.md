@@ -1,3 +1,6 @@
+## 2026-11-22 朝 — v0.4.58 / タパス（第27回）
+- ヨーガ・スートラ2.32・2.43を参照。研究・記事・日次4 Essence・原則候補・3分実践・得度問答を追加。苦行の古典文脈と現代の停止条件を区別。経典昇格なし、AI未実装、GitHub Actions不使用。公開Pages HTTP実配信は別途確認。
+
 ## 2026-11-21 夜｜中道と安全基準・妥協の限界
 - `research/2026-11-21-evening-middle-way-safety-boundaries.md` を追加。SN 56.11 Thanissaro英訳を独立再取得し、八正道と単純な折衷を区別。朝の未確認7ファイルはmainに反映済み。data.json v0.4.57、日次6項目、連載 #middle-way-title とトップ導線を確認。
 - 朝の日次・公開HTMLは変更せず。経典昇格・AI実装・GitHub Actionsなし。SuttaCentral本文再取得と公開Pages HTTP実配信は未確認。
