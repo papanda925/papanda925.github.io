@@ -1,3 +1,7 @@
+## 2026-11-23 朝 — v0.4.59 / 黄金律（第28回）
+- マタイ7:12とShabbat 31a:6を比較。研究・記事・日次4 Essence・原則候補・3分実践・得度問答を追加。data.jsonと連載・トップHTMLを同期。
+- 経典昇格・AI実装・GitHub Actionsなし。公開Pages実配信と原語・伝承成立史は継続確認。
+
 ## 2026-11-22 夜｜タパスと停止・未完了の可視化
 - `research/2026-11-22-evening-tapas-discipline-stop-and-evidence.md` を追加。『ヨーガ・スートラ』2.32・2.43のWoods英訳を再点検。朝の未確認7ファイルはmain上で反映を確認し、data.json v0.4.58と日次6項目・連載 #tapas-title・トップ導線を確認。朝の日次と公開HTMLは不変更。
 - 経典昇格・AI実装・GitHub Actionsなし。公開Pages HTTP実配信、原文校訂・注釈差、過去研究照合は継続。
