@@ -159,3 +159,8 @@
 - [タパス（修練）――苦しいほど、立派なの？](../articles/religious-terms/2026-11-22-tapas.md)
 - [HP版第27回](../articles/religious-terms/index.html#tapas-title)
 - ヨーガ・スートラ2.32・2.43。古典の苦行と現代の継続・停止条件を区別。経典昇格なし。
+
+## 第28回（2026-11-23）
+- [黄金律――自分が嬉しいことなら、相手も嬉しい？](../articles/religious-terms/2026-11-23-golden-rule.md)
+- [HP版の第28回](../articles/religious-terms/index.html#golden-rule-title)
+- マタイ7:12とShabbat 31a:6を文脈別に比較。自己の希望と他者の希望を区別し、現代のAI同意設計は独自応用と明記。経典昇格なし。
