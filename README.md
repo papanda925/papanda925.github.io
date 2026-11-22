@@ -1,21 +1,14 @@
 # papanda925.github.io
 
-papanda925が公開している技術ブログとGitHubプロジェクトを案内するポートフォリオサイトです。
+[公開サイト](https://papanda925.github.io/)は、技術教材と[技術ブログ](https://papanda925.com/)への入口です。[GitHubプロフィール](https://github.com/papanda925)からもアクセスできます。
 
-- ポートフォリオ: https://papanda925.github.io/
-- 技術ブログ: https://papanda925.com/
-- GitHubプロフィール: https://github.com/papanda925
+| パス | 内容 |
+| --- | --- |
+| `index.html`、`stylesheet.css` | トップページとそのスタイル |
+| `mo211/` | Excel MO-211 演習 |
+| `philosophy/` | 宗教・哲学の研究ノート |
+| `mental-health-answer-sheet/`、`mental-health-line-care/` | 既存URLで利用できる一般向け学習ページ |
 
-## 掲載内容
+共通のビルド工程はありません。各教材の利用条件は、該当するリポジトリのREADMEとライセンスを確認してください。
 
-- Excel VBAからWindows APIを直接利用するネットワーク学習シリーズ
-- IPv4/IPv6 TCP・UDP、非同期HTTP、DNS、Ping、Traceroute
-- PowerShellとWPF/XAMLによるWindows GUIサンプル
-- AI/API連携、MarkdownローカルWikiなどの個人プロジェクト
-
-学習用リポジトリでは、日本語コメント、処理トレース、導入手順、テスト手順、制限事項を重視しています。各プロジェクトの詳しい利用条件は、それぞれの`LICENSE`とREADMEを確認してください。
-
-
-## 公開ページのプライバシー
-
-新規作成・更新する公開ページは [PUBLICATION_PRIVACY.md](./PUBLICATION_PRIVACY.md) に従い、個人の学習進捗・医療や職場の個別事情・実運用の秘密情報を公開内容へ混ぜないようにします。
+公開文面とサンプルデータの更新時は [PUBLICATION_PRIVACY.md](PUBLICATION_PRIVACY.md) を確認してください。

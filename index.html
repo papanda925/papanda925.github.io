@@ -2,179 +2,74 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>papanda925｜仕事に役立つPC・Office・プログラミング実用サンプル</title>
-  <meta name="description" content="Windows、Office、VBA、PowerShell、OS、ネットワーク、セキュリティなど、実際に動かして学べる300本のDaily Codeと技術記事を公開しています。">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>papanda925｜動かして学ぶ技術サンプル</title>
+  <meta name="description" content="Windows、Excel VBA、PowerShell、ネットワークの実用サンプルと技術記事を探せます。">
   <link rel="canonical" href="https://papanda925.github.io/">
-  <meta property="og:title" content="papanda925｜実用サンプルと技術ブログ">
-  <meta property="og:description" content="仕事の実用TIPSからOS・ネットワーク・セキュリティの仕組みまで、実際に動かして学べる300本のDaily Codeと公開プロジェクトへの入口です。">
-  <meta property="og:url" content="https://papanda925.github.io/">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/78643310?v=4">
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-  <div class="wrap">
-    <header class="topbar">
+  <header class="bar">
+    <div class="wrap navigation">
       <a class="brand" href="/">papanda925</a>
-      <nav class="nav" aria-label="メインナビゲーション">
-        <a href="https://papanda925.com/">Blog</a>
+      <nav aria-label="メインナビゲーション">
+        <a href="#projects">教材一覧</a>
         <a href="https://github.com/papanda925">GitHub</a>
       </nav>
-    </header>
-
-    <main>
-      <section class="hero">
-        <p class="eyebrow">PRACTICAL SAMPLES · NOTES · PROJECTS</p>
-        <h1>仕事で使えることを、<br>小さく試して公開する。</h1>
-        <p class="lead">
-          Windows、Excel、VBA、PowerShellなどの実用TIPSから、
-          OS・ネットワーク・セキュリティ・WinRT・固定長・Hexまで、
-          「実際に動かす → 前後の差を見る → 仕組みを知る」ためのサンプルと技術記事を公開しています。
-        </p>
-        <div class="actions">
-          <a class="button primary" href="https://papanda925.github.io/Daily-Code-Samples/">Daily Code Samples を探す</a>
-          <a class="button" href="https://papanda925.com/">技術ブログを読む</a>
-        </div>
-      </section>
-
-      <section class="stats" aria-label="Daily Codeの構成">
-        <div class="stat-card">
-          <strong>300</strong>
-          <span>Daily Code Samples</span>
-        </div>
-        <div class="stat-card">
-          <strong>41</strong>
-          <span>仕事ですぐ使える Practical</span>
-        </div>
-        <div class="stat-card">
-          <strong>259</strong>
-          <span>仕組みを体験する Engineering Lab</span>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-heading">
-          <div>
-            <p class="kicker">START HERE</p>
-            <h2>目的に合わせて選ぶ</h2>
-          </div>
-        </div>
-
-        <div class="entry-grid">
-          <a class="entry-card featured" href="https://papanda925.github.io/Daily-Code-Samples/">
-            <span class="pill">おすすめ</span>
-            <h3>Daily Code Samples</h3>
-            <p>仕事の「ちょっと困った」41本に加え、OS・USB・Bluetooth・Wi-Fi・Security・VBA・WinRT・固定長・Hexなど、仕組みを体験するEngineering Labを含む300本のサンプル集。</p>
-            <span class="more">サンプルを検索する →</span>
-          </a>
-
-          <a class="entry-card" href="https://papanda925.com/">
-            <span class="pill">Blog</span>
-            <h3>papanda925.com</h3>
-            <p>実際に調べたこと、試したこと、AI・クラウド・プログラミングなどを詳しく記事として記録。</p>
-            <span class="more">技術ブログを読む →</span>
-          </a>
-
-          <a class="entry-card" href="https://github.com/papanda925">
-            <span class="pill">GitHub</span>
-            <h3>Source Code & Projects</h3>
-            <p>VBA、PowerShell、ネットワーク、AI/APIなどのサンプルコードや小さなツールを公開。</p>
-            <span class="more">GitHubを見る →</span>
-          </a>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-heading">
-          <div>
-            <p class="kicker">FEATURED PROJECTS</p>
-            <h2>公開している主なサンプル</h2>
-          </div>
-          <a class="text-link" href="https://github.com/papanda925?tab=repositories">すべてのリポジトリを見る →</a>
-        </div>
-
-        <div class="project-grid">
-          <a class="card" href="https://github.com/papanda925/VBA_WinsockAPI_TCP_Sample">
-            <span class="pill">VBA / TCP</span>
-            <h3>VBA Winsock API TCP Sample</h3>
-            <p>Excel VBAからTCP通信を試し、ソケットの動きを追いながら学べるサンプル。</p>
-          </a>
-
-          <a class="card" href="https://github.com/papanda925/VBA_Async_HTTP_API_Sample">
-            <span class="pill">VBA / HTTP</span>
-            <h3>VBA Async HTTP API Sample</h3>
-            <p>非同期HTTPの要求・応答を、簡易サーバーとトレース付きで確認する教材。</p>
-          </a>
-
-          <a class="card" href="https://github.com/papanda925/VBA_DnsAPI_Query_Sample">
-            <span class="pill">VBA / DNS</span>
-            <h3>VBA DNS API Query Sample</h3>
-            <p>Windows DNS APIを使って名前解決の仕組みを確認するサンプル。</p>
-          </a>
-
-          <a class="card" href="https://github.com/papanda925/PowerShell_WPF_XAML_GUI_SampleCodes">
-            <span class="pill">PowerShell</span>
-            <h3>PowerShell WPF / XAML GUI</h3>
-            <p>PowerShellでWindows GUIを作るための、コメント付きサンプルコード集。</p>
-          </a>
-
-          <a class="card" href="https://github.com/papanda925/MarkdownLocalWiki">
-            <span class="pill">Markdown</span>
-            <h3>Markdown Local Wiki</h3>
-            <p>Windows上で手軽に使える、MarkdownベースのローカルWiki。</p>
-          </a>
-
-          <a class="card" href="https://github.com/papanda925/OrcaRouter-Samples">
-            <span class="pill">AI / API</span>
-            <h3>OrcaRouter Samples</h3>
-            <p>Web、PowerShell、VBAからLLM APIを試し、質問・回答・HTTPトレースを確認できるサンプル。</p>
-          </a>
-
-
-          <a class="card" href="https://github.com/papanda925/personal-study-tools" rel="nofollow noopener noreferrer">
-            <span class="pill">Private / GitHubログイン</span>
-            <h3>マイツール</h3>
-            <p>個人用ツールの保管場所。GitHubアカウントでアクセスします。</p>
-          </a>
-
-          <a class="card" href="/mental-health-answer-sheet/">
-            <span class="pill">資格学習 / 解答用紙</span>
-            <h3>4択 解答チェックシート</h3>
-            <p>市販の問題集を開きながら1〜4をタップ。問題文を掲載せず、正答登録・自動採点・見直し・印刷・バックアップに対応。</p>
-          </a>
-
-        </div>
-      </section>
-
-      <section class="section about">
-        <div>
-          <p class="kicker">ABOUT</p>
-          <h2>「まず使える」から「なぜ動く？」まで。</h2>
-        </div>
-        <div>
-          <p>
-            専門用語から入るのではなく、まず「何をしたいか」「何が変わったか」を大切にしています。
-            初心者向けの実用操作から始め、興味が出たらProcess・Thread・HWND・Wi-Fi・暗号・WinRT・非同期処理など、
-            WindowsやOfficeの内部に一段ずつ降りていける構成を目指しています。
-          </p>
-          <div class="topics">
-            <span>Windows</span><span>Excel / Office</span><span>VBA</span>
-            <span>PowerShell</span><span>OS / Windows Internals</span><span>Network / Wi-Fi</span>
-            <span>Security</span><span>WinRT / .NET</span><span>AI / API</span>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <span>© papanda925</span>
-      <span>
-        <a href="https://papanda925.github.io/Daily-Code-Samples/">Daily Code</a> ·
-        <a href="https://papanda925.com/">Blog</a> ·
-        <a href="https://github.com/papanda925">GitHub</a>
-      </span>
-    </footer>
-  </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="intro">
+      <h1 id="intro">動かして学ぶ技術サンプル</h1>
+      <p>Windows、Excel VBA、PowerShell、ネットワークを中心に、コードを実行して動作を確かめられる教材を公開しています。</p>
+      <div class="actions">
+        <a class="primary" href="https://papanda925.github.io/Daily-Code-Samples/">Daily Codeを開く</a>
+        <a href="https://papanda925.com/">技術ブログを読む</a>
+      </div>
+    </section>
+    <section id="projects" aria-labelledby="project-title">
+      <h2 id="project-title">テーマから探す</h2>
+      <div class="groups">
+        <section class="group">
+          <h3>Excel VBA・ネットワーク</h3>
+          <ul>
+            <li><a href="https://github.com/papanda925/VBA_WinsockAPI_TCP_Sample">IPv4 TCPの接続と送受信</a></li>
+            <li><a href="https://github.com/papanda925/VBA_WinsockAPI_UDP_Sample">IPv4 UDPの送受信</a></li>
+            <li><a href="https://github.com/papanda925/VBA_Async_HTTP_API_Sample">非同期HTTPとローカルHTTPサーバー</a></li>
+            <li><a href="https://github.com/papanda925/VBA_DnsAPI_Query_Sample">DNSレコードの問い合わせ</a></li>
+            <li><a href="https://github.com/papanda925/VBA_IcmpAPI_Ping_Sample">IPv4・IPv6のPing</a></li>
+            <li><a href="https://github.com/papanda925/VBA_IcmpAPI_Traceroute_Sample">TTLを変えて通信経路を確認</a></li>
+            <li><a href="https://github.com/papanda925/VBA_WinsockAPI_TCP_IPv6_Sample">IPv6 TCPのクライアントとサーバー</a></li>
+            <li><a href="https://github.com/papanda925/VBA_WinsockAPI_UDP_IPv6_Sample">IPv6 UDPの送受信とタイムアウト</a></li>
+          </ul>
+        </section>
+        <section class="group">
+          <h3>PowerShell・Windows GUI</h3>
+          <ul>
+            <li><a href="https://github.com/papanda925/PowerShell_WPF_XAML_GUI_SampleCodes">WPFとXAMLの実装例</a></li>
+            <li><a href="https://github.com/papanda925/PowerShell_HiDPI_GUI_Sample">高DPI環境向けGUI</a></li>
+            <li><a href="https://github.com/papanda925/PowerShellXamlEditTool">PowerShellとXAMLの編集ツール</a></li>
+          </ul>
+        </section>
+        <section class="group">
+          <h3>AI・APIとローカルツール</h3>
+          <ul>
+            <li><a href="https://github.com/papanda925/OrcaRouter-Samples">OpenAI互換APIの利用例</a></li>
+            <li><a href="https://github.com/papanda925/MarkdownLocalWiki">Windows向けMarkdown Wiki</a></li>
+            <li><a href="https://github.com/papanda925/MarkDownPSLocalServerWiki">PowerShellで動くローカルMarkdown Wiki</a></li>
+          </ul>
+        </section>
+      </div>
+      <p><a href="https://github.com/papanda925?tab=repositories">すべての公開リポジトリ</a></p>
+    </section>
+    <section aria-labelledby="other-title">
+      <h2 id="other-title">その他の公開教材</h2>
+      <ul class="other">
+        <li><a href="/mo211/">Excel MO-211 演習</a></li>
+        <li><a href="/philosophy/">宗教・哲学の研究ノート</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="wrap">papanda925</footer>
 </body>
 </html>
