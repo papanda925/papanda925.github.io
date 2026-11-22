@@ -1,3 +1,9 @@
+## 最新点検: 2026-11-23 朝 JST
+- 第28回「黄金律」研究・記事・日次・原則・実践・得度を新規保存。data.json v0.4.59、連載 #golden-rule-title、トップ導線を同期。直接保存・読戻しを実施。
+- 未解決：公開Pages HTTP実配信、原語校訂・伝承成立史・注釈差、旧9月研究原本4件、SN 47.2、AN 4.125、AI実装試験、研究全件照合。失敗分は次回優先。GitHub Actionsなし、経典昇格なし、定期研究は停止しない。
+
+---
+
 ## 最新点検: 2026-11-22 夜 JST
 - 朝の未確認7ファイルの現行main反映を確認。data.json v0.4.58、11月22日の日次Markdownとの6項目一致、連載 #tapas-title と研究トップのリンクを確認。重複更新なし。
 - 夜間研究 `2026-11-22-evening-tapas-discipline-stop-and-evidence.md` を新規保存・読戻し一致。2.32と2.43のWoods英訳を確認。朝の日次・data.json.daily・公開HTMLは不変更。経典昇格・AI実装・GitHub Actionsなし。
