@@ -164,3 +164,8 @@
 - [黄金律――自分が嬉しいことなら、相手も嬉しい？](../articles/religious-terms/2026-11-23-golden-rule.md)
 - [HP版の第28回](../articles/religious-terms/index.html#golden-rule-title)
 - マタイ7:12とShabbat 31a:6を文脈別に比較。自己の希望と他者の希望を区別し、現代のAI同意設計は独自応用と明記。経典昇格なし。
+
+## 第29回（2026-11-24）
+- [ニーヤ――良い目的なら、結果を見なくていい？](../articles/religious-terms/2026-11-24-niyyah.md)
+- [HP版第29回](../articles/religious-terms/index.html#niyyah-title)
+- 『サヒーフ・アル＝ブハーリー』1の意図を参照。善意と権限・結果責任を区別。AI応用は独自提案。経典昇格なし。
