@@ -1,3 +1,7 @@
+## 2026-11-24 朝 — v0.4.60 / ニーヤ（第29回）
+- 『サヒーフ・アル＝ブハーリー』1の意図と行為を参照し、研究・記事・日次4 Essence・原則候補・3分実践・得度問答を追加。data.jsonと連載・トップHTMLを同期。
+- 意図と権限・結果責任の区別は独自応用。経典昇格・AI実装・GitHub Actionsなし。公開Pages実配信と法学注釈差は継続確認。
+
 ## 2026-11-23 夜｜黄金律と相互性・同意の境界
 - `research/2026-11-23-evening-golden-rule-reciprocity-consent-boundaries.md` を追加。マタイ7:12の英訳・ギリシア語形を再確認。Shabbat 31a:6の本文は動的表示で独立再照合未了と明記。
 - data.json v0.4.59と11月23日日次6項目、連載 #golden-rule-title とトップ導線を正本で点検。朝の日次・公開HTML不変更。公開Pages HTTP実配信未確認。経典昇格・AI実装・GitHub Actionsなし。
