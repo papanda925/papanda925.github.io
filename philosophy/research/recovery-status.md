@@ -1,3 +1,9 @@
+## 最新点検: 2026-11-24 朝 JST
+- 第29回「ニーヤ」記事・研究・日次・原則・実践・得度を新規保存。data.json v0.4.60と日次6項目、連載 #niyyah-title、トップ導線を同期予定／個別読戻しで判定。
+- 未解決：公開Pages HTTP実配信、ハディース古典注釈・法学学派差、ヒレル伝承本文独立照合、旧9月原本4件、SN 47.2、AN 4.125、AI実装試験、研究全件照合。GitHub Actionsなし、経典昇格なし。未反映は次回優先、定期研究停止なし。
+
+---
+
 ## 最新点検: 2026-11-23 夜 JST
 - 第28回「黄金律」の朝の日次Markdownとdata.json.dailyの6項目一致、data.json v0.4.59、連載HTML #golden-rule-title とトップHTML導線をmainで確認。重複更新なし。
 - 夜間研究 `2026-11-23-evening-golden-rule-reciprocity-consent-boundaries.md` を追加。マタイ7:12の英訳・ギリシア語形を再点検。Shabbat 31a:6の本文独立取得は未了。朝の日次・公開HTML不変更。
