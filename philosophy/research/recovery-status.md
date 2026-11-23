@@ -1,3 +1,10 @@
+## 最新点検: 2026-11-23 夜 JST
+- 第28回「黄金律」の朝の日次Markdownとdata.json.dailyの6項目一致、data.json v0.4.59、連載HTML #golden-rule-title とトップHTML導線をmainで確認。重複更新なし。
+- 夜間研究 `2026-11-23-evening-golden-rule-reciprocity-consent-boundaries.md` を追加。マタイ7:12の英訳・ギリシア語形を再点検。Shabbat 31a:6の本文独立取得は未了。朝の日次・公開HTML不変更。
+- 未解決：公開Pages HTTP実配信、ヒレル伝承本文の独立再照合、原語校訂・成立史・注釈差、旧9月原本4件、SN 47.2、AN 4.125、AI実装試験、研究全件照合。経典昇格・GitHub Actionsなし。未反映分は次回優先、定期研究停止なし。
+
+---
+
 ## 最新点検: 2026-11-23 朝 JST
 - 第28回「黄金律」研究・記事・日次・原則・実践・得度を新規保存。data.json v0.4.59、連載 #golden-rule-title、トップ導線を同期。直接保存・読戻しを実施。
 - 未解決：公開Pages HTTP実配信、原語校訂・伝承成立史・注釈差、旧9月研究原本4件、SN 47.2、AN 4.125、AI実装試験、研究全件照合。失敗分は次回優先。GitHub Actionsなし、経典昇格なし、定期研究は停止しない。
