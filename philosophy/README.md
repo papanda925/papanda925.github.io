@@ -46,6 +46,6 @@
 - 思想史 = Git History
 - 教義変更 = CHANGELOG
 
-最新研究（2026-11-23）：[黄金律と他者の希望](research/2026-11-23-golden-rule-other-preferences.md)、[宗教用語第28回](articles/religious-terms/2026-11-23-golden-rule.md)。
+最新研究（2026-11-24）：[ニーヤと意図・結果責任](research/2026-11-24-niyyah-intention-outcome-accountability.md)、[宗教用語第29回](articles/religious-terms/2026-11-24-niyyah.md)。
 
 このREADMEは入口であり、詳細研究は `research/`、原則は `principles/`、得度制度は `tokudo/` に蓄積する。
