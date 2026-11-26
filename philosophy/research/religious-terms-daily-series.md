@@ -169,3 +169,7 @@
 - [ニーヤ――良い目的なら、結果を見なくていい？](../articles/religious-terms/2026-11-24-niyyah.md)
 - [HP版第29回](../articles/religious-terms/index.html#niyyah-title)
 - 『サヒーフ・アル＝ブハーリー』1の意図を参照。善意と権限・結果責任を区別。AI応用は独自提案。経典昇格なし。
+
+## 第30回（2026-11-25、11-27導線復旧）
+- [メタノイア](../articles/religious-terms/2026-11-25-metanoia.md)
+- [HP版](../articles/religious-terms/index.html#metanoia-title)
